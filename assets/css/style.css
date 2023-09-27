@@ -1,0 +1,459 @@
+:root {
+    --green: #418985;
+    --orange: #DE7243;
+    --gray: #6B6B6B;
+    --light-gray: #A8A8A8;
+    --black: #000;
+    --white: #fff;
+    --Ubuntu: "Ubuntu";
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+body {
+    font-family: var(--Ubuntu);
+    font-size: 25px;
+    color: var(--black);
+    line-height: 29px;
+    font-weight: normal;
+    background: var(--white);
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.primary-btn {
+    border: 2px solid var(--orange);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    line-height: 30px;
+    background-color: transparent;
+    color: var(--orange);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.primary-btn:hover {
+    background-color: var(--orange);
+    color:  var(--white);
+}
+input {
+    font-family: var(--Ubuntu);
+    font-size: 25px;
+    color: var(--black);
+    line-height: 29px;
+    font-weight: 300;
+    padding: 25px;
+    font-weight: 300;
+    width: 100%;
+    color: var(--black);
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+}
+
+input::placeholder {
+    color: var(--light-gray);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: unset;
+}
+
+/* signup section css start */
+
+.signup-section .signup-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.signup-main .signup-left {
+    padding: 86px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DE72430D;
+    border: 2px solid #DE724330;
+}
+
+.signup-main .signup-left p {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 500;
+    color: var(--green);
+    margin-top: 12px;
+    text-align: center;
+}
+.signup-main .signup-right {
+    padding: 90px 95px;
+}
+.signup-main .signup-right .title {
+    font-size: 65px;
+    line-height: 65px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: var(--green);
+    text-align: center;
+}
+.signup-main .signup-right .sub-text {
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--gray);
+    text-align: center;
+    margin-bottom: 35px;
+}
+.signup-main .signup-right .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    gap: 30px;
+    padding: 23px 25px;
+    border: 1px solid  var(--green);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.signup-main .signup-right .google-btn .google-icon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup-main .signup-right .or-line {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+.signup-main .signup-right .or-line::after {
+    content: '';
+    width: 100%;
+    background-color: #D0D0D0;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    position: absolute;
+}
+.signup-main .signup-right .or-line span {
+    width: fit-content;
+    padding: 5px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.signup-main .signup-right .signup-form .row {
+    margin-bottom: 40px;
+}
+.signup-main .signup-right .signup-form .row.element-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.signup-main .signup-right .signup-form .password-info {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 40px;
+    display: flex;
+}
+.signup-main .signup-right .signup-form .offer-text {
+    margin-bottom: 45px;
+}
+.signup-main .signup-right .signup-form .offer-text input {
+    display: none;
+}
+.signup-main .signup-right .signup-form .offer-text label {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.signup-main .signup-right .signup-form .offer-text label::before {
+    content: '';
+    display: block;
+    min-width: 30px;
+    height: 30px;
+    background-color: #F4F4F4;
+    border-radius: 4px;
+    margin-right: 10px;
+    border: 1px solid #E4E4E4;
+}
+.signup-main .signup-right .signup-form .offer-text input:checked + label::before {
+    background-color: var(--green);
+    background-image: url('../images/write.png');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center;
+}
+.signup-main .signup-right .signup-form .already-account {
+    line-height: 46px;
+    text-align: center;
+    margin-top: 20px;
+}
+.signup-main .signup-right .signup-form .already-account .login-link {
+    color: var(--green);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.signup-main .signup-right .signup-form .primary-btn {
+    max-width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 13.72308px 48.03077px 0px rgba(222, 114, 67, 0.15);
+}
+
+@media(max-width: 1200px) {
+    body {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .primary-btn {
+        border-radius: 10px;
+        padding: 22px;
+        font-size: 28px;
+        line-height: 28px;
+    }
+    input {
+        font-size: 22px;
+        line-height: 26px;
+        padding: 20px;
+    }
+    
+    .signup-main .signup-left {
+        padding: 60px;
+    }
+    
+    .signup-main .signup-left p {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .signup-main .signup-right {
+        padding: 60px;
+    }
+    .signup-main .signup-right .title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .signup-main .signup-right .sub-text {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    .signup-main .signup-right .google-btn {
+        gap: 30px;
+        padding: 20px;
+    }
+    .signup-main .signup-right .signup-form .row {
+        margin-bottom: 30px;
+    }
+    .signup-main .signup-right .signup-form .row.element-two {
+        gap: 20px;
+    }
+    
+    .signup-main .signup-right .signup-form .password-info {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+    .signup-main .signup-right .signup-form .offer-text {
+        margin-bottom: 30px;
+    }
+    
+    .signup-main .signup-right .signup-form .already-account {
+        line-height: 30px;
+    }
+    .signup-main .signup-right .signup-form .primary-btn {
+        max-width: 100%;
+    }
+}
+
+
+@media(max-width: 1024px) {
+    body {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .primary-btn {
+        border-radius: 10px;
+        padding: 20px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    input {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 18px;
+    }
+    .signup-section .signup-main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .signup-main .signup-left {
+        padding: 50px;
+    }
+    
+    .signup-main .signup-left p {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .signup-main .signup-right {
+        padding: 50px;
+    }
+    .signup-main .signup-right .title {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .signup-main .signup-right .sub-text {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .signup-main .signup-right .google-btn {
+        gap: 25px;
+        padding: 18px;
+        margin-bottom: 20px;
+    }
+    .signup-main .signup-right .google-btn .google-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .signup-main .signup-right .or-line {
+        margin-bottom: 20px;
+    }
+    .signup-main .signup-right .signup-form .row {
+        margin-bottom: 20px;
+    }
+    .signup-main .signup-right .signup-form .row.element-two {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    
+    .signup-main .signup-right .signup-form .password-info {
+        margin-bottom: 20px;
+    }
+    .signup-main .signup-right .signup-form .offer-text {
+        margin-bottom: 20px;
+    }
+    
+    .signup-main .signup-right .signup-form .offer-text label::before {
+        min-width: 25px;
+        height: 25px;
+    }
+    .signup-main .signup-right .signup-form .offer-text input:checked + label::before {
+        background-size: 14px;
+    }
+    .signup-main .signup-right .signup-form .already-account {
+        line-height: 26px;
+        margin-top: 15px;
+    }
+}
+
+
+@media(max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .primary-btn {
+        padding: 15px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    input {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 15px;
+    }
+    
+    .signup-main .signup-left {
+        padding: 30px;
+    }
+    
+    .signup-main .signup-left p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .signup-main .signup-right {
+        padding: 30px;
+    }
+    .signup-main .signup-right .title {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+    .signup-main .signup-right .sub-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .signup-main .signup-right .google-btn {
+        gap: 20px;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    .signup-main .signup-right .google-btn .google-icon {
+        width: 25px;
+        height: 25px;
+    }
+    .signup-main .signup-right .or-line {
+        margin-bottom: 15px;
+    }
+    .signup-main .signup-right .signup-form .row {
+        margin-bottom: 15px;
+    }
+    .signup-main .signup-right .signup-form .row.element-two {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+    
+    .signup-main .signup-right .signup-form .password-info {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .signup-main .signup-right .signup-form .offer-text {
+        margin-bottom: 15px;
+    }
+    .signup-main .signup-right .signup-form .already-account {
+        line-height: 22px;
+        margin-top: 10px;
+    }
+    .signup-main .signup-right .signup-form .offer-text label::before {
+        min-width: 20px;
+        height: 20px;
+    }
+    .signup-main .signup-right .signup-form .offer-text input:checked + label::before {
+        background-size: 12px;
+    }
+}
+/* signup section css end */
