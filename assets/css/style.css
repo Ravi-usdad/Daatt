@@ -1239,11 +1239,6 @@ input:focus {
         margin-top: 20px;
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .section_main_title {
-        font-size: 20px;
-        line-height: 28px;
-    }
 }
 
 /* trusted_by section end*/
