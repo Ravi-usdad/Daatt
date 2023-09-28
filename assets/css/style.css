@@ -552,6 +552,30 @@ input:focus {
     background: #FEFAF5;
     padding: 20px 0;
 }
+.header.sticky {
+    position: fixed;
+    top: 0;
+    background: #FEFAF5;
+    width: 100%;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+    z-index: 999;
+    transition: all .4s ease-in-out;
+    -webkit-animation: slide-down .7s;
+    animation: slide-down .7s;
+}
+@keyframes slide-down{
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
 
 .header .navigaton_headre {
     display: flex;
@@ -1163,7 +1187,7 @@ input:focus {
 
 @media (max-width:1366px) {
     .section_main_title {
-        font-size: 42px;
+        font-size: 50px;
         line-height: 52px;
     }
 
@@ -1176,22 +1200,25 @@ input:focus {
     }
 }
 
-@media(max-width:991px) {
+@media(max-width:1024px) {
     .trusted_by_list {
         margin-top: 30px;
         grid-template-columns: repeat(4, 1fr);
     }
 
     .section_main_title {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .services_section .section_main_content {
+        margin-top: 20px;
     }
 }
 
 @media(max-width:767px) {
     .section_main_title {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 30px;
+        line-height: 30px;
     }
 
     .trusted_by_list {
@@ -1201,7 +1228,10 @@ input:focus {
     .trusted_by_section {
         margin: 50px 0;
     }
-
+    .section_main_content{
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 
 @media(max-width:640px) {
@@ -1229,6 +1259,7 @@ input:focus {
 
 .services_section {
     padding: 40px 0 91px;
+    background: #FEFAF5;
 }
 
 .services_section .section_main_content {
@@ -1474,7 +1505,7 @@ input:focus {
     margin: 0 auto;
 }
 
-@media(max-width: 1360px) {
+@media(max-width: 1366px) {
     .feature-product-section {
         margin: 100px 0;
     }
@@ -1610,7 +1641,7 @@ input:focus {
 }
 
 
-@media(max-width: 1360px) {
+@media(max-width: 1366px) {
     .get-started-section {
         padding: 50px 0;
     }
@@ -1737,7 +1768,7 @@ input:focus {
     padding-right: 155px;
 }
 
-@media(max-width: 1360px) {
+@media(max-width: 1366px) {
     .newsletter-section {
         margin: 100px 0;
     }
@@ -1958,7 +1989,7 @@ input:focus {
     transition: all 0.3s ease-in-out;
 }
 
-@media(max-width: 1360px) {
+@media(max-width: 1366px) {
     .footer .footer-top .logo {
         max-width: 180px;
     }
