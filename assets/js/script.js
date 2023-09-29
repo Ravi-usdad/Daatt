@@ -56,25 +56,27 @@ $(document).ready(function () {
     window.addEventListener("resize", resizeWindow);
 
     $('.services_sliser').owlCarousel({
-        loop:true,
-        margin:35,
-        nav:false,
-        dots:false,
-        responsive:{
-            0:{
-                items:1
+        loop: true,
+        margin: 35,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        smartSpeed: 2000,
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                margin:20,
-                items:2
+            600: {
+                margin: 20,
+                items: 2
             },
-            1000:{
-                margin:24,
-                items:3
+            1000: {
+                margin: 24,
+                items: 3
             },
-            1200:{
-                margin:24,
-                items:3.7
+            1300: {
+                margin: 24,
+                items: 3.7
             }
         }
     })
