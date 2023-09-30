@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "daatt";
+    src: url("./icon/daatt.eot");
+    src: url("./icon/daatt.eot?#iefix") format("embedded-opentype"),
+        url("./icon/daatt.woff") format("woff"),
+        url("./icon/daatt.ttf") format("truetype"),
+        url("./icon/daatt.svg#daatt") format("svg");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+[data-icon]:before {
+    font-family: "daatt" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "daatt" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-1:before {
+    content: "\61";
+}
+
+.icon-icon-2:before {
+    content: "\62";
+}
+
+.icon-icon-3:before {
+    content: "\63";
+}
+
+.icon-icon-4:before {
+    content: "\64";
+}
+
+.icon-icon-5:before {
+    content: "\65";
+}
+
+.icon-icon-6:before {
+    content: "\66";
+}
+
+.icon-icon-7:before {
+    content: "\67";
+}
+
+.icon-icon-8:before {
+    content: "\68";
+}
+
+.icon-icon-9:before {
+    content: "\69";
+}
+
+.icon-icon-10:before {
+    content: "\6a";
+}
+
+.icon-icon-11:before {
+    content: "\6b";
+}
+
+.icon-icon-12:before {
+    content: "\6c";
+}
+
+.icon-icon-13:before {
+    content: "\6d";
+}
+
+.icon-icon-14:before {
+    content: "\6e";
+}
+
+.icon-icon-15:before {
+    content: "\6f";
+}
+
+.icon-icon-16:before {
+    content: "\70";
+}
+
+.icon-icon-17:before {
+    content: "\71";
+}
+
+.icon-icon-18:before {
+    content: "\72";
+}
+
+.icon-icon-19:before {
+    content: "\73";
+}
+
+.icon-icon-20:before {
+    content: "\74";
+}
+
+.icon-icon-21:before {
+    content: "\75";
+}
+
+.icon-icon-22:before {
+    content: "\76";
+}
+
+.icon-icon-23:before {
+    content: "\77";
+}
+
+.icon-icon-24:before {
+    content: "\78";
+}
+
+.icon-icon-25:before {
+    content: "\79";
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./ubuntu/Ubuntu-Bold.woff2') format('woff2'),
+        url('./ubuntu/Ubuntu-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./ubuntu/Ubuntu-BoldItalic.woff2') format('woff2'),
+        url('./ubuntu/Ubuntu-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./ubuntu/Ubuntu-Italic.woff2') format('woff2'),
+        url('./ubuntu/Ubuntu-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./ubuntu/Ubuntu-Light.woff2') format('woff2'),
+        url('./ubuntu/Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./ubuntu/Ubuntu-LightItalic.woff2') format('woff2'),
+        url('./ubuntu/Ubuntu-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./ubuntu/Ubuntu-Medium.woff2') format('woff2'),
+        url('./ubuntu/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./ubuntu/Ubuntu-MediumItalic.woff2') format('woff2'),
+        url('./ubuntu/Ubuntu-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./ubuntu/Ubuntu-Regular.woff2') format('woff2'),
+        url('./ubuntu/Ubuntu-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('./PlusJakartaSans/PlusJakartaSans-ExtraLight.woff2') format('woff2'),
+        url('./PlusJakartaSans/PlusJakartaSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('./PlusJakartaSans/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
+        url('./PlusJakartaSans/PlusJakartaSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('./PlusJakartaSans/PlusJakartaSans-Bold.woff2') format('woff2'),
+        url('./PlusJakartaSans/PlusJakartaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('./PlusJakartaSans/PlusJakartaSans-Medium.woff2') format('woff2'),
+        url('./PlusJakartaSans/PlusJakartaSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('./PlusJakartaSans/PlusJakartaSans-Light.woff2') format('woff2'),
+        url('./PlusJakartaSans/PlusJakartaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('./PlusJakartaSans/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('./PlusJakartaSans/PlusJakartaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('./PlusJakartaSans/PlusJakartaSans-SemiBold.woff2') format('woff2'),
+        url('./PlusJakartaSans/PlusJakartaSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
