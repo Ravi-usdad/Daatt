@@ -92,4 +92,15 @@ $(document).ready(function () {
             $('.header').removeClass('sticky')
         }
     });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 150) {
+            $('.message_box').addClass('sticky')
+        } else {
+            $('.message_box').removeClass('sticky')
+        } if ($(this).scrollTop() > 150) {
+            $('.message_box').addClass('sticky')
+        } else {
+            $('.message_box').removeClass('sticky')
+        }
+    });
 })

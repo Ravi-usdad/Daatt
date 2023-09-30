@@ -1,0 +1,146 @@
+:root {
+    --green: #418985;
+    --orange: #DE7243;
+    --gray: #6B6B6B;
+    --light-gray: #A8A8A8;
+    --black: #000000;
+    --white: #FFFFFF;
+    --Ubuntu: "Ubuntu";
+    --Plus-Jakarta-San: "Plus Jakarta Sans";
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+body {
+    font-family: var(--Ubuntu);
+    font-size: 25px;
+    color: var(--black);
+    line-height: 29px;
+    font-weight: normal;
+    background: var(--white);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1470px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.primary-btn {
+    border: 2px solid var(--orange);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    line-height: 30px;
+    background-color: transparent;
+    color: var(--orange);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+input {
+    font-family: var(--Ubuntu);
+    font-size: 25px;
+    color: var(--black);
+    line-height: 29px;
+    font-weight: 300;
+    padding: 25px;
+    font-weight: 300;
+    width: 100%;
+    color: var(--black);
+    border: 1px solid var(--light-gray);
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+input::placeholder {
+    color: var(--light-gray);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: unset;
+    border: 1px solid var(--orange);
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 345px;
+    background: var(--white);
+    transition: all 0.5s ease;
+}
+
+.sidebar .headre_logo{
+    padding: 20px 10px;
+    border-bottom: 1px solid #41898533;
+    margin: 0 10px;
+}
+
+.sidebar .headre_logo a{
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+.sidebar .des_menu_list{
+    max-width: 260px;
+    width: 100%;
+    margin: 25px auto 0;
+}
+.sidebar .des_menu_list .menu_item_link{
+    padding: 18px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #737791;
+    font-weight: 400;
+}
+
+.content_main {
+    position: relative;
+    background: #95DBD41A;
+    min-height: 100vh;
+    width: calc(100% - 345px);
+    left: 345px;
+    transition: all 0.5s ease;
+}
