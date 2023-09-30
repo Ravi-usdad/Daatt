@@ -591,6 +591,7 @@ input:focus {
     .signup-main .signup-right .signup-form .offer-text input:checked+label::before {
         background-size: 12px;
     }
+
     .message_box {
         width: 50px;
         height: 50px;
@@ -3621,3 +3622,816 @@ input:focus {
 }
 
 /* forum community section End */
+
+/* Pricing Section Page Start */
+
+.pricing_box {
+    flex: 1;
+    background-color: #FEFAF5;
+}
+
+.pricing_box .setting_steps {
+    margin-top: 0;
+}
+
+.pricing_title {
+    font-size: 75px;
+    line-height: 131px;
+    color: var(--green);
+    font-weight: 800;
+}
+
+.started_now {
+    margin-top: 130px;
+}
+
+.started_discription {
+    font-size: 22px;
+    line-height: 35px;
+    color: var(--black);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.started_now_card_group {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+    margin-bottom: 130px;
+}
+
+.started_now_card {
+    padding: 50px 30px 30px;
+    border-radius: 30px;
+    border: 2px solid #8B74BA;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.started_now_card .s_ttt_box {
+    margin-bottom: 130px;
+}
+
+.started_now_card:nth-child(2) {
+    border: 2px solid #3498E1;
+}
+
+.started_now_card:nth-child(3) {
+    border: 2px solid #4CB992;
+}
+
+.started_now_subtitle {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--black);
+    font-weight: 400;
+    text-align: center;
+}
+
+.started_now_value {
+    font-size: 50px;
+    line-height: 50px;
+    color: var(--green);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.started_now_card .primary-btn {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 23px 52px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: auto;
+}
+
+.started_now_group_list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 40px 0;
+}
+
+.started_now_card::before {
+    content: ' ';
+    height: 665px;
+    width: 665px;
+    background-color: #8B74BA;
+    border-radius: 100%;
+    position: absolute;
+    top: -415px;
+    left: -200px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.started_now_card:nth-child(2):before {
+    background-color: #3498E1;
+}
+
+.started_now_card:nth-child(3):before {
+    background-color: #4CB992;
+}
+
+.tarted_now_title {
+    font-size: 67px;
+    line-height: 52px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.dis_text {
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.urchase_credits_card_group {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin: 55px 0;
+}
+
+.purchases_discription {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--black);
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.purchase_credits .secound_dis {
+    font-weight: 700;
+}
+
+.urchase_credits_card {
+    border-radius: 15px;
+    border: 2px solid #8B74BA;
+    overflow: hidden;
+    width: 100%;
+}
+
+.urchase_title_group {
+    background-color: #8B74BA;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 40px 0px 40px 30px;
+}
+
+.urchase_title {
+    font-size: 48px;
+    line-height: 35px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.urchase_dis_group {
+    padding: 50px 30px 55px 30px;
+}
+
+.urchase_credit {
+    font-size: 56px;
+    line-height: 45px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.urchase_credit span {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #2F2F2F;
+}
+
+.urchase_list {
+    margin-top: 30px;
+}
+
+.urchase_discription {
+    font-size: 28px;
+    line-height: 45px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+
+.urchase_list ul {
+    list-style: disc;
+    color: #9F9F9F;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.urchase_credits_card:nth-child(2) {
+    border: 2px solid #3498E1;
+}
+
+.urchase_credits_card:nth-child(2) .urchase_title_group {
+    background-color: #3498E1;
+}
+
+.urchase_credits_card:nth-child(3) {
+    border: 2px solid #4CB992;
+}
+
+.urchase_credits_card:nth-child(3) .urchase_title_group {
+    background-color: #4CB992;
+}
+
+.urchase_note {
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 500;
+    color: #418985;
+    text-align: center;
+}
+
+.purchase_credits .credits_btn,
+.still_have_section .credits_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 130px;
+}
+
+.purchase_credits .primary-btn,
+.still_have_section .primary-btn {
+    width: fit-content;
+    padding: 23px 63px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.easy_payment {
+    flex: 1;
+    background-color: #FEFAF5;
+    padding: 106px 0;
+}
+
+.easy_payment_card {
+    padding: 30px 27px;
+    border-radius: 16px;
+    border: 1px solid var(--1, #418985);
+    background: #FFF;
+    box-shadow: 0px 18px 37px 0px rgba(0, 0, 0, 0.12);
+    width: 100%;
+}
+
+.easy_payment_card_group {
+    display: flex;
+    gap: 45px;
+    width: 100%;
+    margin-top: 85px;
+}
+
+.easy_payment_icon_group {
+    display: flex;
+    gap: 16px;
+}
+
+.easy_payment_card_title {
+    color: #434343;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 25px 0;
+}
+
+.easy_payment_card_dis {
+    color: #6C6C6C;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.still_have_section {
+    max-width: 990px;
+    width: 100%;
+    margin: 130px auto;
+}
+
+.faq-main-section {
+    margin: 60px 0;
+}
+
+.faq-main-section .title-icon-box {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.faq-main-section .title-icon-box .title-content-faq .heading-section {
+    line-height: 49px;
+    margin-bottom: 4px;
+}
+
+.faq-main-section .title-icon-box .title-content-faq p {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.faq-main-section .title-icon-box i {
+    font-size: 80px;
+    line-height: 80px;
+    color: var(--black);
+    display: flex;
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.faq-accordion .faq-item {
+    background: var(--white);
+}
+
+.faq-accordion .faq-item .faq-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 25px;
+    cursor: pointer;
+    border: 0.5px solid #418985;
+    border-radius: 10px;
+}
+
+.faq-accordion .faq-item .faq-header .nonePlus_icon {
+    display: none;
+}
+
+.faq-accordion .faq-item .faq-header.is-active .nonePlus_icon {
+    display: block;
+}
+
+.faq-accordion .faq-item .faq-header.is-active .plush_icon {
+    display: none;
+}
+
+.faq-accordion .faq-item .faq-header.is-active .faqs-title {
+    color: #062621;
+}
+
+.faq-accordion .faq-item .faq-header .faqs-title {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 300;
+    color: #74787C;
+
+}
+
+.faq-accordion .faq-item .faq-header .icon {
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    color: var(--blacktitle-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-accordion .faq-item .faq-header.is-active .icon {
+    transform: rotate(45deg);
+}
+
+.faq-accordion .faq-item .faq-content {
+    padding: 30px 10px 0 10px;
+    display: none;
+}
+
+.faq-accordion .faq-item .faq-content .faq-dis-group {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.faq-accordion .faq-item .faq-content .faq-dis-group ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.faq-accordion .faq-item .faq-content p,
+.faq-accordion .faq-item .faq-content li {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 300;
+    color: #000;
+}
+
+.setting_steps .content_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.setting_steps .content_text p {
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+.setting_steps .content_text p span {
+    font-weight: 500;
+}
+
+@media(max-width:1366px) {
+    .pricing_title {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .setting_steps .content_text p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .setting_steps .content_text {
+        margin-top: 20px;
+        gap: 15px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .started_now_card {
+        padding: 30px 20px;
+    }
+
+    .started_now_card::before {
+        height: 614px;
+    }
+
+    .tarted_now_title {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .dis_text {
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+
+    .started_now_card .s_ttt_box {
+        margin-bottom: 70px;
+    }
+
+    .started_now_subtitle {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .started_now_value {
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 10px;
+    }
+
+    .started_now_card .primary-btn {
+        padding: 15px 30px;
+    }
+
+    .started_now_group_list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px 0;
+    }
+
+    .started_now_card_group {
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .urchase_dis_group {
+        padding: 30px 20px;
+    }
+
+    .urchase_title_group {
+        padding: 30px 20px;
+    }
+
+    .urchase_title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .urchase_title_group svg {
+        width: 30px;
+    }
+
+    .urchase_credit {
+        font-size: 45px;
+        line-height: 55px;
+        font-weight: 600;
+        color: var(--orange);
+    }
+
+    .started_now {
+        margin-top: 80px;
+    }
+
+    .purchases_discription {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 20px auto;
+    }
+
+    .urchase_discription {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .urchase_credits_card_group {
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .purchase_credits .credits_btn,
+    .still_have_section .credits_btn {
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+    .purchase_credits .credits_btn .primary-btn,
+    .still_have_section .primary-btn {
+        padding: 15px 30px;
+    }
+
+    .easy_payment_card_group {
+        margin-top: 50px;
+    }
+
+    .easy_payment_card_group {
+        gap: 20px;
+    }
+
+    .easy_payment_card_title {
+        font-size: 24px;
+    }
+
+    .easy_payment_card {
+        padding: 20px;
+    }
+
+    .easy_payment {
+        padding: 70px 0;
+    }
+
+    .still_have_section {
+        margin: 80px auto;
+    }
+
+    .faq-accordion .faq-item .faq-header .faqs-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .faq-accordion .faq-item .faq-content {
+        padding-top: 20px;
+        display: none;
+    }
+
+    .faq-accordion .faq-item .faq-content .faq-dis-group {
+        gap: 20px;
+    }
+
+    .faq-accordion .faq-item .faq-content p,
+    .faq-accordion .faq-item .faq-content li {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .faq-main-section {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:991px) {
+    .started_now_card_group {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .started_now_card {
+        width: 47%;
+        flex: unset;
+    }
+
+    .started_now {
+        margin-top: 50px;
+    }
+
+    .tarted_now_title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .dis_text {
+        font-size: 18px;
+    }
+
+    .started_now_card::before {
+        left: -175px;
+        top: -440px;
+    }
+
+    .started_now_subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .started_now_value {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .started_now_group_list {
+        gap: 20px;
+    }
+
+    .urchase_credits_card_group,
+    .easy_payment_card_group {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .urchase_credits_card,
+    .easy_payment_card {
+        width: 47%;
+    }
+
+    .urchase_credit {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .urchase_list ul {
+        gap: 20px;
+    }
+
+    .urchase_discription {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .easy_payment {
+        padding: 50px 0;
+    }
+
+    .still_have_section {
+        margin: 50px auto;
+    }
+
+    .faq-main-section {
+        margin-top: 20px;
+    }
+
+    .started_now_card_group {
+        margin-bottom: 50px;
+    }
+
+    .pricing_title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media(max-width:767px) {
+
+    .urchase_dis_group,
+    .urchase_title_group {
+        padding: 20px 15px;
+    }
+
+    .urchase_credit {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .urchase_list {
+        margin-top: 20px;
+    }
+
+    .urchase_discription {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .started_discription,
+    .purchases_discription {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .easy_payment_card_dis {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .easy_payment_icon_group {
+        gap: 10px;
+    }
+
+    .faq-accordion .faq-item .faq-header.is-active .nonePlus_icon,
+    .faq-accordion .faq-item .faq-header .plush_icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .faq-accordion .faq-item .faq-header.is-active .nonePlus_icon svg,
+    .faq-accordion .faq-item .faq-header .plush_icon svg {
+        width: 100%;
+        display: flex;
+    }
+
+    .faq-accordion .faq-item .faq-header {
+        padding: 15px;
+    }
+
+    .faq-accordion .faq-item .faq-header .faqs-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .faq-accordion .faq-item .faq-content .faq-dis-group {
+        gap: 10px;
+    }
+
+    .faq-accordion .faq-item .faq-content p,
+    .faq-accordion .faq-item .faq-content li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .setting_steps .content_text p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media(max-width:640px) {
+
+    .started_now_card,
+    .urchase_credits_card,
+    .easy_payment_card {
+        width: 100%;
+    }
+
+    .started_now_card::before {
+        width: 800px;
+    }
+
+    .started_now_card_group {
+        margin-top: 20px;
+    }
+
+    .urchase_credit {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .urchase_discription {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .easy_payment_card {
+        padding: 15px;
+    }
+
+    .easy_payment_card_group {
+        margin-top: 20px;
+    }
+
+    .easy_payment_card_title {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .pricing_title {
+        font-size: 34px;
+        line-height: 45px;
+    }
+}
+
+/* pricing page css end */

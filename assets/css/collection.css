@@ -20,11 +20,13 @@
     height: 70px;
     border-radius: 6px;
 }
+
 .collection-list-wrapper.filter-open .filter {
     width: 100%;
     height: 100%;
     padding: 20px;
 }
+
 .collection-list-wrapper .filter .filter-top .filter-icon {
     width: 70px;
     height: 70px;
@@ -94,7 +96,7 @@
     padding-left: 15px;
 }
 
-.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item > .item {
+.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item>.item {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,11 +109,11 @@
     transition: all 0.3s ease-in-out;
 }
 
-.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item:hover > .item {
+.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item:hover>.item {
     color: #E79637;
 }
 
-.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item:hover > .item .arrow-icon svg path {
+.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item:hover>.item .arrow-icon svg path {
     stroke: #E79637;
 }
 
@@ -121,17 +123,23 @@
     border-radius: 7px;
 }
 
-.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active > .item {
+.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active>.item {
     color: #E79637;
     padding-bottom: 15px;
     border-bottom: 1px solid #E79637;
 }
 
-.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active > .item .arrow-icon {
+.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active>.item .arrow-icon {
     transform: rotate(90deg);
 }
-.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active > .item .arrow-icon svg path {
+
+.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active>.item .arrow-icon svg path {
     stroke: #E79637;
+}
+
+.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active>a.item {
+    padding-bottom: 0;
+    border: 0;
 }
 
 .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item .filter-list-sub {
@@ -149,7 +157,7 @@
     position: relative;
 }
 
-.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items > .item {
+.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items>.item {
     padding: 10px 15px;
     color: #9F9F9F;
     font-family: var(--Plus-Jakarta-San);
@@ -160,7 +168,7 @@
     justify-content: space-between;
 }
 
-.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items:hover > .item {
+.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items:hover>.item {
     padding: 10px 15px;
     background-color: #DDC9B220;
     border-radius: 7px;
@@ -168,14 +176,15 @@
     transition: all 0.3s ease-in-out;
 }
 
-.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items:hover > .item svg path {   
+.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items:hover>.item svg path {
     stroke: #E79637;
 }
 
 .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items .filter-list-sub-item-wrapper {
     display: none;
 }
-.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items:hover > .filter-list-sub-item-wrapper {
+
+.collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items:hover>.filter-list-sub-item-wrapper {
     padding: 19px;
     position: absolute;
     left: 100%;
@@ -233,7 +242,7 @@
     color: #7C7C7C;
     font-family: var(--Plus-Jakarta-San);
     font-size: 20px;
-    line-height: 20px;  
+    line-height: 20px;
 }
 
 .collection-list-wrapper .collection-list .list {
@@ -257,8 +266,9 @@
     max-height: calc(100vh - 60px);
     border-radius: 20px;
 }
+
 .product-slider-popup .modal-dialog .modal-body {
-    padding: 0px;  
+    padding: 0px;
 }
 
 .product-main {
@@ -269,7 +279,7 @@
 
 
 .product-slider-main .thumb-slider-popup .swiper-slide {
-    overflow: hidden;   
+    overflow: hidden;
     background-color: #4189850D;
     display: flex;
     align-items: center;
@@ -277,7 +287,7 @@
     border-radius: 20px;
     padding: 15px;
     mix-blend-mode: multiply;
-}   
+}
 
 .product-slider-main .thumb-slider-popup .swiper-slide.swiper-slide-thumb-active {
     background-color: #41898526;
@@ -345,6 +355,7 @@
     stroke: var(--white);
     fill: var(--white);
 }
+
 .product-slider-main .thumb-slider-popup .swiper-slide img {
     max-height: 100%;
 }
@@ -385,7 +396,7 @@
     font-family: var(--Plus-Jakarta-San);
     font-size: 20px;
     font-weight: 500;
-    line-height: 20px;  
+    line-height: 20px;
     margin-bottom: 9px;
 }
 
@@ -406,7 +417,7 @@
 }
 
 .product-main .product-right .product-detail .product-disc {
-        font-family: var(--Plus-Jakarta-San);
+    font-family: var(--Plus-Jakarta-San);
     font-size: 20px;
     line-height: 31px;
 }
@@ -422,7 +433,7 @@
 }
 
 .rating .rating-point {
-    color: #FFC107; 
+    color: #FFC107;
     font-family: var(--Plus-Jakarta-San);
     font-size: 18px;
     font-weight: 500;
@@ -521,9 +532,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease-in-out;
 }
 
-.folder-btn  img {
+.folder-btn:hover {
+    background: #E79637;
+    border: 1px solid #E79637;
+}
+
+.folder-btn img {
     width: 60px;
     height: 60px;
 }
@@ -534,17 +551,20 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
     }
+
     .collection-list-wrapper .collection-list .title-main {
         margin-bottom: 30px;
     }
+
     .collection-list-wrapper .collection-list .title-main .title {
         font-size: 40px;
         line-height: 50px;
         margin-bottom: 10px;
     }
+
     .collection-list-wrapper .collection-list .title-main .sub-text {
         font-size: 18px;
-        line-height: 18px;  
+        line-height: 18px;
     }
 
     .product-slider-popup .modal-dialog .modal-content {
@@ -572,7 +592,7 @@
 
     .teacher-info .info .name {
         font-size: 18px;
-        line-height: 18px;  
+        line-height: 18px;
     }
 
     .teacher-info .info .grade {
@@ -629,42 +649,50 @@
     .collection-list-wrapper .collection-list .list {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .collection-list-wrapper .collection-list .title-main {
         margin-bottom: 25px;
     }
+
     .collection-list-wrapper .collection-list .title-main .title {
         font-size: 32px;
         line-height: 40px;
     }
+
     .collection-list-wrapper .collection-list .title-main .sub-text {
         font-size: 16px;
-        line-height: 16px;  
+        line-height: 16px;
     }
+
     .collection-list-wrapper.filter-open .filter .filter-text {
         font-size: 16px;
         line-height: 16px;
     }
-    .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item > .item {
+
+    .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item>.item {
         font-size: 16px;
         line-height: 16px;
     }
-    .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items > .item {
+
+    .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items>.item {
         font-size: 16px;
         line-height: 16px;
     }
+
     .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items .filter-list-sub-item-main .item {
         font-size: 16px;
         line-height: 16px;
         gap: 40px;
     }
+
     .folder-btn {
         width: 60px;
         height: 60px;
         left: 2%;
         border-radius: 15px;
     }
-    
-    .folder-btn  img {
+
+    .folder-btn img {
         width: 40px;
         height: 40px;
     }
@@ -676,15 +704,17 @@
 
     .teacher-info .info .name {
         font-size: 16px;
-        line-height: 16px;  
+        line-height: 16px;
     }
 
     .teacher-info .info .grade {
         line-height: 16px;
     }
+
     .product-main .product-right .product-detail {
         gap: 15px;
     }
+
     .product-main .product-right .product-detail .product-title {
         font-size: 22px;
         line-height: 26px;
@@ -730,6 +760,7 @@
         padding: 10px;
         display: flex;
     }
+
     .collection-list-wrapper .filter {
         position: fixed;
         left: -100%;
@@ -739,6 +770,7 @@
         overflow-y: auto;
         transition: all 0.5s ease-in-out;
     }
+
     .collection-list-wrapper.filter-open .filter {
         position: fixed;
         left: 0;
@@ -746,11 +778,14 @@
         max-width: 500px;
         z-index: 99999;
     }
-    .collection-list-wrapper, .collection-list-wrapper.filter-open {
+
+    .collection-list-wrapper,
+    .collection-list-wrapper.filter-open {
         grid-template-columns: 40px calc(100% - 60px);
         gap: 20px;
     }
-    .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items:hover > .filter-list-sub-item-wrapper {
+
+    .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items:hover>.filter-list-sub-item-wrapper {
         position: relative;
         padding: 19px;
         left: unset;
@@ -759,6 +794,7 @@
         height: 100%;
         display: block;
     }
+
     .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items .filter-list-sub-item-main {
         padding: 0 20px;
         background-color: unset;
@@ -769,6 +805,7 @@
         width: 100%;
         box-shadow: unset;
     }
+
     .product-slider-main {
         border-radius: 10px;
     }
@@ -778,11 +815,12 @@
         border-radius: 5px;
     }
 
-    
+
     .product-page-main .product-right .product-detail .action-btn .purchase {
         padding: 10px 20px;
         font-size: 14px;
     }
+
     .product-page-main .product-right .product-detail .action-btn .add-classromm {
         padding: 10px 20px;
         font-size: 14px;
@@ -818,38 +856,45 @@
     .collection-list-wrapper .collection-list .list {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .collection-list-wrapper .collection-list .title-main .title {
         font-size: 26px;
         line-height: 35px;
     }
+
     .collection-list-wrapper .collection-list .title-main .sub-text {
         font-size: 14px;
-        line-height: 14px;  
+        line-height: 14px;
     }
+
     .collection-list-wrapper.filter-open .filter .filter-text {
         font-size: 14px;
         line-height: 16px;
     }
-    .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item > .item {
+
+    .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item>.item {
         font-size: 14px;
         line-height: 26px;
     }
-    .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items > .item {
+
+    .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items>.item {
         font-size: 14px;
         line-height: 26px;
     }
+
     .collection-list-wrapper .filter .filter-body .filter-list .filter-list-item.active .filter-list-sub .filter-list-sub-items .filter-list-sub-item-main .item {
         font-size: 14px;
         line-height: 26px;
         gap: 30px;
     }
+
     .folder-btn {
         width: 50px;
         height: 50px;
         border-radius: 10px;
     }
-    
-    .folder-btn  img {
+
+    .folder-btn img {
         width: 30px;
         height: 30px;
     }
@@ -857,6 +902,7 @@
     .product-slider-main .thumb-slider-popup {
         height: 70px;
     }
+
     .product-slider-main {
         padding: 10px;
     }
