@@ -19,7 +19,15 @@ $(document).ready(function () {
     sidebarBtn.addEventListener("click", addActiveClass);
     overlayBtn.addEventListener("click", removeActiveClass);
 
-    $(".search_button").click(function() {
+    $(".search_button").click(function () {
         $(".search_box").toggleClass("active");
     });
+
+    // Select Vehicle Select Script
+    if ($("#i-am-a").length) {
+        $("#i-am-a").select2({
+            placeholder: "I am a",
+            allowClear: true
+        });
+    }
 })
