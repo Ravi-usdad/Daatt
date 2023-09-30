@@ -104,3 +104,75 @@ $(document).ready(function () {
         }
     });
 })
+
+
+function filterSidebar() {
+    var element = document.getElementById("collection-list");
+    element.classList.toggle("filter-open");
+ }
+
+
+var swiper = new Swiper(".thumb-slider", {
+    freeMode: true,
+    speed: 1000,
+    navigation: false,
+    watchSlidesProgress: true,
+    breakpoints: {       
+        0: {
+            slidesPerView: 3,
+            spaceBetween: 15,        
+        },
+        640: {
+            spaceBetween: 30,        
+            slidesPerView: 4,
+        },
+        991: {
+            spaceBetween: 30,        
+            slidesPerView: 4,
+            direction: "vertical",
+        },        
+      },
+
+});
+
+var swiper2 = new Swiper(".product-slider", {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    speed: 1000,
+    navigation: false,
+    thumbs: {
+        swiper: swiper,
+    },
+});
+
+
+var swiper3 = new Swiper(".thumb-slider-popup", {
+    freeMode: true,
+    speed: 1000,
+    navigation: false,
+    watchSlidesProgress: true,
+    breakpoints: {       
+        0: {
+            spaceBetween: 5,        
+            slidesPerView: 3,
+        },
+        640: {
+            spaceBetween: 15,        
+            slidesPerView: 3,
+        },
+        991: {
+            spaceBetween: 30,        
+            slidesPerView: 3,
+        },        
+      },
+});
+ 
+var swiper4 = new Swiper(".popup-product-slider", {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    speed: 1000,
+    navigation: false,
+    thumbs: {
+        swiper: swiper3,
+    },
+});
