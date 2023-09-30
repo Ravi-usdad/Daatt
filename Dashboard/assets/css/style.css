@@ -109,7 +109,7 @@ input:focus {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    z-index: 10;
 }
 
 .sidebar .des_menu_list::-webkit-scrollbar,
@@ -253,6 +253,7 @@ input:focus {
 
 .das_header .search_box .search_button i {
     display: flex;
+    font-size: 24px;
 }
 
 .das_header .fleg_user_log {
@@ -282,6 +283,21 @@ input:focus {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-right: 20px;
+}
+
+.user_info_dropdown .dropdown-toggle::before {
+    content: "\69";
+    font-family: "daatt" !important;
+    font-size: 15px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    color: var(--black);
 }
 
 .user_info_dropdown .dropdown-toggle .image_box {
@@ -361,6 +377,94 @@ input:focus {
     transition: all 0.5s ease;
 }
 
+.burger_search {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.burger {
+    position: relative;
+    display: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1.6rem;
+    height: 1.15rem;
+    opacity: 0;
+    visibility: hidden;
+    background: transparent;
+}
+
+.burger-line {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 100%;
+    height: 2.1px;
+    opacity: 1;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    background: var(--black);
+}
+
+.burger-line:nth-child(1) {
+    top: 0px;
+}
+
+.burger-line:nth-child(2) {
+    top: 0.5rem;
+    width: 70%;
+}
+
+.burger-line:nth-child(3) {
+    top: 1rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.overlay.active {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.search_button_in {
+    display: none;
+    align-items: center;
+    background: transparent;
+    border: 0;
+}
+
+.search_button_in i {
+    display: flex;
+    font-size: 30px;
+}
+
+.user_info_dropdown .dropdown-menu {
+    border-radius: 7px;
+    box-shadow: 0px 8px 23px 0px rgba(0, 0, 0, 0.05);
+    background-color: var(--white);
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+    cursor: pointer;
+    border: 0;
+}
+
 @media(max-width: 1366px) {
     .sidebar {
         width: 260px;
@@ -396,5 +500,50 @@ input:focus {
 
     .das_sub_title {
         font-size: 14px;
+    }
+
+    .burger {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .sidebar {
+        left: -100%;
+    }
+
+    .sidebar.active {
+        width: 280px;
+        left: 0;
+    }
+
+    .content_main {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media(max-width:640px) {
+    .search_button_in{
+        display: flex;
+    }
+    .das_header .fleg_user_log {
+        gap: 15px;
+    }
+
+    .user_info_dropdown .dropdown-toggle .name_info {
+        display: none;
+    }
+
+    .das_header .search_box {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        max-width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .das_header .search_box.active {
+        left: 0;
     }
 }
