@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-    <title>Dashboard</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
@@ -115,29 +115,207 @@
         </div>
     </div>
     <div class="page_content">
-        <div class="page_info">
-            <div class="main_title_box">
-                <p class="des_main_title">Profile</p>
-                <p class="das_sub_title">Home - Profile</p>
+        <div class="page-header">
+            <div class="left">
+                <h1 class="des_main_title">Profile</h1>
+                <div class="bredcrump">
+                    <p class="das_sub_title">Home - Profile</p>   
+                </div>
+            </div>
+            <div class="right">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="buyer-tab" data-bs-toggle="tab" data-bs-target="#buyer" type="button" role="tab" aria-controls="buyer" aria-selected="false">Buyer</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="seller-tab" data-bs-toggle="tab" data-bs-target="#seller" type="button" role="tab" aria-controls="seller" aria-selected="true">Seller</button>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="des_box personal_infomation">
-            <div class="personal_line">
-                <p class="des_title">Personal Information</p>
-                <p class="ss_your_profile"><span>*</span>Complete your profile to become a seller.</p>
-            </div>
-            <form class="personal_infomation_form">
-                <div class="input-field input-select-field">
-                    <select id="i-am-a">
-                        <option value="Select brand 1">I am a</option>
-                        <option value="Select brand 2">I am a I am a</option>
-                        <option value="Select brand 3">I am a</option>
-                        <option value="Select brand 4">I am a</option>
-                    </select>
+        <div class="tab-content page-body personal_infomation des_box">
+            <div class="tab-pane fade show active" id="buyer" role="tabpanel" aria-labelledby="buyer-tab">
+                <div class="personal_line">
+                    <p class="des_title">Personal Information</p>
+                    <p class="ss_your_profile"><span>*</span>Complete your profile to become a seller.</p>
                 </div>
-
-                <button class="new_btn">Submit  </button>
-            </form>
+                <form class="personal_infomation_form">
+                    <div class="row input_group">
+                        <div class="col-md-6">
+                            <div class="input">
+                                <input type="text" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input">
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="input">
+                                <input type="text" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input">
+                                <input type="text" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input">
+                                <input type="text" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-field input-select-field">
+                                <select id="i-am-a">
+                                    <option value="Select brand 1">I am a</option>
+                                    <option value="Select brand 2">I am a I am a</option>
+                                    <option value="Select brand 3">I am a</option>
+                                    <option value="Select brand 4">I am a</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-field input-select-field">
+                                <select id="age_group">
+                                    <option value="Select brand 1">Age Group</option>
+                                    <option value="Select brand 2">Age Group 2 I am a</option>
+                                    <option value="Select brand 3">Age Group 3</option>
+                                    <option value="Select brand 4">Age Group 4</option>
+                                </select>
+                            </div>        
+                        </div>
+                        <div class="col-md-12">
+                            <div class="input-field input-select-field">
+                                <select id="location">
+                                    <option value="Select brand 1">Location</option>
+                                    <option value="Select brand 2">Ahmedabd</option>
+                                    <option value="Select brand 3">Junagadh</option>
+                                    <option value="Select brand 4">Surat</option>
+                                </select>
+                            </div>        
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-field input-select-field">
+                                <select id="preferred_languages">
+                                    <option value="Select brand 1">Preferred Languages</option>
+                                    <option value="Select brand 2">Preferred Languages 2</option>
+                                    <option value="Select brand 3">Preferred Languages 3</option>
+                                    <option value="Select brand 4">Preferred Languages 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-field input-select-field">
+                                <select id="affiliation">
+                                    <option value="Select brand 1">affiliation</option>
+                                    <option value="Select brand 2">affiliation 2</option>
+                                    <option value="Select brand 3">affiliation 3</option>
+                                    <option value="Select brand 4">affiliation 4</option>
+                                </select>
+                            </div>        
+                        </div>
+                    </div>
+                   
+                  <div class="btn_submit">
+                    <button class="new_btn">Submit </button>
+                </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="seller" role="tabpanel" aria-labelledby="seller-tab">
+                <div class="personal_line">
+                    <p class="des_title">Personal Information seler</p>
+                    <p class="ss_your_profile"><span>*</span>Complete your profile to become a seller.</p>
+                </div>
+                <form class="personal_infomation_form">
+                    <div class="row input_group">
+                        <div class="col-md-6">
+                            <div class="input">
+                                <input type="text" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input">
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="input">
+                                <input type="text" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input">
+                                <input type="text" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input">
+                                <input type="text" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-field input-select-field">
+                                <select id="i-am-a2">
+                                    <option value="Select brand 1">I am a</option>
+                                    <option value="Select brand 2">I am a I am a</option>
+                                    <option value="Select brand 3">I am a</option>
+                                    <option value="Select brand 4">I am a</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-field input-select-field">
+                                <select id="age_group2">
+                                    <option value="Select brand 1">Age Group</option>
+                                    <option value="Select brand 2">Age Group 2 I am a</option>
+                                    <option value="Select brand 3">Age Group 3</option>
+                                    <option value="Select brand 4">Age Group 4</option>
+                                </select>
+                            </div>        
+                        </div>
+                        <div class="col-md-12">
+                            <div class="input-field input-select-field">
+                                <select id="location2">
+                                    <option value="Select brand 1">Location</option>
+                                    <option value="Select brand 2">Ahmedabd</option>
+                                    <option value="Select brand 3">Junagadh</option>
+                                    <option value="Select brand 4">Surat</option>
+                                </select>
+                            </div>        
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-field input-select-field">
+                                <select id="preferred_languages2">
+                                    <option value="Select brand 1">Preferred Languages</option>
+                                    <option value="Select brand 2">Preferred Languages 2</option>
+                                    <option value="Select brand 3">Preferred Languages 3</option>
+                                    <option value="Select brand 4">Preferred Languages 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-field input-select-field">
+                                <select id="affiliation2">
+                                    <option value="Select brand 1">affiliation</option>
+                                    <option value="Select brand 2">affiliation 2</option>
+                                    <option value="Select brand 3">affiliation 3</option>
+                                    <option value="Select brand 4">affiliation 4</option>
+                                </select>
+                            </div>        
+                        </div>
+                    </div>
+                   
+                  <div class="btn_submit">
+                    <button class="new_btn">Submit </button>
+                </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>

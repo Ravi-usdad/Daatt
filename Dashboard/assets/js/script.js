@@ -1,65 +1,126 @@
 $(document).ready(function () {
-    let sidebar = document.querySelector(".sidebar");
-    let sidebarBtn = document.querySelector(".burger");
-    let overlayBtn = document.querySelector(".overlay");
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".burger");
+  let overlayBtn = document.querySelector(".overlay");
 
-    // Function to add the 'active' class
-    function addActiveClass() {
-        sidebar.classList.add("active");
-        overlayBtn.classList.add("active");
-    }
+  // Function to add the 'active' class
+  function addActiveClass() {
+    sidebar.classList.add("active");
+    overlayBtn.classList.add("active");
+  }
 
-    // Function to remove the 'active' class
-    function removeActiveClass() {
-        sidebar.classList.remove("active");
-        overlayBtn.classList.remove("active");
-    }
+  // Function to remove the 'active' class
+  function removeActiveClass() {
+    sidebar.classList.remove("active");
+    overlayBtn.classList.remove("active");
+  }
 
-    // Attach the functions to the button click event
-    sidebarBtn.addEventListener("click", addActiveClass);
-    overlayBtn.addEventListener("click", removeActiveClass);
+  // Attach the functions to the button click event
+  sidebarBtn.addEventListener("click", addActiveClass);
+  overlayBtn.addEventListener("click", removeActiveClass);
 
-    $(".search_button").click(function () {
-        $(".search_box").toggleClass("active");
+  $(".search_button").click(function () {
+    $(".search_box").toggleClass("active");
+  });
+
+  // Select Vehicle Select Script
+  if ($("#i-am-a").length) {
+    $("#i-am-a").select2({
+      placeholder: "I am a",
+      allowClear: true
     });
+  }
+  if ($("#i-am-b").length) {
+    $("#i-am-b").select2({
+      placeholder: "I am b",
+      allowClear: true
+    });
+  }
+  if ($("#i-am-c").length) {
+    $("#i-am-c").select2({
+      placeholder: "I am c",
+      allowClear: true
+    });
+  }
+  if ($("#i-am-d").length) {
+    $("#i-am-d").select2({
+      placeholder: "I am d",
+      allowClear: true
+    });
+  }
+  if ($("#i-am-a").length) {
+    $("#i-am-a").select2({
+      placeholder: "I am a",
+      allowClear: true
+    });
+  }
+  if ($("#age_group").length) {
+    $("#age_group").select2({
+      placeholder: "Age Group",
+      allowClear: true
+    });
+  }
+  if ($("#location").length) {
+    $("#location").select2({
+      placeholder: "Location",
+      allowClear: true
+    });
+  }
+  if ($("#preferred_languages").length) {
+    $("#preferred_languages").select2({
+      placeholder: "Preferred languages",
+      allowClear: true
+    });
+  }
+  if ($("#affiliation").length) {
+    $("#affiliation").select2({
+      placeholder: "Affiliation",
+      allowClear: true
+    });
+  }
 
-    // Select Vehicle Select Script
-    if ($("#i-am-a").length) {
-        $("#i-am-a").select2({
-            placeholder: "I am a",
-            allowClear: true
-        });
-    }
-    if ($("#i-am-b").length) {
-        $("#i-am-b").select2({
-            placeholder: "I am b",
-            allowClear: true
-        });
-    }
-    if ($("#i-am-c").length) {
-        $("#i-am-c").select2({
-            placeholder: "I am c",
-            allowClear: true
-        });
-    }
-    if ($("#i-am-d").length) {
-      $("#i-am-d").select2({
-          placeholder: "I am d",
-          allowClear: true
-      });
-    }
+  if ($("#i-am-a2").length) {
+    $("#i-am-a2").select2({
+      placeholder: "I am a",
+      allowClear: true
+    });
+  }
+  if ($("#age_group2").length) {
+    $("#age_group2").select2({
+      placeholder: "Age Group",
+      allowClear: true
+    });
+  }
+  if ($("#location2").length) {
+    $("#location2").select2({
+      placeholder: "Location",
+      allowClear: true
+    });
+  }
+  if ($("#preferred_languages2").length) {
+    $("#preferred_languages2").select2({
+      placeholder: "Preferred languages",
+      allowClear: true
+    });
+  }
+  if ($("#affiliation2").length) {
+    $("#affiliation2").select2({
+      placeholder: "Affiliation",
+      allowClear: true
+    });
+  }
 })
 
 
 var options = {
-    series: [{
+  series: [{
     name: 'Online Sales',
     data: [11, 13, 4, 12, 8, 12, 16]
   }, {
     name: 'Offline Sales',
     data: [9, 8, 15, 4, 7, 10, 8]
   }],
-    chart: {
+  chart: {
     type: 'bar',
     height: 245
   },
@@ -84,10 +145,10 @@ var options = {
   },
   yaxis: {
     labels: {
-        formatter: function (value) {
-          return value + "k";
-        }
-      },
+      formatter: function (value) {
+        return value + "k";
+      }
+    },
   },
   fill: {
     opacity: 1
@@ -99,14 +160,14 @@ var options = {
       }
     }
   }
-  };
+};
 
-  var chart = new ApexCharts(document.querySelector("#earning-report"), options);
-  chart.render();
+var chart = new ApexCharts(document.querySelector("#earning-report"), options);
+chart.render();
 
 
-  var options = {
-    series: [
+var options = {
+  series: [
     {
       name: "High - 2013",
       data: [28, 29, 33, 36, 32, 32, 33]
@@ -116,7 +177,7 @@ var options = {
       data: [12, 11, 14, 18, 17, 13, 13]
     }
   ],
-    chart: {
+  chart: {
     height: 350,
     type: 'line',
     dropShadow: {
@@ -150,7 +211,7 @@ var options = {
   },
   xaxis: {
     categories: [''],
-   
+
   },
   fill: {
     type: 'gradient',
@@ -172,22 +233,22 @@ var options = {
     horizontalAlign: 'center',
     offsetY: 0,
   }
-  };
+};
 
-  var chart = new ApexCharts(document.querySelector("#sales-earnings"), options);
-  chart.render();
+var chart = new ApexCharts(document.querySelector("#sales-earnings"), options);
+chart.render();
 
 
 
-  var options = {
-    series: [{
+var options = {
+  series: [{
     name: 'Amount Earned',
     data: [20, 25, 20, 17, 14, 15]
   }, {
     name: 'Amount Spent',
     data: [11, 13, 5, 6, 5, 9]
   }],
-    chart: {
+  chart: {
     type: 'bar',
     height: 250
   },
@@ -212,10 +273,10 @@ var options = {
   },
   yaxis: {
     labels: {
-        formatter: function (value) {
-          return value + "k";
-        }
-      },
+      formatter: function (value) {
+        return value + "k";
+      }
+    },
   },
   fill: {
     opacity: 1
@@ -227,7 +288,7 @@ var options = {
       }
     }
   }
-  };
+};
 
-  var chart = new ApexCharts(document.querySelector("#paid-promotions"), options);
-  chart.render();
+var chart = new ApexCharts(document.querySelector("#paid-promotions"), options);
+chart.render();
