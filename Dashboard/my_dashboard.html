@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/font/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<div class="sidebar">
+    <div class="headre_logo">
+        <a href="/Dashboard/dashboard.html">
+            <img src="./assets/images/headre_logo.svg" alt="logo">
+        </a>
+    </div>
+    <ul class="des_menu_list">
+        <li class="des_menu_item">
+            <a href="dashboard.html" class="menu_item_link active">
+                <i class="icon-icon-1"></i>
+                Dashboard
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="profile.html" class="menu_item_link">
+                <i class="icon-icon-2"></i>
+                Profile
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="billing.html" class="menu_item_link">
+                <i class="icon-icon-3"></i>
+                Billing
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="my-store.html" class="menu_item_link">
+                <i class="icon-icon-4"></i>
+                My Store
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="my-purchases.html" class="menu_item_link">
+                <i class="icon-icon-5"></i>
+                My purchases
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="my-products.html" class="menu_item_link">
+                <i class="icon-icon-6"></i>
+                My Products
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="community-forum.html" class="menu_item_link">
+                <i class="icon-icon-7"></i>
+                Community forum
+            </a>
+        </li>
+    </ul>
+    <div class="get_premium_box">
+        <div class="icon_in">
+            <img src="./assets/images/dummy.png" alt="dummy">
+        </div>
+        <p class="titel">Get Premium</p>
+        <p class="content">
+            Earn more money and increase your impact
+        </p>
+        <a href="#" class="upgrade_now_button">Upgrade Now</a>
+    </div>
+</div>
+<span class="overlay"></span>
+<div class="content_main">
+    <div class="das_header">
+        <div class="burger_search">
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <button class="search_button_in"><i class="icon-icon-8"></i></button>
+            <form class="search_box">
+                <input type="text" placeholder="Search here">
+                <button class="search_button"><i class="icon-icon-8"></i></button>
+            </form>
+        </div>
+        <div class="fleg_user_log">
+            <div class="flag_icon">
+                <img src="./assets/images/flag.png" alt="flag">
+            </div>
+            <div class="btn-group user_info_dropdown">
+                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static"
+                    aria-expanded="false">
+                    <span class="image_box"><img src="./assets/images/user.png" alt="user"></span>
+                    <span class="name_info">
+                        <span class="name_i">Bessie Cooper</span>
+                        <span class="name_immm">Administrator</span>
+                    </span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">My Account</button></li>
+                    <li><button class="dropdown-item" type="button">Log Out</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page_content">
+        <div class="page-header">
+            <div class="left">
+                <h1 class="des_main_title">Dashboard</h1>
+                <div class="bredcrump">
+                    <p class="das_sub_title">Home - Dashboard</p>   
+                </div>
+            </div>
+        </div>
+        <div class="my_dashboard dashboard">
+            <div class="row mb-35">
+                <div class="col-12 col-xxl-8 px-3 mb-xxl-0 mb-4">
+                    <div class="row">
+                        <div class="col-12 mb-xxl-3 mb-4">
+                            <div class="stats-main des_box">
+                                <div class="title-main">
+                                    <div class="title">
+                                        <h2 class="des_title">Today’s Stats</h2>
+                                        <p>Summary</p>
+                                    </div>
+                                    <a href="#" class="export-btn">
+                                        <i class="icon-icon-10"></i>
+                                        <span>Export</span>
+                                    </a>
+                                </div>
+                                <div class="stats-points">
+                                    <div class="points">
+                                        <div class="icon">
+                                            <img src="./assets/images/sales-icon.svg" alt="sales" />
+                                        </div>
+                                        <p class="point-summery">$1k</p>
+                                        <p class="point-title">Total Sales</p>
+                                        <p class="point-percentage">+8% from yesterday</p>
+                                    </div>
+                                    <div class="points">
+                                        <div class="icon">
+                                            <img src="./assets/images/order-icon.svg" alt="order" />
+                                        </div>
+                                        <p class="point-summery">300</p>
+                                        <p class="point-title">Total Orders</p>
+                                        <p class="point-percentage">+5% from yesterday</p>
+                                    </div>
+                                    <div class="points">
+                                        <div class="icon">
+                                            <img src="./assets/images/sold-icon.svg" alt="sold" />
+                                        </div>
+                                        <p class="point-summery">5</p>
+                                        <p class="point-title">Products Sold</p>
+                                        <p class="point-percentage">+1.2% from yesterday</p>
+                                    </div>
+                                    <div class="points">
+                                        <div class="icon">
+                                            <img src="./assets/images/new-customer-icon.svg" alt="new-customer" />
+                                        </div>
+                                        <p class="point-summery">8</p>
+                                        <p class="point-title">New Customers</p>
+                                        <p class="point-percentage">0.5% from yesterday</p>
+                                    </div>
+                                    <div class="points">
+                                        <div class="icon">
+                                            <img src="./assets/images/unread-message-icon.svg" alt="unread-message" />
+                                        </div>
+                                        <p class="point-summery">10</p>
+                                        <p class="point-title">Unread Messages</p>
+                                        <p class="point-percentage">0.5% from yesterday</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-xxl-3">
+                           <div class="earning-report-main des_box">
+                                <div class="title-main">
+                                    <div class="title">
+                                        <h2 class="des_title">Total Revenue</h2>
+                                    </div>
+                                </div>
+                                <div id="total-revenue"></div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xxl-4 px-3">
+                    <div class="des_box top_product_setter top-seller">
+                        <div class="title-main">
+                            <div class="title">
+                                <h2 class="des_title mb-0">Top Sellers</h2>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                    Sort By
+                                    <i class="icon-icon-9"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                                  <li><a class="dropdown-item" href="#">Name</a></li>
+                                  <li><a class="dropdown-item" href="#">Price</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                        <div class="top_product_list">
+                            <div class="top_product_item">
+                                <div class="product_in">
+                                    <div class="images_box">
+                                        <img src="./assets/images/seller01.png" alt="seller01">
+                                    </div>
+                                    <div class="product_info">
+                                        <p class="name">Eleanor Pena</p>
+                                        <p class="text">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
+                                <p class="price">$8602</p>
+                            </div>
+                            <div class="top_product_item">
+                                <div class="product_in">
+                                    <div class="images_box">
+                                        <img src="./assets/images/seller02.png" alt="seller02">
+                                    </div>
+                                    <div class="product_info">
+                                        <p class="name">Cameron Williamson</p>
+                                        <p class="text">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
+                                <p class="price">$8641</p>
+                            </div>
+                            <div class="top_product_item">
+                                <div class="product_in">
+                                    <div class="images_box">
+                                        <img src="./assets/images/seller03.png" alt="seller03">
+                                    </div>
+                                    <div class="product_info">
+                                        <p class="name">Jane Cooper</p>
+                                        <p class="text">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
+                                <p class="price">$4621</p>
+                            </div>
+                            <div class="top_product_item">
+                                <div class="product_in">
+                                    <div class="images_box">
+                                        <img src="./assets/images/seller04.png" alt="seller04">
+                                    </div>
+                                    <div class="product_info">
+                                        <p class="name">Jenny Wilson</p>
+                                        <p class="text">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
+                                <p class="price">$4925</p>
+                            </div>
+                            <div class="top_product_item">
+                                <div class="product_in">
+                                    <div class="images_box">
+                                        <img src="./assets/images/seller05.png" alt="seller05">
+                                    </div>
+                                    <div class="product_info">
+                                        <p class="name">Guy Hawkins</p>
+                                        <p class="text">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
+                                <p class="price">$2512</p>
+                            </div>
+                            <div class="top_product_item">
+                                <div class="product_in">
+                                    <div class="images_box">
+                                        <img src="./assets/images/seller06.png" alt="seller06">
+                                    </div>
+                                    <div class="product_info">
+                                        <p class="name">Ronald Richards</p>
+                                        <p class="text">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
+                                <p class="price">$5235</p>
+                            </div>
+                            <div class="top_product_item">
+                                <div class="product_in">
+                                    <div class="images_box">
+                                        <img src="./assets/images/seller07.png" alt="seller07">
+                                    </div>
+                                    <div class="product_info">
+                                        <p class="name">Dianne Russell</p>
+                                        <p class="text">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
+                                <p class="price">$252</p>
+                            </div>
+                            <div class="top_product_item">
+                                <div class="product_in">
+                                    <div class="images_box">
+                                        <img src="./assets/images/seller08.png" alt="seller08">
+                                    </div>
+                                    <div class="product_info">
+                                        <p class="name">Devon Lane</p>
+                                        <p class="text">Lorem ipsum dolor</p>
+                                    </div>
+                                </div>
+                                <p class="price">$5265</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-35">
+                <div class="col-12 col-xxl-6 px-3 mb-xxl-0 mb-4">
+                    <div class="popular_products_box des_box product-overview">
+                        <p class="des_title">Products Overview</p>
+                        <div class="table_header">
+                            <p class="table-header-title">Product</p>
+                            <p class="table-header-title">Total Sales</p>
+                            <p class="table-header-title">Status</p>
+                        </div>
+                        <div class="popular_products_list scroll">
+                            <div class="popular_products_item">
+                                <div class="product_in">
+                                    <div class="imag_box">
+                                        <img src="./assets/images/produc1.png" alt="product">
+                                    </div>
+                                    <p class="title_name">Ahavat yisrael Lesson</p>
+                                </div>
+                                <p class="price">$5643</p>
+                                <p class="available">Available</p>
+                            </div>
+                            <div class="popular_products_item">
+                                <div class="product_in">
+                                    <div class="imag_box">
+                                        <img src="./assets/images/product2.png" alt="product">
+                                    </div>
+                                    <p class="title_name">Ahavat yisrael Lesson</p>
+                                </div>
+                                <p class="price">$5643</p>
+                                <p class="available">Available</p>
+                            </div>
+                            <div class="popular_products_item">
+                                <div class="product_in">
+                                    <div class="imag_box">
+                                        <img src="./assets/images/product3.png" alt="product">
+                                    </div>
+                                    <p class="title_name">Ahavat yisrael Lesson</p>
+                                </div>
+                                <p class="price">$5643</p>
+                                <p class="not-available">Not Available</p>
+                            </div>
+                            <div class="popular_products_item">
+                                <div class="product_in">
+                                    <div class="imag_box">
+                                        <img src="./assets/images/product4.png" alt="product">
+                                    </div>
+                                    <p class="title_name">Ahavat yisrael Lesson</p>
+                                </div>
+                                <p class="price">$5643</p>
+                                <p class="pending">Pending</p>
+                            </div>
+                            <div class="popular_products_item">
+                                <div class="product_in">
+                                    <div class="imag_box">
+                                        <img src="./assets/images/produc1.png" alt="product">
+                                    </div>
+                                    <p class="title_name">Ahavat yisrael Lesson</p>
+                                </div>
+                                <p class="price">$5643</p>
+                                <p class="available">Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xxl-6 px-3 mb-xxl-0">
+                    <div class="popular_products_box des_box top-selling">
+                        <p class="des_title">Top Selling Products</p>
+                        <div class="table_header">
+                            <p class="table-header-title">Product</p>
+                            <p class="table-header-title">Total Sales</p>
+                        </div>
+                        <div class="popular_products_list scroll">
+                            <div class="popular_products_item">
+                                <div class="product_in">
+                                    <div class="imag_box">
+                                        <img src="./assets/images/produc1.png" alt="product">
+                                    </div>
+                                    <p class="title_name">Ahavat yisrael Lesson</p>
+                                </div>
+                                <p class="price">5643</p>
+                            </div>
+                            <div class="popular_products_item">
+                                <div class="product_in">
+                                    <div class="imag_box">
+                                        <img src="./assets/images/product2.png" alt="product">
+                                    </div>
+                                    <p class="title_name">Ahavat yisrael Lesson</p>
+                                </div>
+                                <p class="price">5643</p>
+                            </div>
+                            <div class="popular_products_item">
+                                <div class="product_in">
+                                    <div class="imag_box">
+                                        <img src="./assets/images/product3.png" alt="product">
+                                    </div>
+                                    <p class="title_name">Ahavat yisrael Lesson</p>
+                                </div>
+                                <p class="price">5643</p>
+                            </div>
+                            <div class="popular_products_item">
+                                <div class="product_in">
+                                    <div class="imag_box">
+                                        <img src="./assets/images/product4.png" alt="product">
+                                    </div>
+                                    <p class="title_name">Ahavat yisrael Lesson</p>
+                                </div>
+                                <p class="price">5643</p>
+                            </div>
+                            <div class="popular_products_item">
+                                <div class="product_in">
+                                    <div class="imag_box">
+                                        <img src="./assets/images/produc1.png" alt="product">
+                                    </div>
+                                    <p class="title_name">Ahavat yisrael Lesson</p>
+                                </div>
+                                <p class="price">5643</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-12 col-xxl-8 mb-xxl-0 mb-4">
+                    <div class="des_box">
+                        <div class="email_box">
+                            <div class="main_box_inner">
+                                <p class="des_title">Emails</p>
+                                <p class="index_total">Inbox<span>25</span></p>
+                            </div>
+                            <div class="main_table scroll">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Title</th>
+                                            <th>Day</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Name">
+                                                <p>Esther Howard</p>
+                                            </td>
+                                            <td data-label="Title">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                                            </td>
+                                            <td data-label="Day">
+                                                <p>10 may</p>
+                                            </td>
+                                            <td data-label="Action">
+                                                <button class="unread action_button">Unread</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Name">
+                                                <p>Jane Cooper</p>
+                                            </td>
+                                            <td data-label="Title">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                                            </td>
+                                            <td data-label="Day">
+                                                <p>04 may</p>
+                                            </td>
+                                            <td data-label="Action">
+                                                <button class="unread action_button">Unread</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="read_text">
+                                            <td data-label="Name">
+                                                <p>Brooklyn Simmons</p>
+                                            </td>
+                                            <td data-label="Title">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                                            </td>
+                                            <td data-label="Day">
+                                                <p>03 may</p>
+                                            </td>
+                                            <td data-label="Action">
+                                                <button class="read action_button">Read</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="read_text">
+                                            <td data-label="Name">
+                                                <p>Robert Fox</p>
+                                            </td>
+                                            <td data-label="Title">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                                            </td>
+                                            <td data-label="Day">
+                                                <p>03 may</p>
+                                            </td>
+                                            <td data-label="Action">
+                                                <button class="read action_button">Read</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="read_text">
+                                            <td data-label="Name">
+                                                <p>Guy Hawkins</p>
+                                            </td>
+                                            <td data-label="Title">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                                            </td>
+                                            <td data-label="Day">
+                                                <p>03 may</p>
+                                            </td>
+                                            <td data-label="Action">
+                                                <button class="read action_button">Read</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="read_text">
+                                            <td data-label="Name">
+                                                <p>Guy Hawkins</p>
+                                            </td>
+                                            <td data-label="Title">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                                            </td>
+                                            <td data-label="Day">
+                                                <p>03 may</p>
+                                            </td>
+                                            <td data-label="Action">
+                                                <button class="read action_button">Read</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xxl-4 px-3">
+                    <div class="maping-by-caountry-main des_box">
+                        <div class="title-main">
+                            <div class="title">
+                                <h2 class="des_title">Sales Mapping by Country</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/owl.carousel.js"></script>
+    <script src="./assets/js/select2.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

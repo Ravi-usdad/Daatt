@@ -775,6 +775,10 @@ input:focus {
     background-color: #DCFCE7;
 }
 
+.dashboard .stats-main .stats-points .points:nth-child(5) {
+    background-color: #FFE9DE;
+}
+
 .dashboard .stats-main .stats-points .points:nth-child(4) {
     background-color: #F3E8FF;
 }
@@ -793,6 +797,10 @@ input:focus {
 
 .dashboard .stats-main .stats-points .points:nth-child(4) .icon {
     background-color: #BF83FF;
+}
+
+.dashboard .stats-main .stats-points .points:nth-child(5) .icon {
+    background-color: #FFBE9D;
 }
 
 .dashboard .earning-report-main {
@@ -2923,3 +2931,218 @@ input:focus {
 }
 
 /* billing infomation Page End */
+
+
+
+/* my_dashboard css start */
+
+.my_dashboard.dashboard .stats-main .stats-points {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.top-seller.top_product_setter .title-main {
+    padding: 0 20px;
+    margin-bottom: 45px;
+}
+
+.top-seller.top_product_setter .des_title {
+    padding: 0;
+}
+
+.top-seller.top_product_setter .btn-group .btn {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #80808030;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.top-seller.top_product_setter .btn-group .btn:focus {
+    box-shadow: unset;
+}
+
+.top-seller.top_product_setter .btn-group .dropdown-menu {
+    left: unset !important;
+    right: 0 !important;
+    transform: none !important;
+    top: 100% !important;
+}
+
+.top-seller.top_product_setter .btn-group .btn i {
+    display: flex;
+}
+
+.top-seller.top_product_setter .btn-group .btn::after {
+    display: none;
+}
+
+.top-seller.top_product_setter .top_product_list .top_product_item .product_in .images_box {
+    min-width: 55px;
+    max-width: 55px;
+    height: 55px;
+    padding: 0;
+    border-radius: 100%;
+}
+
+.top-seller.top_product_setter .top_product_list {
+    gap: 22px;
+}
+
+.product-overview .table_header {
+    display: grid;
+    grid-template-columns: calc(100% - 320px ) 100px 100px;
+    gap: 60px;
+    padding: 15px 10px;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 15px;
+    color: #252525;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.product-overview .table_header p {
+    text-align: center;
+}
+.product-overview .table_header p:first-child {
+    text-align: left;
+}
+
+.product-overview .popular_products_list .popular_products_item {
+    display: grid;
+    grid-template-columns: calc(100% - 320px ) 100px 100px;
+    gap: 60px;
+}
+.product-overview .popular_products_list .popular_products_item .price {
+    text-align: center;
+}
+
+.product-overview .popular_products_list .popular_products_item .available {
+    border-radius: 5px;
+    background: #E5FFF2;
+    color: #35C67A;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    padding: 9px;
+    width: 100%;
+}
+
+.product-overview .popular_products_list .popular_products_item .not-available {
+    border-radius: 5px;
+    background: #FFE4EC;
+    color: #F43F75;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    padding: 9px;
+    width: 100%;
+}
+
+.product-overview .popular_products_list .popular_products_item .pending {
+    border-radius: 5px;
+    background: #FFF8E4;
+    color: #ECB71D;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    padding: 9px;
+    width: 100%;
+}
+
+.top-selling .table_header {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 15px 10px;
+    border-bottom: 1px solid #EBEBEB;
+    margin-bottom: 15px;
+    color: #252525;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.top-selling .table_header p:first-child {
+    text-align: left;
+}
+
+@media(max-width: 1600px) {
+    .my_dashboard.dashboard .stats-main .stats-points {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 1440px) {
+    .top-seller.top_product_setter .title-main {
+        padding: 0 20px;
+    }
+    .top-seller.top_product_setter .top_product_list {
+        padding: 0 10px;
+    }
+}
+
+@media(max-width: 991px) {
+    .recently_inner .recently_viewed, .popular_products_box, .email_box {
+        margin-bottom: 0;
+    }
+    .product-overview .table_header {
+        grid-template-columns: calc(100% - 220px ) 80px 80px;
+        padding-top: 0;
+        gap: 30px;
+        font-size: 16Px;
+        line-height: 20px;
+    }
+    .product-overview .popular_products_list .popular_products_item {
+        grid-template-columns: calc(100% - 220px ) 80px 80px;
+        gap: 30px;
+    }
+    
+    .product-overview .popular_products_list .popular_products_item .available {
+        font-size: 10px;
+        line-height: 10px;
+        padding: 6px;
+    }
+    
+    .product-overview .popular_products_list .popular_products_item .not-available {
+        font-size: 10px;
+        line-height: 10px;
+        padding: 6px;
+    }
+    
+    .product-overview .popular_products_list .popular_products_item .pending {
+        font-size: 10px;
+        line-height: 10px;
+        padding: 6px;
+    }
+    
+    .top-selling .table_header {
+        padding-top: 0;
+        font-size: 16Px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 640px) {
+    .my_dashboard.dashboard .stats-main .stats-points {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media(max-width: 500px) {
+    .my_dashboard.dashboard .stats-main .stats-points {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
+
+/* my_dashboard css End */
