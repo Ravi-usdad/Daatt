@@ -546,10 +546,15 @@ input:focus {
 
 .page-header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
     margin-bottom: 35px;
+}
+
+.page-header .right {
+    margin-left: auto;
 }
 
 .page-header .right .nav {
@@ -668,6 +673,10 @@ input:focus {
 
 
 /* dashboard css start */
+
+.mb-35 {
+    margin-bottom: 35px;
+}
 
 .dashboard .title-main {
     display: flex;
@@ -872,6 +881,8 @@ input:focus {
 
 .dashboard .top-performer {
     padding: 20px;
+    max-height: 772px;
+    overflow: auto;
 }
 
 .dashboard .top-performer .title-main {
@@ -889,11 +900,14 @@ input:focus {
     display: grid;
     grid-template-columns: 10px calc(100% - 52px);
     gap: 42px;
+    align-items: center;
 }
 
 .dashboard .top-performer .top-performer-table .sales-col {
     display: grid;
     grid-template-columns: calc(100% - 87px) 45px;
+    align-items: center;
+    justify-content: space-between;
     gap: 42px;
 }
 
@@ -943,6 +957,7 @@ input:focus {
 
 .dashboard .payouts-main {
     padding: 22px;
+    height: 100%;
 }
 
 .dashboard .payouts-main .title-main {
@@ -990,11 +1005,22 @@ input:focus {
 
 .dashboard .paid-promotions-main {
     padding: 20px;
+    height: 100%;
 }
 
 .dashboard .paid-promotions-main .title-main {
     margin-bottom: 25px;
 }
+
+.dashboard .maping-by-caountry-main {
+    padding: 20px;
+    height: 100%;
+}
+
+.dashboard .maping-by-caountry-main .title-main {
+    margin-bottom: 40px;
+}
+
 
 .dashboard .payouts-main .title-main .new_btn,
 .dashboard .sales-earnings-main .title-main .new_btn,
@@ -1007,6 +1033,126 @@ input:focus {
     min-width: 160px;
     padding: 7px 10px;
 }
+
+
+@media(max-width: 1800px) {
+    .dashboard .stats-main {
+        padding: 20px;
+    }
+    .dashboard .stats-main .title-main {
+        margin-bottom: 30px;
+    }
+    .dashboard .stats-main .stats-points {
+        gap: 15px;
+    }
+    .dashboard .earning-report-main {
+        padding: 20px;
+    }
+    .dashboard .payouts-main {
+        padding: 20px;
+    }
+    .dashboard .stats-main .stats-points .points {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .dashboard .top-performer .top-performer-table .name-col {
+        grid-template-columns: 10px calc(100% - 30px);
+        gap: 20px;
+    }
+    .dashboard .top-performer .top-performer-table .sales-col {
+        grid-template-columns: calc(100% - 65px) 45px;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 1400px) {
+    .mb-35 {
+        margin-bottom: 24px;
+    }
+}
+
+@media(max-width: 991px) {
+    .dashboard .stats-main .stats-points .points .point-summery {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 5px;
+    }
+    .dashboard .stats-main .stats-points .points .point-title {
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 5px;
+    }
+    .dashboard .stats-main .stats-points .points .icon {
+        margin-bottom: 10px;
+    }
+    .dashboard .maping-by-caountry-main .title-main {
+        margin-bottom: 20px;
+    }
+    .dashboard .top-performer .top-performer-table .name-col {
+        gap: 15px;
+    }
+    .dashboard .top-performer .top-performer-table .sales-col {
+        gap: 15px;
+    }
+    .dashboard .top-performer .top-performer-table .table-header, .dashboard .top-performer .top-performer-table .table-body .record {
+        gap: 15px;
+    }
+}
+
+@media(max-width: 640px) {
+    .dashboard .stats-main .stats-points {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dashboard .stats-main {
+        padding: 15px;
+    }
+    .dashboard .stats-main .title-main {
+        margin-bottom: 15px;
+    }
+    .dashboard .earning-report-main {
+        padding: 15px;
+    }
+    .dashboard .earning-report-main .title-main {
+        margin-bottom: 15px;
+    }
+    .dashboard .top-performer {
+        padding: 15px;
+    }
+    .dashboard .top-performer .top-performer-table .table-body .record {
+        padding: 10px 0;
+    }
+    .dashboard .payouts-main {
+        padding: 15px;
+    }
+    .dashboard .payouts-main .payout-list .payout {
+        padding: 15px;
+    }
+    .dashboard .sales-earnings-main {
+        padding: 15px;
+    }
+    .dashboard .sales-earnings-main .title-main {
+        margin-bottom: 15px;
+    }
+    .dashboard .paid-promotions-main {
+        padding: 15px;
+    }
+    .dashboard .paid-promotions-main .title-main {
+        margin-bottom: 15px;
+    }
+    .dashboard .maping-by-caountry-main {
+        padding: 15px;
+    }
+    .dashboard .maping-by-caountry-main .title-main {
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:500px) {
+    .dashboard .stats-main .stats-points {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 
 
 /* dashboard css end */
