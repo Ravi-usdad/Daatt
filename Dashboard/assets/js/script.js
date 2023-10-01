@@ -169,11 +169,11 @@ chart.render();
 var options = {
   series: [
     {
-      name: "High - 2013",
+      name: "Earnings",
       data: [28, 29, 33, 36, 32, 32, 33]
     },
     {
-      name: "Low - 2013",
+      name: "Sales",
       data: [12, 11, 14, 18, 17, 13, 13]
     }
   ],
@@ -291,4 +291,65 @@ var options = {
 };
 
 var chart = new ApexCharts(document.querySelector("#paid-promotions"), options);
+chart.render();
+
+
+
+var options = {
+  series: [{
+    name: 'Online Sales',
+    data: [11, 13, 4, 12, 8, 12, 16]
+  }, {
+    name: 'Suscriptions',
+    data: [9, 8, 15, 4, 7, 10, 8]
+  }],
+  chart: {
+    type: 'bar',
+    height: 380
+  },
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      columnWidth: '55%',
+      endingShape: 'rounded'
+    },
+  },
+  dataLabels: {
+    enabled: false
+  },
+  colors: ['#FA5A7D', '#BF83FF'],
+  stroke: {
+    show: true,
+    width: 2,
+    colors: ['transparent'],
+    curve: 'smooth'
+  },
+  xaxis: {
+    categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+  },
+  yaxis: {
+    labels: {
+      formatter: function (value) {
+        return value + "k";
+      }
+    },
+  },
+  fill: {
+    opacity: 1
+  },
+  legend: {
+    position: 'bottom',
+    horizontalAlign: 'center',
+    offsetY: 0,
+  },
+  tooltip: {
+    y: {
+      formatter: function (val) {
+        return "$ " + val + " thousands"
+      }
+    }
+  }
+};
+
+var chart = new ApexCharts(document.querySelector("#total-revenue"), options);
 chart.render();
