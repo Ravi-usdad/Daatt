@@ -197,7 +197,7 @@ var swiper3 = new Swiper(".thumb-slider-popup", {
         },
         640: {
             spaceBetween: 15,
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
         991: {
             spaceBetween: 30,

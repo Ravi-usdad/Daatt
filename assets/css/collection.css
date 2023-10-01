@@ -572,16 +572,8 @@
         border-radius: 10px;
     }
 
-    .product-main {
-        display: block;
-    }
-
-    .product-main .product-left {
-        margin-bottom: 30px;
-    }
-
     .product-slider-main .popup-product-slider .swiper-wrapper .swiper-slide {
-        min-height: 300px;
+        min-height: 400px;
     }
 
     .teacher-info .profile-icon {
@@ -804,6 +796,14 @@
         gap: 20px;
         width: 100%;
         box-shadow: unset;
+    }
+
+    .product-main {
+        display: block;
+    }
+
+    .product-main .product-left {
+        margin-bottom: 30px;
     }
 
     .product-slider-main {

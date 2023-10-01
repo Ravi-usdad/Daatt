@@ -424,6 +424,7 @@ input:focus {
     line-height: 32px;
     font-weight: 500;
     color: #2C3F3F;
+    margin-bottom: 0;
 }
 
 .das_header {
@@ -543,6 +544,41 @@ input:focus {
     padding: 30px 35px;
 }
 
+
+.content {
+    padding: 30px;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.page-header .right .nav {
+    background-color: var(--green);
+    border-radius: 7px;
+    padding: 2px;
+}
+
+.page-header .right .nav .nav-link {
+    padding: 10px 34px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.page-header .right .nav .nav-link.active {
+    background-color: #fff;
+    color: var(--green);
+}
+
+
 @media(max-width: 1366px) {
     .sidebar {
         width: 260px;
@@ -626,6 +662,342 @@ input:focus {
         left: 0;
     }
 }
+
+
+/* dashboard css start */
+
+.dashboard .title-main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.dashboard .title-main .title p {
+    color:  #737791;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.dashboard .stats-main {
+    padding: 30px;
+}
+ 
+.dashboard .stats-main .title-main {
+    margin-bottom: 45px;
+}
+
+.dashboard .stats-main .title-main .export-btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #C3D3E2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0F3659;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.dashboard .stats-main .title-main .export-btn i {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.dashboard .stats-main .stats-points {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.dashboard .stats-main .stats-points .points {
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.dashboard .stats-main .stats-points .points .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 100%;
+}
+
+.dashboard .stats-main .stats-points .points .point-summery {
+    color: #151D48;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px; 
+    margin-bottom: 8px;
+}
+
+.dashboard .stats-main .stats-points .points .point-title {
+    color: #425166;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.dashboard .stats-main .stats-points .points .point-percentage {
+    color:  #4079ED;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.dashboard .stats-main .stats-points .points:nth-child(1) {
+    background-color: #FFE2E5;
+}
+.dashboard .stats-main .stats-points .points:nth-child(2) {
+    background-color: #FFF4DE;
+}
+.dashboard .stats-main .stats-points .points:nth-child(3) {
+    background-color: #DCFCE7;
+}
+.dashboard .stats-main .stats-points .points:nth-child(4) {
+    background-color: #F3E8FF;
+}
+
+.dashboard .stats-main .stats-points .points:nth-child(1) .icon {
+    background-color: #FA5A7D;
+}
+.dashboard .stats-main .stats-points .points:nth-child(2) .icon {
+    background-color: #FA8A5A;
+}
+.dashboard .stats-main .stats-points .points:nth-child(3) .icon {
+    background-color: #6ABA72;
+}
+.dashboard .stats-main .stats-points .points:nth-child(4) .icon {
+    background-color: #BF83FF;
+}
+
+.dashboard .earning-report-main {
+    padding: 30px;
+}
+
+.dashboard .earning-report-main .title-main  {
+    margin-bottom: 25px;
+}
+.dashboard .earning-report-main .title-main .filter-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.dashboard .earning-report-main .title-main .filters {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.dashboard .earning-report-main .title-main .filters .filter {
+    border-radius: 4.222px;
+    border: 0.844px solid #EFEFEF;
+    background: #FFF;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard .earning-report-main .title-main .filters .filter .input-field {
+    display: flex;
+}
+
+.dashboard .earning-report-main .title-main .filters .filter.sort-by .input-field .select2-container {
+    padding: 12px 15px 12px 60px;
+}
+.dashboard .earning-report-main .title-main .filters .filter.during .input-field .select2-container {
+    padding: 12px 15px 12px 60px;
+}
+.dashboard .earning-report-main .title-main .filters .filter.for .input-field .select2-container {
+    padding: 12px 15px 12px 40px;
+}
+
+.dashboard .earning-report-main .title-main .filters .filter .default-label {
+    color: #858585;
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    left: 15px;
+}
+
+.dashboard .earning-report-main .title-main .filters .filter .select2-container--default .select2-selection--single {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 8px;
+    border: unset !important;
+}
+
+.dashboard .earning-report-main .title-main .filters .filter .select2-container--default .select2-selection--single .select2-selection__arrow::before {
+    right: 10px;
+    font-size: 8px;
+}
+
+.dashboard .earning-report-main .title-main .filters .filter .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 13px;
+    line-height: 13px;
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+.dashboard .earning-report-main .title-main .new_btn {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.624px;  
+    padding: 11px 17px;
+    min-width: unset;
+    border-radius: 5px;
+}
+
+.dashboard .top-performer {
+    padding: 20px;
+}
+
+.dashboard .top-performer .title-main {
+    margin-bottom: 10px;
+}
+
+.dashboard .top-performer .top-performer-table .table-header,
+.dashboard .top-performer .top-performer-table .table-body .record {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.dashboard .top-performer .top-performer-table .name-col {
+    display: grid;
+    grid-template-columns: 10px calc(100% - 52px);
+    gap: 42px;
+}
+
+.dashboard .top-performer .top-performer-table .sales-col {
+    display: grid;
+    grid-template-columns: calc(100% - 87px) 45px;
+    gap: 42px;
+}
+
+
+.dashboard .top-performer .top-performer-table .table-header {
+    font-size: 13px;
+    line-height: 16px;
+    color: #96A5B8;
+    padding: 11px 0;
+}
+
+.dashboard .top-performer .top-performer-table .table-body {
+    color: #444A6D;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.dashboard .top-performer .top-performer-table .table-body .record {
+    padding: 18px 0;
+    border-top: 1px solid #EDF2F6;
+}
+
+.dashboard .top-performer .top-performer-table .table-body .sales-number{
+    padding: 4px 11px;
+    background-color: #F1FEFF;
+    border: 1px solid #418589;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.dashboard .top-performer .top-performer-table .table-body .progress-bar {
+    height: 4px;
+    border-radius: 8px;
+    position: relative;
+    background-color: #CAFCFF;
+}
+.dashboard .top-performer .top-performer-table .table-body .progress-bar::after {
+    content: '';
+    width: 50%;
+    height: 4px;
+    border-radius: 8px;
+    left: 0;
+    top: 0;
+    background-color: #418589;
+}
+
+.dashboard .payouts-main {
+    padding: 22px;
+}
+
+.dashboard .payouts-main .title-main {
+    margin-bottom: 5px;
+}
+
+.dashboard .payouts-main .payout-list .payout {
+    padding: 25px 0;
+    border-bottom: 1px solid #EDF2F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dashboard .payouts-main .payout-list .payout .payout-name {
+    color: #96A5B8;
+    font-size: 14px;
+    line-height: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.dashboard .payouts-main .payout-list .payout:last-child {
+    border-bottom: 0;
+}
+
+.dashboard .payouts-main .payout-list .payout:hover .payout-name {
+    color: #222B45;
+}
+
+.dashboard .payouts-main .payout-list .payout .price {
+    color: #444;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.dashboard .sales-earnings-main {
+    padding: 20px;
+}
+
+.dashboard .sales-earnings-main .title-main {
+    margin-bottom: 20px;
+}
+
+.dashboard .paid-promotions-main {
+    padding: 20px;
+}
+
+.dashboard .paid-promotions-main .title-main {
+    margin-bottom: 25px;
+}
+
+.dashboard .payouts-main .title-main .new_btn,
+.dashboard .sales-earnings-main .title-main .new_btn,
+.dashboard .paid-promotions-main .title-main .new_btn,
+.dashboard .top-performer .title-main .new_btn
+ {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.652px;
+    border-radius: 6px;
+    min-width: 160px;
+    padding: 7px 10px;
+}
+
+
+/* dashboard css end */
+
 
 /* personal Infomation Page Satrt */
 
