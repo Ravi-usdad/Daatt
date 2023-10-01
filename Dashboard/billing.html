@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/css/dropzone.min.css">
     <link rel="stylesheet" href="./assets/font/font.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -207,7 +208,7 @@
                             <div class="des_box total_credits_left billing_information_inn">
                                 <p class="box_title_in">Billing Information</p>
                                 <div class="commin_billing">
-                                    <div>
+                                    <div class="name_icon_infom">
                                         <div class="name_icon">
                                             <div class="icon">
                                                 <i class="icon-icon-13"></i>
@@ -217,16 +218,241 @@
                                                 <p class="name">Franklin Jr.</p>
                                             </div>
                                         </div>
-                                        <button class="new_btn">Update Credit Card Information</button>
+                                        <button class="new_btn" data-bs-toggle="modal"
+                                            data-bs-target="#termsofServiceUpdate">Update Credit Card
+                                            Information</button>
+                                    </div>
+                                    <div class="card_exp_num">
+                                        <p class="card_num">**** **** **** 6588</p>
+                                        <div class="card_expiration">
+                                            Expiration Date
+                                            <p>08/23</p>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="des_box total_credits_left total_income_inn">
+                                <p class="box_title_in">Total Income</p>
+                                <div class="withdraw_info_inner">
+                                    <div class="withdraw_info">
+                                        <p class="price">$6,732.66</p>
+                                        <button class="new_btn">Withdraw</button>
+                                    </div>
+                                    <p class="add_banking">Add banking information to withdraw your income</p>
+                                    <div class="card_list">
+                                        <button class="card_item">
+                                            <sapn class="imag_box">
+                                                <img src="./assets/images/card1.png" alt="Banking Info">
+                                            </sapn>
+                                            <sapn class="name">Banking Info</sapn>
+                                        </button>
+                                        <button class="card_item">
+                                            <span class="imag_box">
+                                                <img src="./assets/images/card2.png" alt="Debit Card">
+                                            </span>
+                                            <span class="name">Debit Card</span>
+                                        </button>
+                                        <button class="card_item">
+                                            <span class="imag_box">
+                                                <img src="./assets/images/card3.png" alt="Link Paypal">
+                                            </span>
+                                            <span class="name">Link Paypal</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mar_top">
+                        <div class="col-lg-6">
+                            <div class="des_box total_credits_left purchase_credit_history">
+                                <p class="box_title_in">Purchase Credit History</p>
+                                <div class="main_table scroll">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Products</th>
+                                                <th>Subject</th>
+                                                <th>Payment</th>
+                                                <th>Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Products">
+                                                    <p>Ahavat yisrael Lesson</p>
+                                                </td>
+                                                <td data-label="Subject">
+                                                    <p>Chumash</p>
+                                                </td>
+                                                <td data-label="Payment">
+                                                    <p>$540</p>
+                                                </td>
+                                                <td data-label="Date">
+                                                    <p>10 May, 2023</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Products">
+                                                    <p>Alef Bais Memory Game</p>
+                                                </td>
+                                                <td data-label="Subject">
+                                                    <p>Chumash</p>
+                                                </td>
+                                                <td data-label="Payment">
+                                                    <p>$840</p>
+                                                </td>
+                                                <td data-label="Date">
+                                                    <p>8 feb, 2023</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Products">
+                                                    <p>Ahavat yisrael Lesson</p>
+                                                </td>
+                                                <td data-label="Subject">
+                                                    <p>Chumash</p>
+                                                </td>
+                                                <td data-label="Payment">
+                                                    <p>$840</p>
+                                                </td>
+                                                <td data-label="Date">
+                                                    <p>8 feb, 2023</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Products">
+                                                    <p>Ahavat yisrael Lesson</p>
+                                                </td>
+                                                <td data-label="Subject">
+                                                    <p>Chumash</p>
+                                                </td>
+                                                <td data-label="Payment">
+                                                    <p>$840</p>
+                                                </td>
+                                                <td data-label="Date">
+                                                    <p>8 feb, 2023</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="des_box total_credits_left purchase_credit_history">
+                                <p class="box_title_in">Billing History</p>
+                                <div class="main_table scroll">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Pricing plan</th>
+                                                <th>Payment</th>
+                                                <th>Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Pricing plan">
+                                                    <p>Basic</p>
+                                                </td>
+                                                <td data-label="Payment">
+                                                    <p>$540</p>
+                                                </td>
+                                                <td data-label="Date">
+                                                    <p>10 May, 2023</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Pricing plan">
+                                                    <p>Premium</p>
+                                                </td>
+                                                <td data-label="Payment">
+                                                    <p>$850</p>
+                                                </td>
+                                                <td data-label="Date">
+                                                    <p>8 feb, 2023</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Pricing plan">
+                                                    <p>Basic</p>
+                                                </td>
+                                                <td data-label="Payment">
+                                                    <p>$540</p>
+                                                </td>
+                                                <td data-label="Date">
+                                                    <p>10 May, 2023</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Pricing plan">
+                                                    <p>Premium</p>
+                                                </td>
+                                                <td data-label="Payment">
+                                                    <p>$850</p>
+                                                </td>
+                                                <td data-label="Date">
+                                                    <p>8 feb, 2023</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="des_box total_credits_left mar_top">
+                        <p class="box_title_in">Tax Information</p>
+                        <div class="tax_information_box">
+                            <div class="dropzone-root-group upload-images-group" id="dropzone">
+                                <form class="dropzone needsclick" id="my-awesome-dropzone" action="assets/images">
+                                    <div class="dz-message needsclick">
+                                        <div class="icon-div">
+                                            <span><i class="icon-icon-42"></i></span>
+                                        </div>
+                                        <p>
+                                            <span class="block-p"> Front side of your document</span>
+                                            <span class="block">Select a file or drag and drop here</span>
+                                        </p>
+
+                                        <div class="button-center-div">
+                                            <span class="btn btn-common-primary">
+                                                Choose a File
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="seller" role="tabpanel" aria-labelledby="seller-tab">
+                seller
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Modal -->
+<div class="modal fade" id="termsofServiceUpdate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="trams_title">Terms of Service Update</p>
+                <div class="front_content">
+                    <p class="inner_title">Terms and Conditions for Sellers</p>
+                    <div class="trams_content">
+                        <p>Please read these Terms and Conditions ("Terms") carefully before becoming a seller on Daatt.
+                            These Terms govern your relationship with Daatt and your use of the platform as a seller. By
+                            signing up as a seller and using our platform, you agree to be bound by these Terms. If you
+                            do not agree to these Terms, you may not become a seller on Daatt.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -239,6 +465,8 @@
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/owl.carousel.js"></script>
     <script src="./assets/js/select2.min.js"></script>
+    <script src="./assets/js/drag-and-drop/dropzone.js"></script>
+    <script src="./assets/js/drag-and-drop/get-dropzone.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

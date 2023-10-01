@@ -1039,26 +1039,33 @@ input:focus {
     .dashboard .stats-main {
         padding: 20px;
     }
+
     .dashboard .stats-main .title-main {
         margin-bottom: 30px;
     }
+
     .dashboard .stats-main .stats-points {
         gap: 15px;
     }
+
     .dashboard .earning-report-main {
         padding: 20px;
     }
+
     .dashboard .payouts-main {
         padding: 20px;
     }
+
     .dashboard .stats-main .stats-points .points {
         padding: 15px;
         border-radius: 10px;
     }
+
     .dashboard .top-performer .top-performer-table .name-col {
         grid-template-columns: 10px calc(100% - 30px);
         gap: 20px;
     }
+
     .dashboard .top-performer .top-performer-table .sales-col {
         grid-template-columns: calc(100% - 65px) 45px;
         gap: 20px;
@@ -1077,24 +1084,31 @@ input:focus {
         line-height: 26px;
         margin-bottom: 5px;
     }
+
     .dashboard .stats-main .stats-points .points .point-title {
         font-size: 14px;
         line-height: 14px;
         margin-bottom: 5px;
     }
+
     .dashboard .stats-main .stats-points .points .icon {
         margin-bottom: 10px;
     }
+
     .dashboard .maping-by-caountry-main .title-main {
         margin-bottom: 20px;
     }
+
     .dashboard .top-performer .top-performer-table .name-col {
         gap: 15px;
     }
+
     .dashboard .top-performer .top-performer-table .sales-col {
         gap: 15px;
     }
-    .dashboard .top-performer .top-performer-table .table-header, .dashboard .top-performer .top-performer-table .table-body .record {
+
+    .dashboard .top-performer .top-performer-table .table-header,
+    .dashboard .top-performer .top-performer-table .table-body .record {
         gap: 15px;
     }
 }
@@ -1103,45 +1117,59 @@ input:focus {
     .dashboard .stats-main .stats-points {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .dashboard .stats-main {
         padding: 15px;
     }
+
     .dashboard .stats-main .title-main {
         margin-bottom: 15px;
     }
+
     .dashboard .earning-report-main {
         padding: 15px;
     }
+
     .dashboard .earning-report-main .title-main {
         margin-bottom: 15px;
     }
+
     .dashboard .top-performer {
         padding: 15px;
     }
+
     .dashboard .top-performer .top-performer-table .table-body .record {
         padding: 10px 0;
     }
+
     .dashboard .payouts-main {
         padding: 15px;
     }
+
     .dashboard .payouts-main .payout-list .payout {
         padding: 15px;
     }
+
     .dashboard .sales-earnings-main {
         padding: 15px;
     }
+
     .dashboard .sales-earnings-main .title-main {
         margin-bottom: 15px;
     }
+
     .dashboard .paid-promotions-main {
         padding: 15px;
     }
+
     .dashboard .paid-promotions-main .title-main {
         margin-bottom: 15px;
     }
+
     .dashboard .maping-by-caountry-main {
         padding: 15px;
     }
+
     .dashboard .maping-by-caountry-main .title-main {
         margin-bottom: 15px;
     }
@@ -1891,11 +1919,6 @@ input:focus {
     color: #7D7D7D;
 }
 
-.main_table table td:last-child,
-.main_table table th:last-child {
-    text-align: center;
-}
-
 .email_box .main_table table .unread.action_button {
     color: #EF2E2E;
     background: #FFF4F4;
@@ -1994,6 +2017,52 @@ input:focus {
     line-height: 17px;
     color: #7D7D7D;
     font-weight: 300;
+}
+
+#termsofServiceUpdate.modal.show .modal-dialog {
+    max-width: 90%;
+}
+
+#termsofServiceUpdate.modal.show .modal-dialog .modal-content {
+    box-shadow: 0px 3px 26px 0px #4189851A;
+    border-radius: 15px;
+    padding: 40px 30px;
+}
+
+#termsofServiceUpdate.modal.show .modal-dialog .modal-content .modal-body {
+    padding: 0;
+}
+
+.trams_title {
+    font-size: 40px;
+    line-height: 40px;
+    color: #2C3F3F;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.front_content {
+    margin-bottom: 30px;
+}
+
+.front_content .inner_title {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.trams_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trams_content p {
+    font-size: 28px;
+    line-height: 40px;
+    color: #595959;
 }
 
 @media(max-width:1800px) {
@@ -2113,6 +2182,27 @@ input:focus {
         padding: 20px 0;
         overflow: hidden;
     }
+
+    .purchase_credit_history table td {
+        padding: 20px 5px;
+    }
+
+    .front_content .inner_title {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .trams_content p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .trams_title {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width:1200px) {
@@ -2182,7 +2272,27 @@ input:focus {
         font-size: 24px;
         line-height: 28px;
     }
+
+    .front_content .inner_title {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .trams_content p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .trams_title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    #termsofServiceUpdate.modal.show .modal-dialog .modal-content {
+        padding: 30px 16px;
+    }
 }
+
 
 @media(max-width:640px) {
     .recently_viewed_list {
@@ -2283,6 +2393,12 @@ input:focus {
     }
 }
 
+@media(max-width:576px) {
+    #termsofServiceUpdate.modal.show .modal-dialog {
+        max-width: 100%;
+    }
+}
+
 @media(max-width:420px) {
     .recently_viewed_list {
         grid-template-columns: repeat(1, 1fr);
@@ -2322,10 +2438,12 @@ input:focus {
 .billing_infomation .total_credits_left .box_content_in .con_text {
     padding-left: 10%;
 }
-.total_savings_box{
+
+.total_savings_box {
     display: flex;
     flex-direction: column;
 }
+
 .total_savings_box .total_savings_list {
     display: flex;
     align-items: center;
@@ -2338,11 +2456,14 @@ input:focus {
     flex: 1;
     padding: 16px 0;
 }
-.total_savings_box .total_savings_list .savings_total{
+
+.total_savings_box .total_savings_list .savings_total {
     padding-left: 30px;
 }
+
 .total_savings_box .total_savings_list .spent_total {
     border-right: 1px solid #DFDFDF;
+    padding-right: 10px;
 }
 
 .total_savings_box .total_savings_list .spent_total .title_i,
@@ -2361,17 +2482,444 @@ input:focus {
     font-weight: 500;
     color: #3F8FC9;
 }
-.total_savings_box  .total_savings_list .savings_total .price_inn{
+
+.total_savings_box .total_savings_list .savings_total .price_inn {
     color: #46C69B;
 }
-.total_savings_box .upgrade_text{
+
+.total_savings_box .upgrade_text {
     margin-top: auto;
     padding: 0 50px 16px;
     color: #3D3D3D;
     font-size: 16px;
     line-height: 16px;
 }
-.mar_top{
+
+.mar_top {
     margin-top: 35px;
 }
+
+.commin_billing {
+    padding: 25px 25px 50px;
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+}
+
+.commin_billing .name_icon_infom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.commin_billing .name_icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.commin_billing .name_icon .icon {
+    display: flex;
+}
+
+.commin_billing .name_icon .icon i {
+    display: flex;
+    font-size: 50px;
+    line-height: 50px;
+    color: #3F8FC9;
+}
+
+.commin_billing .card_exp_num {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.commin_billing .card_exp_num .card_num {
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--black);
+}
+
+.commin_billing .card_exp_num .card_expiration {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #6C6C6C;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.commin_billing .card_exp_num .card_expiration p {
+    color: var(--black);
+    font-weight: 400;
+}
+
+.commin_billing .name_icon .name_user_text .text {
+    font-size: 24px;
+    line-height: 24px;
+    color: #6C6C6C;
+    margin-bottom: 5px;
+}
+
+.commin_billing .name_icon .name_user_text .name {
+    font-size: 32px;
+    line-height: 32px;
+    color: #3F8FC9;
+    font-weight: 500;
+}
+
+.total_income_inn .withdraw_info_inner {
+    padding: 20px;
+}
+
+.total_income_inn .withdraw_info_inner .withdraw_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 23px;
+}
+
+.total_income_inn .withdraw_info_inner .withdraw_info .price {
+    font-size: 38px;
+    line-height: 38px;
+    color: #3F8FC9;
+    font-weight: 500;
+}
+
+.total_income_inn .withdraw_info_inner .add_banking {
+    text-align: center;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.total_income_inn .withdraw_info_inner .card_list {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.total_income_inn .withdraw_info_inner .card_list .card_item {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 15px;
+    border: 1px solid #D4D4D4;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--white);
+}
+
+.total_income_inn .withdraw_info_inner .card_list .card_item .name {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--green);
+}
+
+.total_income_inn .withdraw_info_inner .card_list .card_item .imag_box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.total_income_inn .withdraw_info_inner .card_list .card_item .imag_box img {
+    width: 100%;
+}
+
+.purchase_credit_history table th {
+    padding: 15px;
+}
+
+.purchase_credit_history table td {
+    padding: 20px 15px;
+}
+
+.dropzone-root-group .dropzone {
+    width: 100%;
+    border: 3px dashed #C6C6C6;
+    border-radius: 15px;
+    padding: 2rem 1rem 2rem 1rem;
+    background: #F9F9F9;
+    min-height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.tax_information_box{
+    padding: 30px;
+}
+
+@media(max-width:1800px) {
+    .billing_infomation .total_credits_left .box_content_in .wallat_info {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .billing_infomation .total_credits_left .box_content_in .wallat_info .new_btn {
+        width: fit-content;
+    }
+
+    .commin_billing .name_icon_infom {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1600px) {
+    .commin_billing .name_icon_infom .new_btn {
+        width: 100%;
+    }
+
+    .total_income_inn .withdraw_info_inner .card_list .card_item {
+        width: 48%;
+    }
+}
+
+@media(max-width:1440px) {
+    .billing_infomation .buyer_current_plan .basic_plan_info .current_plan_box .button_group {
+        flex-direction: row;
+    }
+
+    .billing_infomation .buyer_current_plan .basic_plan_info .current_plan_box .button_group .cancle_button,
+    .billing_infomation .buyer_current_plan .basic_plan_info .current_plan_box .button_group .new_btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        width: fit-content;
+    }
+
+    .billing_infomation .basic_plan_info .current_plan_box {
+        border: 0;
+        padding: 0;
+    }
+
+    .total_savings_box .total_savings_list {
+        padding: 10px 20px;
+    }
+
+    .commin_billing .card_exp_num {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .commin_billing .card_exp_num .card_num {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .commin_billing .card_exp_num .card_expiration {
+        gap: 10px;
+        font-size: 20px;
+        line-height: 18px;
+    }
+}
+
+@media(max-width:1366px) {
+    .billing_infomation .buyer_current_plan .basic_plan_info {
+        flex-direction: row;
+    }
+
+    .total_savings_box .total_savings_list .spent_total .title_i,
+    .total_savings_box .total_savings_list .savings_total .title_i {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .total_savings_box .total_savings_list .spent_total .price_inn,
+    .total_savings_box .total_savings_list .savings_total .price_inn {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .total_savings_box .total_savings_list .spent_total {
+        padding: 0;
+        padding-right: 20px;
+    }
+
+    .total_savings_box .total_savings_list .savings_total {
+        padding: 0;
+        padding-left: 15px;
+    }
+
+    .commin_billing .name_icon .name_user_text .text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .commin_billing .name_icon .name_user_text .name {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .total_income_inn .withdraw_info_inner .card_list .card_item {
+        padding: 10px;
+    }
+
+    .total_income_inn .withdraw_info_inner .card_list .card_item {
+        width: 46%;
+    }
+
+    .commin_billing {
+        padding: 15px 15px 20px;
+    }
+
+    .total_income_inn .withdraw_info_inner {
+        padding: 15px;
+    }
+
+    .total_income_inn .withdraw_info_inner .withdraw_info .price {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+}
+
+@media(max-width:1200px) {
+    .total_income_inn .withdraw_info_inner .card_list {
+        gap: 10px;
+    }
+
+    .total_income_inn .withdraw_info_inner .card_list .card_item {
+        width: 100%;
+    }
+}
+
+@media(max-width:991px) {
+    .commin_billing .name_icon_infom {
+        flex-direction: row;
+        align-items: unset;
+    }
+
+    .commin_billing .name_icon_infom .new_btn {
+        width: fit-content;
+        padding: 10px 20px;
+    }
+
+    .billing_infomation .total_credits_left .box_content_in .wallat_info .new_btn {
+        margin-bottom: 0;
+    }
+
+    .billing_infomation .total_credits_left .box_content_in .con_text {
+        padding-left: 0;
+    }
+
+    .total_credits_left .wallat_info .main_balance .total_balance .text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .total_credits_left .wallat_info .main_balance .total_balance .number {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .new_btn {
+        padding: 12px 20px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .billing_infomation .mar_top {
+        margin-top: 0;
+    }
+
+    .billing_infomation .buyer_current_plan .basic_plan_info {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .billing_infomation .buyer_current_plan .basic_plan_info {
+        flex-direction: column;
+    }
+
+    .billing_infomation .basic_plan_info .available_plan_box .new_btn {
+        width: fit-content;
+    }
+}
+
+@media(max-width:640px) {
+    .commin_billing .name_icon_infom {
+        flex-direction: column;
+    }
+
+    .commin_billing .name_icon_infom .new_btn {
+        width: 100%;
+    }
+
+    .commin_billing .name_icon .icon i {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .commin_billing .name_icon .name_user_text .text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .total_savings_box .total_savings_list .spent_total .title_i,
+    .total_savings_box .total_savings_list .savings_total .title_i {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .total_savings_box .total_savings_list .spent_total .price_inn,
+    .total_savings_box .total_savings_list .savings_total .price_inn {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .total_savings_box .upgrade_text {
+        padding: 16px;
+    }
+
+    .billing_infomation .buyer_current_plan .basic_plan_info .current_plan_box .button_group {
+        flex-direction: column;
+    }
+
+    .billing_infomation .buyer_current_plan .basic_plan_info .current_plan_box .button_group .cancle_button,
+    .billing_infomation .buyer_current_plan .basic_plan_info .current_plan_box .button_group .new_btn,
+    .billing_infomation .basic_plan_info .available_plan_box .new_btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .billing_infomation .buyer_current_plan .basic_plan_info .current_plan_box .button_group .new_btn {
+        padding: 12px;
+    }
+
+    .billing_infomation .total_credits_left .box_content_in .wallat_info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .billing_infomation .total_credits_left .box_content_in .wallat_info .new_btn {
+        width: 100%;
+    }
+
+    .total_income_inn .withdraw_info_inner .withdraw_info {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 /* billing infomation Page End */
