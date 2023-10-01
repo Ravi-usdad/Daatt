@@ -10,7 +10,7 @@ Dropzone.options.myAwesomeDropzone = {
     var self = this;
     // config
     self.options.addRemoveLinks = true;
-    self.options.dictRemoveFile = "<i class='icon-icon-30'></i>";
+    self.options.dictRemoveFile = "<i class='icon-icon-17'></i>";
     //New file added
     self.on("addedfile", function (file) {
       console.log("new file added ", file);
