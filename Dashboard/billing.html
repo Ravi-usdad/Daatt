@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <title>Billing</title>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/font/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<div class="sidebar">
+    <div class="headre_logo">
+        <a href="/Dashboard/dashboard.html">
+            <img src="./assets/images/headre_logo.svg" alt="logo">
+        </a>
+    </div>
+    <ul class="des_menu_list">
+        <li class="des_menu_item">
+            <a href="dashboard.html" class="menu_item_link">
+                <i class="icon-icon-1"></i>
+                Dashboard
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="profile.html" class="menu_item_link ">
+                <i class="icon-icon-2"></i>
+                Profile
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="billing.html" class="menu_item_link active">
+                <i class="icon-icon-3"></i>
+                Billing
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="my-store.html" class="menu_item_link">
+                <i class="icon-icon-4"></i>
+                My Store
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="my-purchases.html" class="menu_item_link">
+                <i class="icon-icon-5"></i>
+                My purchases
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="my-products.html" class="menu_item_link">
+                <i class="icon-icon-6"></i>
+                My Products
+            </a>
+        </li>
+        <li class="des_menu_item">
+            <a href="community-forum.html" class="menu_item_link">
+                <i class="icon-icon-7"></i>
+                Community forum
+            </a>
+        </li>
+    </ul>
+    <div class="get_premium_box">
+        <div class="icon_in">
+            <img src="./assets/images/dummy.png" alt="dummy">
+        </div>
+        <p class="titel">Get Premium</p>
+        <p class="content">
+            Earn more money and increase your impact
+        </p>
+        <a href="#" class="upgrade_now_button">Upgrade Now</a>
+    </div>
+</div>
+<span class="overlay"></span>
+
+<div class="content_main">
+    <div class="das_header">
+        <div class="burger_search">
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <button class="search_button_in"><i class="icon-icon-8"></i></button>
+            <form class="search_box">
+                <input type="text" placeholder="Search here">
+                <button class="search_button"><i class="icon-icon-8"></i></button>
+            </form>
+        </div>
+        <div class="fleg_user_log">
+            <div class="flag_icon">
+                <img src="./assets/images/flag.png" alt="flag">
+            </div>
+            <div class="btn-group user_info_dropdown">
+                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static"
+                    aria-expanded="false">
+                    <span class="image_box"><img src="./assets/images/user.png" alt="user"></span>
+                    <span class="name_info">
+                        <span class="name_i">Bessie Cooper</span>
+                        <span class="name_immm">Administrator</span>
+                    </span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">My Account</button></li>
+                    <li><button class="dropdown-item" type="button">Log Out</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="page_content">
+        <div class="page-header">
+            <div class="left">
+                <h1 class="des_main_title">Billing</h1>
+                <div class="bredcrump">
+                    <p class="das_sub_title">Home - Billing</p>
+                </div>
+            </div>
+            <div class="right">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="buyer-tab" data-bs-toggle="tab" data-bs-target="#buyer"
+                            type="button" role="tab" aria-controls="buyer" aria-selected="false">Buyer</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="seller-tab" data-bs-toggle="tab" data-bs-target="#seller"
+                            type="button" role="tab" aria-controls="seller" aria-selected="true">Seller</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content page-body billing_infomation">
+            <div class="tab-pane fade show active" id="buyer" role="tabpanel" aria-labelledby="buyer-tab">
+                <div class="buyer_current_plan">
+                    <div class="des_box basic_plan_info">
+                        <div class="current_plan_box">
+                            <p class="des_title">Current Plan</p>
+                            <div class="basic_info_plan">
+                                <p class="basic_text">Basic Plan</p>
+                                <p class="most_text">Our most popular plan</p>
+                            </div>
+                            <div class="active_date_box">
+                                <p class="basic_text">Active until July 20, 2023</p>
+                                <p class="most_text">We will send you a notification upon subscription renewal</p>
+                            </div>
+                            <div class="button_group">
+                                <button class="new_btn">Change Plan</button>
+                                <button class="cancle_button">Cancel subscription</button>
+                            </div>
+                        </div>
+                        <div class="available_plan_box">
+                            <p class="des_title">Available Plan</p>
+                            <div class="basic_info_plan">
+                                <p class="basic_text">Basic Plan</p>
+                                <p class="most_text">Our most popular plan</p>
+                            </div>
+                            <button class="new_btn">Move to Premium</button>
+                        </div>
+                    </div>
+                    <div class="row mar_top">
+                        <div class="col-lg-6">
+                            <div class="des_box total_credits_left">
+                                <div class="box_title_in">Total Credits Left</div>
+                                <div class="box_content_in">
+                                    <div class="wallat_info">
+                                        <div class="main_balance">
+                                            <div class="image_box">
+                                                <img src="./assets/images/wallet.png" alt="wallet">
+                                            </div>
+                                            <div class="total_balance">
+                                                <p class="text">Main Balance</p>
+                                                <p class="number">6,732.66</p>
+                                            </div>
+                                        </div>
+                                        <button class="new_btn">Add Credits</button>
+                                    </div>
+                                    <p class="con_text">Credits valid while your plan stays the same. If you downgrade,
+                                        you will lose your credit benefits. For policy details, click here. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="des_box total_credits_left total_savings_box">
+                                <p class="box_title_in">Total Savings</p>
+                                <div class="total_savings_list">
+                                    <div class="spent_total">
+                                        <p class="title_i">Total Spent</p>
+                                        <p class="price_inn">$1,260.66</p>
+                                    </div>
+                                    <div class="savings_total">
+                                        <p class="title_i">Savings</p>
+                                        <p class="price_inn">$460.53</p>
+                                    </div>
+                                </div>
+                                <p class="upgrade_text">Upgrade your account for more discounts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mar_top">
+                        <div class="col-lg-6">
+                            <div class="des_box total_credits_left billing_information_inn">
+                                <p class="box_title_in">Billing Information</p>
+                                <div class="commin_billing">
+                                    <div>
+                                        <div class="name_icon">
+                                            <div class="icon">
+                                                <i class="icon-icon-13"></i>
+                                            </div>
+                                            <div class="name_user_text">
+                                                <p class="text">Cardholder</p>
+                                                <p class="name">Franklin Jr.</p>
+                                            </div>
+                                        </div>
+                                        <button class="new_btn">Update Credit Card Information</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="seller" role="tabpanel" aria-labelledby="seller-tab">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/owl.carousel.js"></script>
+    <script src="./assets/js/select2.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

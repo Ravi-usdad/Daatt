@@ -544,11 +544,6 @@ input:focus {
     padding: 30px 35px;
 }
 
-
-.content {
-    padding: 30px;
-}
-
 .page-header {
     display: flex;
     align-items: center;
@@ -573,9 +568,17 @@ input:focus {
     margin-bottom: 0;
 }
 
+.page-header .right .nav .nav-link:hover {
+    border: 1px solid var(--green);
+}
+
 .page-header .right .nav .nav-link.active {
     background-color: #fff;
     color: var(--green);
+}
+
+.page-header .right .nav .nav-link.active:hover {
+    border: 1px solid var(--white);
 }
 
 
@@ -675,7 +678,7 @@ input:focus {
 }
 
 .dashboard .title-main .title p {
-    color:  #737791;
+    color: #737791;
     font-size: 16px;
     line-height: 30px;
 }
@@ -683,7 +686,7 @@ input:focus {
 .dashboard .stats-main {
     padding: 30px;
 }
- 
+
 .dashboard .stats-main .title-main {
     margin-bottom: 45px;
 }
@@ -732,7 +735,7 @@ input:focus {
     color: #151D48;
     font-size: 24px;
     font-weight: 500;
-    line-height: 32px; 
+    line-height: 32px;
     margin-bottom: 8px;
 }
 
@@ -745,7 +748,7 @@ input:focus {
 }
 
 .dashboard .stats-main .stats-points .points .point-percentage {
-    color:  #4079ED;
+    color: #4079ED;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
@@ -754,12 +757,15 @@ input:focus {
 .dashboard .stats-main .stats-points .points:nth-child(1) {
     background-color: #FFE2E5;
 }
+
 .dashboard .stats-main .stats-points .points:nth-child(2) {
     background-color: #FFF4DE;
 }
+
 .dashboard .stats-main .stats-points .points:nth-child(3) {
     background-color: #DCFCE7;
 }
+
 .dashboard .stats-main .stats-points .points:nth-child(4) {
     background-color: #F3E8FF;
 }
@@ -767,12 +773,15 @@ input:focus {
 .dashboard .stats-main .stats-points .points:nth-child(1) .icon {
     background-color: #FA5A7D;
 }
+
 .dashboard .stats-main .stats-points .points:nth-child(2) .icon {
     background-color: #FA8A5A;
 }
+
 .dashboard .stats-main .stats-points .points:nth-child(3) .icon {
     background-color: #6ABA72;
 }
+
 .dashboard .stats-main .stats-points .points:nth-child(4) .icon {
     background-color: #BF83FF;
 }
@@ -781,9 +790,10 @@ input:focus {
     padding: 30px;
 }
 
-.dashboard .earning-report-main .title-main  {
+.dashboard .earning-report-main .title-main {
     margin-bottom: 25px;
 }
+
 .dashboard .earning-report-main .title-main .filter-right {
     display: flex;
     align-items: center;
@@ -814,9 +824,11 @@ input:focus {
 .dashboard .earning-report-main .title-main .filters .filter.sort-by .input-field .select2-container {
     padding: 12px 15px 12px 60px;
 }
+
 .dashboard .earning-report-main .title-main .filters .filter.during .input-field .select2-container {
     padding: 12px 15px 12px 60px;
 }
+
 .dashboard .earning-report-main .title-main .filters .filter.for .input-field .select2-container {
     padding: 12px 15px 12px 40px;
 }
@@ -852,7 +864,7 @@ input:focus {
 .dashboard .earning-report-main .title-main .new_btn {
     font-size: 14px;
     font-weight: 400;
-    line-height: 15.624px;  
+    line-height: 15.624px;
     padding: 11px 17px;
     min-width: unset;
     border-radius: 5px;
@@ -872,6 +884,7 @@ input:focus {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
 .dashboard .top-performer .top-performer-table .name-col {
     display: grid;
     grid-template-columns: 10px calc(100% - 52px);
@@ -903,7 +916,7 @@ input:focus {
     border-top: 1px solid #EDF2F6;
 }
 
-.dashboard .top-performer .top-performer-table .table-body .sales-number{
+.dashboard .top-performer .top-performer-table .table-body .sales-number {
     padding: 4px 11px;
     background-color: #F1FEFF;
     border: 1px solid #418589;
@@ -917,6 +930,7 @@ input:focus {
     position: relative;
     background-color: #CAFCFF;
 }
+
 .dashboard .top-performer .top-performer-table .table-body .progress-bar::after {
     content: '';
     width: 50%;
@@ -985,8 +999,7 @@ input:focus {
 .dashboard .payouts-main .title-main .new_btn,
 .dashboard .sales-earnings-main .title-main .new_btn,
 .dashboard .paid-promotions-main .title-main .new_btn,
-.dashboard .top-performer .title-main .new_btn
- {
+.dashboard .top-performer .title-main .new_btn {
     font-size: 12px;
     font-weight: 400;
     line-height: 15.652px;
@@ -1007,6 +1020,31 @@ input:focus {
 }
 
 .personal_line {
+    margin-bottom: 25px;
+}
+
+.input_group .input {
+    margin-bottom: 40px;
+}
+
+.input_group .input input {
+    padding: 0 15px;
+    height: 75px;
+    font-weight: 300;
+    line-height: 24.193px;
+    border: 1px solid #C8C8C8;
+}
+
+.personal_infomation .input-select-field {
+    margin-bottom: 40px;
+}
+
+.btn_submit {
+    display: flex;
+    justify-content: end;
+}
+
+.personal_line {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1022,6 +1060,31 @@ input:focus {
 
 .ss_your_profile span {
     color: var(--orange);
+}
+
+@media(max-width:1366px) {
+    .input_group .input input {
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .input_group .input {
+        margin-bottom: 20px;
+    }
+
+    .select2-container--default .select2-selection--single {
+        padding: 14.5px 10px;
+        font-size: 18px;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .personal_infomation .input-select-field {
+        margin-bottom: 20px;
+    }
 }
 
 /* personal Infomation Page End */
@@ -1494,7 +1557,7 @@ input:focus {
 .popular_products_box,
 .top_collections_box {
     padding: 20px 10px;
-    height: 530px;
+    max-height: 530px;
     overflow: hidden;
 }
 
@@ -1627,12 +1690,12 @@ input:focus {
     overflow: hidden;
 }
 
-.email_box .main_table {
+.main_table {
     height: calc(100% - 50px);
     overflow-y: auto;
 }
 
-.email_box .main_box_inner {
+.main_box_inner {
     padding: 10px 10px 20px;
     display: flex;
     align-items: center;
@@ -1640,7 +1703,7 @@ input:focus {
     gap: 10px;
 }
 
-.email_box .index_total {
+.index_total {
     background: #DEF4F2;
     border-radius: 4px;
     padding: 8px 15px;
@@ -1653,7 +1716,7 @@ input:focus {
     color: var(--green);
 }
 
-.email_box .index_total span {
+.index_total span {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
@@ -1902,7 +1965,6 @@ input:focus {
     .popular_products_box,
     .top_collections_box {
         padding: 20px 0;
-        height: 530px;
         overflow: hidden;
     }
 }
@@ -1920,9 +1982,15 @@ input:focus {
         line-height: 24px;
     }
 
+    .personal_infomation {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
     .page_content {
         padding: 20px 15px;
     }
+
     .buyer_current_plan .basic_plan_info .available_plan_box {
         padding-left: 0;
     }
@@ -1947,17 +2015,22 @@ input:focus {
     .emails_top_forums {
         margin-top: 20px;
     }
+
     .popular_products_box .popular_products_item .product_in {
         gap: 15px;
     }
-    .total_credits_left .box_title_in, .billing_information .box_title_in {
+
+    .total_credits_left .box_title_in,
+    .billing_information .box_title_in {
         font-size: 18px;
         line-height: 24px;
     }
+
     .total_credits_left .wallat_info .main_balance .total_balance .text {
         font-size: 20px;
         line-height: 24px;
     }
+
     .total_credits_left .wallat_info .main_balance .total_balance .number {
         color: #E79637;
         font-size: 24px;
@@ -1965,43 +2038,50 @@ input:focus {
     }
 }
 
-@media(max-width:640px){
+@media(max-width:640px) {
     .recently_viewed_list {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .top_collections_box .top_collections_list .top_collections_item {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .top_collections_box .top_collections_list .top_collections_item .rating_product{
+
+    .top_collections_box .top_collections_list .top_collections_item .rating_product {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         margin-top: 10px;
     }
+
     .top_product_setter .top_product_list .top_product_item {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .top_product_setter .top_product_list .top_product_item .price{
+
+    .top_product_setter .top_product_list .top_product_item .price {
         margin-top: 10px;
         text-align: end;
         width: 100%;
     }
+
     .billing_information .card_number_otp {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 20px;
     }
+
     .main_table table td {
         border-top: 0;
         padding: 0;
     }
-    .main_table table tr{
+
+    .main_table table tr {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -2009,43 +2089,143 @@ input:focus {
         border-bottom: 1px solid #F2F2F2;
         margin-bottom: 15px;
     }
-    .main_table table tr:last-child{
+
+    .main_table table tr:last-child {
         border: 0;
     }
-    .main_table table td{
+
+    .main_table table td {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 10px;
         text-align: end;
     }
-    .main_table table td::before{
+
+    .main_table table td::before {
         content: attr(data-label);
         font-size: 12px;
         line-height: 14px;
         color: var(--black);
     }
-    .main_table table thead{
+
+    .main_table table thead {
         display: none;
     }
-    .popular_products_box .popular_products_list .popular_products_item{
+
+    .popular_products_box .popular_products_list .popular_products_item {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .popular_products_box .popular_products_list .popular_products_item .price{
+
+    .popular_products_box .popular_products_list .popular_products_item .price {
         width: 100%;
         margin-top: 10px;
         text-align: end;
     }
-    .billing_information .card_number_otp .cvv_number .date{
+
+    .billing_information .card_number_otp .cvv_number .date {
         text-align: start;
     }
+
+    .personal_line {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
 }
-@media(max-width:420px){
+
+@media(max-width:420px) {
     .recently_viewed_list {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
 /* Buyer Current Plan Page End  */
+
+/* billing infomation Page Satrt */
+
+.billing_infomation .basic_plan_info .current_plan_box,
+.billing_infomation .basic_plan_info .available_plan_box {
+    flex: 1;
+}
+
+.billing_infomation .basic_plan_info .available_plan_box .new_btn {
+    max-width: 330px;
+    min-width: unset;
+    width: 100%;
+}
+
+.billing_infomation .basic_plan_info .current_plan_box .button_group .new_btn {
+    max-width: 240px;
+    width: 100%;
+    min-width: unset;
+    padding: 10px;
+}
+
+.billing_infomation .basic_plan_info .current_plan_box .cancle_button {
+    padding: 12px 35px;
+}
+
+.billing_infomation .total_credits_left .box_content_in .wallat_info {
+    align-items: flex-start;
+}
+
+.billing_infomation .total_credits_left .box_content_in .con_text {
+    padding-left: 10%;
+}
+.total_savings_box{
+    display: flex;
+    flex-direction: column;
+}
+.total_savings_box .total_savings_list {
+    display: flex;
+    align-items: center;
+    padding: 26px 50px 0;
+    margin-top: 10px;
+}
+
+.total_savings_box .total_savings_list .spent_total,
+.total_savings_box .total_savings_list .savings_total {
+    flex: 1;
+    padding: 16px 0;
+}
+.total_savings_box .total_savings_list .savings_total{
+    padding-left: 30px;
+}
+.total_savings_box .total_savings_list .spent_total {
+    border-right: 1px solid #DFDFDF;
+}
+
+.total_savings_box .total_savings_list .spent_total .title_i,
+.total_savings_box .total_savings_list .savings_total .title_i {
+    font-size: 28px;
+    line-height: 32px;
+    color: var(--black);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.total_savings_box .total_savings_list .spent_total .price_inn,
+.total_savings_box .total_savings_list .savings_total .price_inn {
+    font-size: 46px;
+    line-height: 46px;
+    font-weight: 500;
+    color: #3F8FC9;
+}
+.total_savings_box  .total_savings_list .savings_total .price_inn{
+    color: #46C69B;
+}
+.total_savings_box .upgrade_text{
+    margin-top: auto;
+    padding: 0 50px 16px;
+    color: #3D3D3D;
+    font-size: 16px;
+    line-height: 16px;
+}
+.mar_top{
+    margin-top: 35px;
+}
+/* billing infomation Page End */
