@@ -133,6 +133,18 @@ $(document).ready(function () {
       allowClear: true
     });
   }
+  if ($("#selectgrades").length) {
+    $("#selectgrades").select2({
+      placeholder: "Select Grade/s",
+      allowClear: true
+    });
+  }
+  if ($("#addfolder").length) {
+    $("#addfolder").select2({
+      placeholder: "Add Folder",
+      allowClear: true
+    });
+  }
 })
 
 

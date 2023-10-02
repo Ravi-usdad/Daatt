@@ -3661,13 +3661,10 @@ input:focus {
     gap: 20px;
 }
 
-.search_select_item {
-    margin-top: 25px;
-}
-
 .my_purchases_box .my_purchases_content {
     margin-top: 40px;
 }
+
 
 .all_purchases_table thead tr th {
     text-align: center;
@@ -3846,13 +3843,15 @@ input:focus {
 
 .my_purchases_box {
     min-height: calc(100vh - 220px);
+    display: flex;
+    flex-direction: column;
 }
 
 .no_results {
     display: flex;
     justify-content: center;
     height: 100%;
-    margin-top: 50px;
+    align-items: center;
 }
 
 .no_results p {
@@ -3861,6 +3860,69 @@ input:focus {
     color: var(--black);
     font-weight: 300;
 }
+
+.create_collection_no {
+    max-width: 535px;
+    width: 100%;
+    margin: auto;
+}
+
+.create_collection_no p {
+    font-size: 26px;
+    line-height: 40px;
+    color: #363636;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.create_collection_no .new_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.create_collection_no .new_btn i {
+    display: flex;
+}
+#createcollectionpopup.modal.show .modal-dialog{
+    max-width: 950px;
+}
+
+#createcollectionpopup.modal.show .modal-dialog .modal-content{
+    border-radius: 20px;
+}
+#createcollectionpopup.modal.show .modal-dialog .modal-content .modal-title{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+    color: var(--green);
+}
+#createcollectionpopup.modal.show .modal-dialog .modal-content .btn i{
+    color: var(--orange);
+}
+
+.createcollection_form{
+    padding: 0 10px;
+}
+
+.createcollection_form .input_group input,
+.createcollection_form .input_group textarea{
+    padding: 20px 15px;
+    font-size: 24px;
+    width: 100%;
+    line-height: 24px;
+    font-weight: 300;
+    border: 1px solid #C8C8C8;
+    border-radius: 10px;
+}
+
+.createcollection_form .select_grade .select2-container{
+    width: 100% !important;
+} 
 
 @media(max-width:1366px) {
 
@@ -3970,6 +4032,38 @@ input:focus {
         width: 18px;
         height: 18px;
     }
+
+    .create_collection_no p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .create_collection_no .new_btn {
+        max-width: fit-content;
+        padding: 10px 25px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .create_collection_no .new_btn i{
+        display: flex;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .no_results p {
+        font-size: 18px;
+        line-height: 38px;
+    }
+    .ceckout_box label::before {
+        min-width: 20px;
+        height: 20px;
+    }
+    .ceckout_box input:checked~label::before {
+        background-color: var(--green);
+        background-image: url('../images/write.png');
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position: center;
+    }
 }
 
 @media(max-width:1200px) {
@@ -4055,6 +4149,10 @@ input:focus {
 
     .my_collections_list {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 
@@ -4143,6 +4241,7 @@ input:focus {
     line-height: 32px;
     margin-bottom: 13px;
 }
+
 .my-store .profile-main .profile-top .left .location {
     color: #808080;
     font-size: 24px;
@@ -4190,6 +4289,7 @@ input:focus {
 .my-store .profile-main .profile-top .right .box:nth-child(1) {
     border-color: #1877F2;
 }
+
 .my-store .profile-main .profile-top .right .box:nth-child(1) .icon-text {
     background-color: #1877F2;
 }
@@ -4201,9 +4301,11 @@ input:focus {
 .my-store .profile-main .profile-top .right .box:nth-child(2) {
     border-color: #E60023;
 }
+
 .my-store .profile-main .profile-top .right .box:nth-child(2) .icon-text {
     background-color: #E60023;
 }
+
 .my-store .profile-main .profile-top .right .box:nth-child(2) .number {
     color: #E60023;
 }
@@ -4211,9 +4313,11 @@ input:focus {
 .my-store .profile-main .profile-top .right .box:nth-child(3) {
     border-color: #0073B1;
 }
+
 .my-store .profile-main .profile-top .right .box:nth-child(3) .icon-text {
     background-color: #0073B1;
 }
+
 .my-store .profile-main .profile-top .right .box:nth-child(3) .number {
     color: #0073B1;
 }
@@ -4244,14 +4348,14 @@ input:focus {
     margin-top: -150px;
 }
 
-.my-store .profile-main .profile-bottom .left .store-name  {
+.my-store .profile-main .profile-bottom .left .store-name {
     color: #418985;
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 10px;
 }
 
-.my-store .profile-main .profile-bottom .left .store-link  {
+.my-store .profile-main .profile-bottom .left .store-link {
     color: #545454;
     font-size: 18px;
     font-weight: 300;
@@ -4264,7 +4368,7 @@ input:focus {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 10px;
-} 
+}
 
 .my-store .profile-main .profile-bottom .left .user-desc .text {
     color: #545454;
@@ -4335,18 +4439,23 @@ input:focus {
         height: 150px;
         margin-top: -90px;
     }
+
     .my-store .profile-main .profile-bottom {
         padding: 20px;
     }
+
     .my-store .profile-main .profile-top {
         max-width: calc(100% - 190px);
     }
+
     .my-store .profile-main .profile-bottom .left .user-info {
         gap: 20px;
     }
+
     .my-store .profile-main .profile-bottom .left {
         padding-right: 30px;
     }
+
     .my-store .profile-main .profile-bottom .right {
         padding-left: 30px;
     }
@@ -4357,59 +4466,72 @@ input:focus {
         max-width: 100%;
         padding: 0 20px;
     }
+
     .my-store .profile-main .profile-bottom .left .user-info {
         align-items: center;
         margin-bottom: 15px;
     }
+
     .my-store .profile-main .profile-bottom .left .user-info .user-image {
         margin-top: 0;
     }
+
     .my-store .profile-main .profile-bottom {
         flex-direction: column;
         gap: 30px;
     }
+
     .my-store .profile-main .profile-bottom .left {
         padding-right: 0px;
         border-right: 0;
     }
+
     .my-store .profile-main .profile-bottom .right {
         padding-left: 0px;
     }
 }
 
 @media(max-width: 1024px) {
-    .my-store .profile-main { 
+    .my-store .profile-main {
         margin-bottom: 40px;
     }
+
     .my-store .profile-main .profile-top .left .name {
         font-size: 24px;
         line-height: 24px;
     }
+
     .my-store .profile-main .profile-top .left .location {
         font-size: 18px;
         line-height: 18px;
     }
+
     .my-store .profile-main .profile-bottom .left .user-desc .desc-title {
         font-size: 20px;
         line-height: 20px;
     }
+
     .my-store .profile-main .profile-bottom .left .user-desc .text {
         font-size: 16px;
         line-height: 24px;
     }
+
     .my-store .profile-main .profile-bottom .right .bio-title {
         font-size: 20px;
         line-height: 20px;
     }
+
     .my-store .profile-main .profile-bottom .right .bio-detail {
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 20px;
     }
+
     .my-store .profile-main .profile-bottom .right .bio-info .info-title {
         font-size: 20px;
         line-height: 20px;
     }
+
     .my-store .profile-main .profile-bottom .right .bio-info .info-detail {
         font-size: 14px;
         line-height: 20px;
@@ -4417,9 +4539,10 @@ input:focus {
 }
 
 @media(max-width: 768px) {
-    .my-store .profile-main { 
+    .my-store .profile-main {
         margin-bottom: 30px;
     }
+
     .my-store .profile-main .profile-top {
         display: flex;
         flex-wrap: wrap;
@@ -4429,6 +4552,7 @@ input:focus {
         padding: 0 15px;
     }
 }
+
 /* profile-section */
 
 /* tab-section */
