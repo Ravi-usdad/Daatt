@@ -16,576 +16,620 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-
-<div class="sidebar">
-    <div class="headre_logo">
-        <a href="/Dashboard/dashboard.html">
-            <img src="./assets/images/headre_logo.svg" alt="logo">
-        </a>
-    </div>
-    <ul class="des_menu_list">
-        <li class="des_menu_item">
-            <a href="dashboard.html" class="menu_item_link">
-                <i class="icon-icon-1"></i>
-                Dashboard
-            </a>
-        </li>
-        <li class="des_menu_item">
-            <a href="profile.html" class="menu_item_link ">
-                <i class="icon-icon-2"></i>
-                Profile
-            </a>
-        </li>
-        <li class="des_menu_item">
-            <a href="billing.html" class="menu_item_link active">
-                <i class="icon-icon-3"></i>
-                Billing
-            </a>
-        </li>
-        <li class="des_menu_item">
-            <a href="my-store.html" class="menu_item_link">
-                <i class="icon-icon-4"></i>
-                My Store
-            </a>
-        </li>
-        <li class="des_menu_item">
-            <a href="my-purchases.html" class="menu_item_link">
-                <i class="icon-icon-5"></i>
-                My purchases
-            </a>
-        </li>
-        <li class="des_menu_item">
-            <a href="my-products.html" class="menu_item_link">
-                <i class="icon-icon-6"></i>
-                My Products
-            </a>
-        </li>
-        <li class="des_menu_item">
-            <a href="community-forum.html" class="menu_item_link">
-                <i class="icon-icon-7"></i>
-                Community forum
-            </a>
-        </li>
-    </ul>
-    <div class="get_premium_box">
-        <div class="icon_in">
-            <img src="./assets/images/dummy.png" alt="dummy">
-        </div>
-        <p class="titel">Get Premium</p>
-        <p class="content">
-            Earn more money and increase your impact
-        </p>
-        <a href="#" class="upgrade_now_button">Upgrade Now</a>
-    </div>
-</div>
-<span class="overlay"></span>
-
-<div class="content_main">
-    <div class="das_header">
-        <div class="burger_search">
-            <div class="burger" id="burger">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </div>
-            <button class="search_button_in"><i class="icon-icon-8"></i></button>
-            <form class="search_box">
-                <input type="text" placeholder="Search here">
-                <button class="search_button"><i class="icon-icon-8"></i></button>
-            </form>
-        </div>
-        <div class="fleg_user_log">
-            <div class="flag_icon">
-                <img src="./assets/images/flag.png" alt="flag">
-            </div>
-            <div class="btn-group user_info_dropdown">
-                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static"
-                    aria-expanded="false">
-                    <span class="image_box"><img src="./assets/images/user.png" alt="user"></span>
-                    <span class="name_info">
-                        <span class="name_i">Bessie Cooper</span>
-                        <span class="name_immm">Administrator</span>
-                    </span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-                    <li><button class="dropdown-item" type="button">Action</button></li>
-                    <li><button class="dropdown-item" type="button">My Account</button></li>
-                    <li><button class="dropdown-item" type="button">Log Out</button></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="page_content">
-        <div class="page-header">
-            <div class="left">
-                <h1 class="des_main_title">Billing</h1>
-                <div class="bredcrump">
-                    <p class="das_sub_title">Home - Billing</p>
-                </div>
-            </div>
-            <div class="right">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="buyer-tab" data-bs-toggle="tab" data-bs-target="#buyer"
-                            type="button" role="tab" aria-controls="buyer" aria-selected="false">Buyer</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="seller-tab" data-bs-toggle="tab" data-bs-target="#seller"
-                            type="button" role="tab" aria-controls="seller" aria-selected="true">Seller</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="tab-content page-body billing_infomation">
-            <div class="tab-pane fade show active" id="buyer" role="tabpanel" aria-labelledby="buyer-tab">
-                <div class="buyer_current_plan">
-                    <div class="des_box basic_plan_info">
-                        <div class="current_plan_box">
-                            <p class="des_title">Current Plan</p>
-                            <div class="basic_info_plan">
-                                <p class="basic_text">Basic Plan</p>
-                                <p class="most_text">Our most popular plan</p>
-                            </div>
-                            <div class="active_date_box">
-                                <p class="basic_text">Active until July 20, 2023</p>
-                                <p class="most_text">We will send you a notification upon subscription renewal</p>
-                            </div>
-                            <div class="button_group">
-                                <button class="new_btn">Change Plan</button>
-                                <button class="cancle_button">Cancel subscription</button>
-                            </div>
-                        </div>
-                        <div class="available_plan_box">
-                            <p class="des_title">Available Plan</p>
-                            <div class="basic_info_plan">
-                                <p class="basic_text">Basic Plan</p>
-                                <p class="most_text">Our most popular plan</p>
-                            </div>
-                            <button class="new_btn">Move to Premium</button>
-                        </div>
-                    </div>
-                    <div class="row mar_top">
-                        <div class="col-lg-6">
-                            <div class="des_box total_credits_left">
-                                <div class="box_title_in">Total Credits Left</div>
-                                <div class="box_content_in">
-                                    <div class="wallat_info">
-                                        <div class="main_balance">
-                                            <div class="image_box">
-                                                <img src="./assets/images/wallet.png" alt="wallet">
-                                            </div>
-                                            <div class="total_balance">
-                                                <p class="text">Main Balance</p>
-                                                <p class="number">6,732.66</p>
-                                            </div>
-                                        </div>
-                                        <button class="new_btn">Add Credits</button>
-                                    </div>
-                                    <p class="con_text">Credits valid while your plan stays the same. If you downgrade,
-                                        you will lose your credit benefits. For policy details, click here. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="des_box total_credits_left total_savings_box">
-                                <p class="box_title_in">Total Savings</p>
-                                <div class="total_savings_list">
-                                    <div class="spent_total">
-                                        <p class="title_i">Total Spent</p>
-                                        <p class="price_inn">$1,260.66</p>
-                                    </div>
-                                    <div class="savings_total">
-                                        <p class="title_i">Savings</p>
-                                        <p class="price_inn">$460.53</p>
-                                    </div>
-                                </div>
-                                <p class="upgrade_text">Upgrade your account for more discounts</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mar_top">
-                        <div class="col-lg-6">
-                            <div class="des_box total_credits_left billing_information_inn">
-                                <p class="box_title_in">Billing Information</p>
-                                <div class="commin_billing">
-                                    <div class="name_icon_infom">
-                                        <div class="name_icon">
-                                            <div class="icon">
-                                                <i class="icon-icon-13"></i>
-                                            </div>
-                                            <div class="name_user_text">
-                                                <p class="text">Cardholder</p>
-                                                <p class="name">Franklin Jr.</p>
-                                            </div>
-                                        </div>
-                                        <button class="new_btn" data-bs-toggle="modal"
-                                            data-bs-target="#termsofServiceUpdate">Update Credit Card
-                                            Information</button>
-                                    </div>
-                                    <div class="card_exp_num">
-                                        <p class="card_num">**** **** **** 6588</p>
-                                        <div class="card_expiration">
-                                            Expiration Date
-                                            <p>08/23</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="des_box total_credits_left total_income_inn">
-                                <p class="box_title_in">Total Income</p>
-                                <div class="withdraw_info_inner">
-                                    <div class="withdraw_info">
-                                        <p class="price">$6,732.66</p>
-                                        <button class="new_btn">Withdraw</button>
-                                    </div>
-                                    <p class="add_banking">Add banking information to withdraw your income</p>
-                                    <div class="card_list">
-                                        <button class="card_item">
-                                            <sapn class="imag_box">
-                                                <img src="./assets/images/card1.png" alt="Banking Info">
-                                            </sapn>
-                                            <sapn class="name">Banking Info</sapn>
-                                        </button>
-                                        <button class="card_item">
-                                            <span class="imag_box">
-                                                <img src="./assets/images/card2.png" alt="Debit Card">
-                                            </span>
-                                            <span class="name">Debit Card</span>
-                                        </button>
-                                        <button class="card_item">
-                                            <span class="imag_box">
-                                                <img src="./assets/images/card3.png" alt="Link Paypal">
-                                            </span>
-                                            <span class="name">Link Paypal</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mar_top">
-                        <div class="col-lg-6">
-                            <div class="des_box total_credits_left purchase_credit_history">
-                                <p class="box_title_in">Purchase Credit History</p>
-                                <div class="main_table scroll">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Products</th>
-                                                <th>Subject</th>
-                                                <th>Payment</th>
-                                                <th>Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td data-label="Products">
-                                                    <p>Ahavat yisrael Lesson</p>
-                                                </td>
-                                                <td data-label="Subject">
-                                                    <p>Chumash</p>
-                                                </td>
-                                                <td data-label="Payment">
-                                                    <p>$540</p>
-                                                </td>
-                                                <td data-label="Date">
-                                                    <p>10 May, 2023</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td data-label="Products">
-                                                    <p>Alef Bais Memory Game</p>
-                                                </td>
-                                                <td data-label="Subject">
-                                                    <p>Chumash</p>
-                                                </td>
-                                                <td data-label="Payment">
-                                                    <p>$840</p>
-                                                </td>
-                                                <td data-label="Date">
-                                                    <p>8 feb, 2023</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td data-label="Products">
-                                                    <p>Ahavat yisrael Lesson</p>
-                                                </td>
-                                                <td data-label="Subject">
-                                                    <p>Chumash</p>
-                                                </td>
-                                                <td data-label="Payment">
-                                                    <p>$840</p>
-                                                </td>
-                                                <td data-label="Date">
-                                                    <p>8 feb, 2023</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td data-label="Products">
-                                                    <p>Ahavat yisrael Lesson</p>
-                                                </td>
-                                                <td data-label="Subject">
-                                                    <p>Chumash</p>
-                                                </td>
-                                                <td data-label="Payment">
-                                                    <p>$840</p>
-                                                </td>
-                                                <td data-label="Date">
-                                                    <p>8 feb, 2023</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="des_box total_credits_left purchase_credit_history">
-                                <p class="box_title_in">Billing History</p>
-                                <div class="main_table scroll">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Pricing plan</th>
-                                                <th>Payment</th>
-                                                <th>Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td data-label="Pricing plan">
-                                                    <p>Basic</p>
-                                                </td>
-                                                <td data-label="Payment">
-                                                    <p>$540</p>
-                                                </td>
-                                                <td data-label="Date">
-                                                    <p>10 May, 2023</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td data-label="Pricing plan">
-                                                    <p>Premium</p>
-                                                </td>
-                                                <td data-label="Payment">
-                                                    <p>$850</p>
-                                                </td>
-                                                <td data-label="Date">
-                                                    <p>8 feb, 2023</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td data-label="Pricing plan">
-                                                    <p>Basic</p>
-                                                </td>
-                                                <td data-label="Payment">
-                                                    <p>$540</p>
-                                                </td>
-                                                <td data-label="Date">
-                                                    <p>10 May, 2023</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td data-label="Pricing plan">
-                                                    <p>Premium</p>
-                                                </td>
-                                                <td data-label="Payment">
-                                                    <p>$850</p>
-                                                </td>
-                                                <td data-label="Date">
-                                                    <p>8 feb, 2023</p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="des_box total_credits_left mar_top">
-                        <p class="box_title_in">Tax Information</p>
-                        <div class="tax_information_box">
-                            <div class="dropzone-root-group upload-images-group" id="dropzone">
-                                <form class="dropzone needsclick" id="my-awesome-dropzone" action="assets/images">
-                                    <div class="dz-message needsclick">
-                                        <div class="uplod_text">
-                                            <p class="tex_one">Upload tax documents</p>
-                                            <p class="tex_one">or</p>
-                                            <p class="information">Tax information must be uploaded upon reaching the $600 threshold. Click here for tax form.</p>
-                                            <div class="select_files">
-                                                Select Files
-                                            </div>
-                                            <p class="sub_tex">Maximum upload file size 300 MB</p>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="seller" role="tabpanel" aria-labelledby="seller-tab">
-                seller
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="termsofServiceUpdate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-body">
-                <p class="trams_title">Terms of Service Update</p>
-                <div class="front_content">
-                    <p class="inner_title">Terms and Conditions for Sellers</p>
-                    <div class="trams_content">
-                        <p>Please read these Terms and Conditions ("Terms") carefully before becoming a seller on Daatt.
-                            These Terms govern your relationship with Daatt and your use of the platform as a seller. By
-                            signing up as a seller and using our platform, you agree to be bound by these Terms. If you
-                            do not agree to these Terms, you may not become a seller on Daatt.
-                        </p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">Seller Account</p>
-                    <div class="trams_content">
-                        <p>1.1 To become a seller on Daatt, you must create a seller account and provide accurate and
-                            complete information.
-                        </p>
-                        <p>1.2 You are responsible for maintaining the security of your account and keeping your login
-                            credentials confidential.</p>
-                        <p>1.3 You must be at least 18 years old or of legal age in your jurisdiction to become a seller
-                            on Daatt.</p>
-                        <p>1.4 It is your responsibility to ensure that their contact information is accurate and up to
-                            date to receive important notifications.</p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">
-                        Resource Listing and Pricing</p>
-                    <div class="trams_content">
-                        <p>2.1 As a seller, you are responsible for creating accurate and informative listings for your
-                            resources.</p>
-                        <p>2.2 You must provide clear and honest descriptions, including relevant details, grade levels,
-                            subject areas, and any other applicable information.</p>
-                        <p>2.3 You have the freedom to set your own prices for your resources, but they must comply with
-                            our pricing guidelines and be reasonable</p>
-                        <p>2.4 Daatt reserves the right to review and moderate resource listings to ensure compliance
-                            with our policies and guidelines, making sure that the materials posted are appropriate for
-                            a frum, religious Jewish demographic.</p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">Pricing and Currency</p>
-                    <div class="trams_content">
-                        <p>3.1 Prices for resources listed on Daatt are displayed in the currency specified by the
-                            seller.</p>
-                        <p>3.2 Buyers will be charged in the currency specified by the seller at the time of purchase.
-                        </p>
-                        <p>3.3 Currency conversion fees may apply if the buyer's currency differs from the seller's
-                            currency.</p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">Intellectual Property Rights</p>
-                    <div class="trams_content">
-                        <p>4.1 By uploading and listing resources on Daatt, you represent and warrant that you own or
-                            have the necessary rights to distribute the content.</p>
-                        <p>4.2 You grant Daatt a non-exclusive, worldwide, royalty-free license to use, reproduce,
-                            modify, adapt, and distribute your listed resources for promotional purposes within the
-                            Daatt platform.</p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">Sales and Payments</p>
-                    <div class="trams_content">
-                        <p>5.1 When a buyer purchases your resource, you are responsible for delivering the resource to
-                            the buyer promptly and as described in the listing.</p>
-                        <p>5.2 Daatt will handle payment processing on your behalf and deduct applicable fees,
-                            commissions, and taxes according to the agreed terms.</p>
-                        <p>5.3 Daatt facilitates payment processing for transactions between buyers and sellers on the
-                            platform.</p>
-                        <p>5.4 All payments made through Daatt will be processed securely using trusted third-party
-                            payment gateways.</p>
-                        <p>5.5 Payments will be processed and disbursed to your designated payment account on a regular
-                            schedule, as per your designation.</p>
-                        <p>5.6 Continued use of the platform after the changes have been made will constitute your
-                            acceptance of the modified payment policies.</p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">Fees, Taxes and Commissions</p>
-                    <div class="trams_content">
-                        <p>5.1 Daatt charges fees and commissions on sales made through the platform.</p>
-                        <p>5.2 The specific fees and commission rates applicable to sellers are outlined in the seller
-                            agreement or pricing policy, and can be found on the website under “pricing”.</p>
-                        <p>5.3 Sellers are responsible for determining and complying with any applicable taxes related
-                            to their sales on Daatt.</p>
-                        <p>5.4 Daatt reserves the right to modify the fees and commission rates, and any changes will be
-                            communicated to sellers in advance.</p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">Seller Conduct</p>
-                    <div class="trams_content">
-                        <p>5.1 As a seller on Daatt, you agree to conduct yourself professionally and treat buyers and
-                            other users with respect and courtesy.</p>
-                        <p>5.2 You must adhere to Daatt's policies and guidelines, including our content standards, code
-                            of conduct, and any additional guidelines specific to sellers.</p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">Refunds and Disputes</p>
-                    <div class="trams_content">
-                        <p>6.1 As a seller, you are responsible for handling any refund or dispute requests from buyers
-                            promptly and in good faith.</p>
-                        <p>6.2 Daatt may step in to mediate and resolve disputes if necessary, and our decisions will be
-                            final and binding.</p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">Termination</p>
-                    <div class="trams_content">
-                        <p>7.1 Daatt reserves the right to suspend or terminate your seller account if you violate these
-                            Terms or engage in any prohibited activities.</p>
-                        <p>7.2 You may also terminate your seller account at any time.</p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">Modifications to Terms</p>
-                    <div class="trams_content">
-                        <p>8.1 Daatt reserves the right to modify these Terms at any time. Any changes will be
-                            communicated to you through the platform or by email.</p>
-                        <p>8.2 Continued use of the platform after the changes have been made will constitute your
-                            acceptance of the modified Terms.</p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">Governing Law</p>
-                    <div class="trams_content">
-                        <p>9.1 These Terms shall be governed by and construed in accordance with the laws of New York
-                            State, without regard to its conflict of law provisions.</p>
-                        <p>
-                            9.2 All users of Daatt must comply with applicable laws and regulations related to payments,
-                            including anti-money laundering (AML) and know-your-customer (KYC) requirements.</p>
-                    </div>
-                </div>
-                <div class="front_content">
-                    <p class="inner_title">Contact Us</p>
-                    <div class="trams_content">
-                        <p>10.1 If you have any questions or concerns regarding these Terms or your seller account,
-                            please contact our support team.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <body>
+    <div class="sidebar">
+        <div class="headre_logo">
+            <a href="/Dashboard/dashboard.html">
+                <img src="./assets/images/headre_logo.svg" alt="logo">
+            </a>
+        </div>
+        <ul class="des_menu_list">
+            <li class="des_menu_item">
+                <a href="dashboard.html" class="menu_item_link">
+                    <i class="icon-icon-1"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="profile.html" class="menu_item_link ">
+                    <i class="icon-icon-2"></i>
+                    Profile
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="billing.html" class="menu_item_link active">
+                    <i class="icon-icon-3"></i>
+                    Billing
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="my-store.html" class="menu_item_link">
+                    <i class="icon-icon-4"></i>
+                    My Store
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="my-purchases.html" class="menu_item_link">
+                    <i class="icon-icon-5"></i>
+                    My purchases
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="my-products.html" class="menu_item_link">
+                    <i class="icon-icon-6"></i>
+                    My Products
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="community-forum.html" class="menu_item_link">
+                    <i class="icon-icon-7"></i>
+                    Community forum
+                </a>
+            </li>
+        </ul>
+        <div class="get_premium_box">
+            <div class="icon_in">
+                <img src="./assets/images/dummy.png" alt="dummy">
+            </div>
+            <p class="titel">Get Premium</p>
+            <p class="content">
+                Earn more money and increase your impact
+            </p>
+            <a href="#" class="upgrade_now_button">Upgrade Now</a>
+        </div>
+    </div>
+    <span class="overlay"></span>
+
+    <div class="content_main">
+        <div class="das_header">
+            <div class="burger_search">
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <button class="search_button_in"><i class="icon-icon-8"></i></button>
+                <form class="search_box">
+                    <input type="text" placeholder="Search here">
+                    <button class="search_button"><i class="icon-icon-8"></i></button>
+                </form>
+            </div>
+            <div class="fleg_user_log">
+                <div class="flag_icon">
+                    <img src="./assets/images/flag.png" alt="flag">
+                </div>
+                <div class="btn-group user_info_dropdown">
+                    <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static"
+                        aria-expanded="false">
+                        <span class="image_box"><img src="./assets/images/user.png" alt="user"></span>
+                        <span class="name_info">
+                            <span class="name_i">Bessie Cooper</span>
+                            <span class="name_immm">Administrator</span>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">My Account</button></li>
+                        <li><button class="dropdown-item" type="button">Log Out</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page_content">
+            <div class="page-header">
+                <div class="left">
+                    <h1 class="des_main_title">Billing</h1>
+                    <div class="bredcrump">
+                        <p class="das_sub_title">Home - Billing</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="buyer-tab" data-bs-toggle="tab" data-bs-target="#buyer"
+                                type="button" role="tab" aria-controls="buyer" aria-selected="false">Buyer</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="seller-tab" data-bs-toggle="tab"
+                                data-bs-target="#seller" type="button" role="tab" aria-controls="seller"
+                                aria-selected="true">Seller</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content page-body billing_infomation">
+                <div class="tab-pane fade show active" id="seller" role="tabpanel" aria-labelledby="buyer-tab">
+                    <div class="buyer_current_plan">
+                        <div class="des_box basic_plan_info">
+                            <div class="current_plan_box">
+                                <p class="des_title">Current Plan</p>
+                                <div class="basic_info_plan">
+                                    <p class="basic_text">Basic Plan</p>
+                                    <p class="most_text">Our most popular plan</p>
+                                </div>
+                                <div class="active_date_box">
+                                    <p class="basic_text">Active until July 20, 2023</p>
+                                    <p class="most_text">We will send you a notification upon subscription renewal</p>
+                                </div>
+                                <div class="button_group">
+                                    <button class="new_btn">Change Plan</button>
+                                    <button class="cancle_button">Cancel subscription</button>
+                                </div>
+                            </div>
+                            <div class="available_plan_box">
+                                <p class="des_title">Available Plan</p>
+                                <div class="basic_info_plan">
+                                    <p class="basic_text">Basic Plan</p>
+                                    <p class="most_text">Our most popular plan</p>
+                                </div>
+                                <button class="new_btn">Move to Premium</button>
+                            </div>
+                        </div>
+                        <div class="row mar_top">
+                            <div class="col-lg-6">
+                                <div class="des_box total_credits_left">
+                                    <div class="box_title_in">Total Credits Left</div>
+                                    <div class="box_content_in">
+                                        <div class="wallat_info">
+                                            <div class="main_balance">
+                                                <div class="image_box">
+                                                    <img src="./assets/images/wallet.png" alt="wallet">
+                                                </div>
+                                                <div class="total_balance">
+                                                    <p class="text">Main Balance</p>
+                                                    <p class="number">6,732.66</p>
+                                                </div>
+                                            </div>
+                                            <button class="new_btn">Add Credits</button>
+                                        </div>
+                                        <p class="con_text">Credits valid while your plan stays the same. If you
+                                            downgrade,
+                                            you will lose your credit benefits. For policy details, click here. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="des_box total_credits_left total_savings_box">
+                                    <p class="box_title_in">Total Savings</p>
+                                    <div class="total_savings_list">
+                                        <div class="spent_total">
+                                            <p class="title_i">Total Spent</p>
+                                            <p class="price_inn">$1,260.66</p>
+                                        </div>
+                                        <div class="savings_total">
+                                            <p class="title_i">Savings</p>
+                                            <p class="price_inn">$460.53</p>
+                                        </div>
+                                    </div>
+                                    <p class="upgrade_text">Upgrade your account for more discounts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mar_top">
+                            <div class="col-lg-6">
+                                <div class="des_box total_credits_left billing_information_inn">
+                                    <p class="box_title_in">Billing Information</p>
+                                    <div class="commin_billing">
+                                        <div class="name_icon_infom">
+                                            <div class="name_icon">
+                                                <div class="icon">
+                                                    <i class="icon-icon-13"></i>
+                                                </div>
+                                                <div class="name_user_text">
+                                                    <p class="text">Cardholder</p>
+                                                    <p class="name">Franklin Jr.</p>
+                                                </div>
+                                            </div>
+                                            <button class="new_btn" data-bs-toggle="modal"
+                                                data-bs-target="#termsofServiceUpdate">Update Credit Card
+                                                Information</button>
+                                        </div>
+                                        <div class="card_exp_num">
+                                            <p class="card_num">**** **** **** 6588</p>
+                                            <div class="card_expiration">
+                                                Expiration Date
+                                                <p>08/23</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="des_box total_credits_left total_income_inn">
+                                    <p class="box_title_in">Total Income</p>
+                                    <div class="withdraw_info_inner">
+                                        <div class="withdraw_info">
+                                            <p class="price">$6,732.66</p>
+                                            <button class="new_btn">Withdraw</button>
+                                        </div>
+                                        <p class="add_banking">Add banking information to withdraw your income</p>
+                                        <div class="card_list">
+                                            <button class="card_item">
+                                                <sapn class="imag_box">
+                                                    <img src="./assets/images/card1.png" alt="Banking Info">
+                                                </sapn>
+                                                <sapn class="name">Banking Info</sapn>
+                                            </button>
+                                            <button class="card_item">
+                                                <span class="imag_box">
+                                                    <img src="./assets/images/card2.png" alt="Debit Card">
+                                                </span>
+                                                <span class="name">Debit Card</span>
+                                            </button>
+                                            <button class="card_item">
+                                                <span class="imag_box">
+                                                    <img src="./assets/images/card3.png" alt="Link Paypal">
+                                                </span>
+                                                <span class="name">Link Paypal</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mar_top">
+                            <div class="col-lg-6">
+                                <div class="des_box total_credits_left purchase_credit_history">
+                                    <p class="box_title_in">Purchase Credit History</p>
+                                    <div class="main_table scroll">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Products</th>
+                                                    <th>Subject</th>
+                                                    <th>Payment</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Products">
+                                                        <p>Ahavat yisrael Lesson</p>
+                                                    </td>
+                                                    <td data-label="Subject">
+                                                        <p>Chumash</p>
+                                                    </td>
+                                                    <td data-label="Payment">
+                                                        <p>$540</p>
+                                                    </td>
+                                                    <td data-label="Date">
+                                                        <p>10 May, 2023</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Products">
+                                                        <p>Alef Bais Memory Game</p>
+                                                    </td>
+                                                    <td data-label="Subject">
+                                                        <p>Chumash</p>
+                                                    </td>
+                                                    <td data-label="Payment">
+                                                        <p>$840</p>
+                                                    </td>
+                                                    <td data-label="Date">
+                                                        <p>8 feb, 2023</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Products">
+                                                        <p>Ahavat yisrael Lesson</p>
+                                                    </td>
+                                                    <td data-label="Subject">
+                                                        <p>Chumash</p>
+                                                    </td>
+                                                    <td data-label="Payment">
+                                                        <p>$840</p>
+                                                    </td>
+                                                    <td data-label="Date">
+                                                        <p>8 feb, 2023</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Products">
+                                                        <p>Ahavat yisrael Lesson</p>
+                                                    </td>
+                                                    <td data-label="Subject">
+                                                        <p>Chumash</p>
+                                                    </td>
+                                                    <td data-label="Payment">
+                                                        <p>$840</p>
+                                                    </td>
+                                                    <td data-label="Date">
+                                                        <p>8 feb, 2023</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="des_box total_credits_left purchase_credit_history">
+                                    <p class="box_title_in">Billing History</p>
+                                    <div class="main_table scroll">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Pricing plan</th>
+                                                    <th>Payment</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Pricing plan">
+                                                        <p>Basic</p>
+                                                    </td>
+                                                    <td data-label="Payment">
+                                                        <p>$540</p>
+                                                    </td>
+                                                    <td data-label="Date">
+                                                        <p>10 May, 2023</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Pricing plan">
+                                                        <p>Premium</p>
+                                                    </td>
+                                                    <td data-label="Payment">
+                                                        <p>$850</p>
+                                                    </td>
+                                                    <td data-label="Date">
+                                                        <p>8 feb, 2023</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Pricing plan">
+                                                        <p>Basic</p>
+                                                    </td>
+                                                    <td data-label="Payment">
+                                                        <p>$540</p>
+                                                    </td>
+                                                    <td data-label="Date">
+                                                        <p>10 May, 2023</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Pricing plan">
+                                                        <p>Premium</p>
+                                                    </td>
+                                                    <td data-label="Payment">
+                                                        <p>$850</p>
+                                                    </td>
+                                                    <td data-label="Date">
+                                                        <p>8 feb, 2023</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="des_box total_credits_left mar_top">
+                            <p class="box_title_in">Tax Information</p>
+                            <div class="tax_information_box">
+                                <div class="dropzone-root-group upload-images-group" id="dropzone">
+                                    <form class="dropzone needsclick" id="my-awesome-dropzone" action="assets/images">
+                                        <div class="dz-message needsclick">
+                                            <div class="uplod_text">
+                                                <p class="tex_one">Upload tax documents</p>
+                                                <p class="tex_one">or</p>
+                                                <p class="information">Tax information must be uploaded upon reaching
+                                                    the $600 threshold. Click here for tax form.</p>
+                                                <div class="select_files">
+                                                    Select Files
+                                                </div>
+                                                <p class="sub_tex">Maximum upload file size 300 MB</p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="buyer" role="tabpanel" aria-labelledby="seller-tab">
+                    seller
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="termsofServiceUpdate" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="trams_title">Terms of Service Update</p>
+                    <div class="front_content">
+                        <p class="inner_title">Terms and Conditions for Sellers</p>
+                        <div class="trams_content">
+                            <p>Please read these Terms and Conditions ("Terms") carefully before becoming a seller on
+                                Daatt.
+                                These Terms govern your relationship with Daatt and your use of the platform as a
+                                seller. By
+                                signing up as a seller and using our platform, you agree to be bound by these Terms. If
+                                you
+                                do not agree to these Terms, you may not become a seller on Daatt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">Seller Account</p>
+                        <div class="trams_content">
+                            <p>1.1 To become a seller on Daatt, you must create a seller account and provide accurate
+                                and
+                                complete information.
+                            </p>
+                            <p>1.2 You are responsible for maintaining the security of your account and keeping your
+                                login
+                                credentials confidential.</p>
+                            <p>1.3 You must be at least 18 years old or of legal age in your jurisdiction to become a
+                                seller
+                                on Daatt.</p>
+                            <p>1.4 It is your responsibility to ensure that their contact information is accurate and up
+                                to
+                                date to receive important notifications.</p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">
+                            Resource Listing and Pricing</p>
+                        <div class="trams_content">
+                            <p>2.1 As a seller, you are responsible for creating accurate and informative listings for
+                                your
+                                resources.</p>
+                            <p>2.2 You must provide clear and honest descriptions, including relevant details, grade
+                                levels,
+                                subject areas, and any other applicable information.</p>
+                            <p>2.3 You have the freedom to set your own prices for your resources, but they must comply
+                                with
+                                our pricing guidelines and be reasonable</p>
+                            <p>2.4 Daatt reserves the right to review and moderate resource listings to ensure
+                                compliance
+                                with our policies and guidelines, making sure that the materials posted are appropriate
+                                for
+                                a frum, religious Jewish demographic.</p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">Pricing and Currency</p>
+                        <div class="trams_content">
+                            <p>3.1 Prices for resources listed on Daatt are displayed in the currency specified by the
+                                seller.</p>
+                            <p>3.2 Buyers will be charged in the currency specified by the seller at the time of
+                                purchase.
+                            </p>
+                            <p>3.3 Currency conversion fees may apply if the buyer's currency differs from the seller's
+                                currency.</p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">Intellectual Property Rights</p>
+                        <div class="trams_content">
+                            <p>4.1 By uploading and listing resources on Daatt, you represent and warrant that you own
+                                or
+                                have the necessary rights to distribute the content.</p>
+                            <p>4.2 You grant Daatt a non-exclusive, worldwide, royalty-free license to use, reproduce,
+                                modify, adapt, and distribute your listed resources for promotional purposes within the
+                                Daatt platform.</p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">Sales and Payments</p>
+                        <div class="trams_content">
+                            <p>5.1 When a buyer purchases your resource, you are responsible for delivering the resource
+                                to
+                                the buyer promptly and as described in the listing.</p>
+                            <p>5.2 Daatt will handle payment processing on your behalf and deduct applicable fees,
+                                commissions, and taxes according to the agreed terms.</p>
+                            <p>5.3 Daatt facilitates payment processing for transactions between buyers and sellers on
+                                the
+                                platform.</p>
+                            <p>5.4 All payments made through Daatt will be processed securely using trusted third-party
+                                payment gateways.</p>
+                            <p>5.5 Payments will be processed and disbursed to your designated payment account on a
+                                regular
+                                schedule, as per your designation.</p>
+                            <p>5.6 Continued use of the platform after the changes have been made will constitute your
+                                acceptance of the modified payment policies.</p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">Fees, Taxes and Commissions</p>
+                        <div class="trams_content">
+                            <p>5.1 Daatt charges fees and commissions on sales made through the platform.</p>
+                            <p>5.2 The specific fees and commission rates applicable to sellers are outlined in the
+                                seller
+                                agreement or pricing policy, and can be found on the website under “pricing”.</p>
+                            <p>5.3 Sellers are responsible for determining and complying with any applicable taxes
+                                related
+                                to their sales on Daatt.</p>
+                            <p>5.4 Daatt reserves the right to modify the fees and commission rates, and any changes
+                                will be
+                                communicated to sellers in advance.</p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">Seller Conduct</p>
+                        <div class="trams_content">
+                            <p>5.1 As a seller on Daatt, you agree to conduct yourself professionally and treat buyers
+                                and
+                                other users with respect and courtesy.</p>
+                            <p>5.2 You must adhere to Daatt's policies and guidelines, including our content standards,
+                                code
+                                of conduct, and any additional guidelines specific to sellers.</p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">Refunds and Disputes</p>
+                        <div class="trams_content">
+                            <p>6.1 As a seller, you are responsible for handling any refund or dispute requests from
+                                buyers
+                                promptly and in good faith.</p>
+                            <p>6.2 Daatt may step in to mediate and resolve disputes if necessary, and our decisions
+                                will be
+                                final and binding.</p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">Termination</p>
+                        <div class="trams_content">
+                            <p>7.1 Daatt reserves the right to suspend or terminate your seller account if you violate
+                                these
+                                Terms or engage in any prohibited activities.</p>
+                            <p>7.2 You may also terminate your seller account at any time.</p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">Modifications to Terms</p>
+                        <div class="trams_content">
+                            <p>8.1 Daatt reserves the right to modify these Terms at any time. Any changes will be
+                                communicated to you through the platform or by email.</p>
+                            <p>8.2 Continued use of the platform after the changes have been made will constitute your
+                                acceptance of the modified Terms.</p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">Governing Law</p>
+                        <div class="trams_content">
+                            <p>9.1 These Terms shall be governed by and construed in accordance with the laws of New
+                                York
+                                State, without regard to its conflict of law provisions.</p>
+                            <p>
+                                9.2 All users of Daatt must comply with applicable laws and regulations related to
+                                payments,
+                                including anti-money laundering (AML) and know-your-customer (KYC) requirements.</p>
+                        </div>
+                    </div>
+                    <div class="front_content">
+                        <p class="inner_title">Contact Us</p>
+                        <div class="trams_content">
+                            <p>10.1 If you have any questions or concerns regarding these Terms or your seller account,
+                                please contact our support team.</p>
+                        </div>
+                    </div>
+                    <div class="community_guidelines">
+                        <div class="ceckout_box">
+                            <input type="checkbox" id="community">
+                            <label for="community">I have read and agree to the Terms and Conditions and <a
+                                    href="#">Community Guidelines</a></label>
+                        </div>
+                        <div class="ceckout_box">
+                            <input type="checkbox" id="agree">
+                            <label for="agree">I agree to abide by the community guidelines and will only post and share
+                                content that is appropriate for a religious Jewish community.</label>
+                        </div>
+                    </div>
+                    <button class="new_btn">Agree</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>

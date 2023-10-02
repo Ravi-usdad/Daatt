@@ -79,6 +79,40 @@ input:focus {
     border: 1px solid var(--orange);
 }
 
+.ceckout_box input {
+    display: none;
+}
+
+.ceckout_box label {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    color: var(--black);
+    align-items: center;
+    cursor: pointer;
+}
+
+.ceckout_box label::before {
+    content: '';
+    display: block;
+    min-width: 30px;
+    height: 30px;
+    background-color: #F4F4F4;
+    border-radius: 4px;
+    border: 1px solid #E4E4E4;
+}
+
+.ceckout_box input:checked~label::before {
+    background-color: var(--green);
+    background-image: url('../images/write.png');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center;
+}
+
 .new_btn {
     border: 1px solid var(--green);
     border-radius: 10px;
@@ -103,12 +137,18 @@ input:focus {
     width: 3px;
 }
 
-.scroll::-webkit-scrollbar-track {
+#termsofServiceUpdate.modal.show .modal-dialog .modal-content .modal-body::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroll::-webkit-scrollbar-track,
+#termsofServiceUpdate.modal.show .modal-dialog .modal-content .modal-body::-webkit-scrollbar-track {
     border-radius: 24px;
     background: #D9D9D9;
 }
 
-.scroll::-webkit-scrollbar-thumb {
+.scroll::-webkit-scrollbar-thumb,
+#termsofServiceUpdate.modal.show .modal-dialog .modal-content .modal-body::-webkit-scrollbar-thumb {
     background: #9F9F9F;
     border-radius: 24px;
     width: 5px;
@@ -3327,6 +3367,30 @@ input:focus {
     text-align: left;
 }
 
+.community_guidelines {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.community_guidelines .ceckout_box label {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.community_guidelines .ceckout_box label a {
+    color: var(--green);
+}
+
+.community_guidelines .ceckout_box label a:hover {
+    color: var(--orange);
+}
+
+.community_guidelines .ceckout_box label::before {
+    background: transparent;
+}
+
 @media(max-width: 1600px) {
     .my_dashboard.dashboard .stats-main .stats-points {
         grid-template-columns: repeat(3, 1fr);
@@ -3403,3 +3467,114 @@ input:focus {
 }
 
 /* my_dashboard css End */
+
+/* my Purchases Page Css Strat */
+
+.my_purchases_box {
+    padding: 30px;
+}
+
+.search_box_filter {
+    display: flex;
+    border: 1px solid #BEBEBE;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.search_box_filter input {
+    border: 0;
+    padding: 0 20px;
+}
+
+.all_grades_subjects {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.all_grades_subjects .select2-container--default .select2-selection--single {
+    padding: 0;
+    border: 0 !important;
+}
+
+.all_grades_subjects .select2-container {
+    max-width: 160px;
+    min-width: 160px;
+}
+
+.all_grades_subjects .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #050505;
+}
+
+.all_grades_subjects .select2-container--default .select2-selection--single .select2-selection__arrow::before {
+    right: 0;
+}
+
+.all_grades_subjects .all_grades,
+.all_grades_subjects .all_subjects {
+    padding: 13px 0 13px 20px;
+    border-left: 1px solid #BEBEBE;
+}
+
+.search_box_filter .search_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    padding: 17px 23px;
+    color: var(--white);
+    background: var(--green);
+    margin-left: 15px;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.search_box_filter .search_icon:hover {
+    background: var(--orange);
+}
+
+.search_box_filter .search_icon i {
+    display: flex;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.nav_tab_button .nav.nav-tabs{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #CECECE;
+}
+
+.nav_tab_button .nav.nav-tabs .nav-link{
+    max-width: 370px;
+    width: 100%;
+    padding: 0 10px 25px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #363636;
+    font-weight: 300;
+}
+.nav_tab_button .nav.nav-tabs .nav-link:focus,
+.nav_tab_button .nav.nav-tabs .nav-link:hover{
+    border: 0;
+    border: 1px solid transparent;
+}
+.nav_tab_button .nav.nav-tabs .nav-link.active{
+    color: var(--green);
+    font-weight: 500;
+    border: 0;
+    border-bottom: 1px solid var(--green);
+}
+.nav_tab_button .nav.nav-tabs .nav-link:hover{
+    color: var(--green);
+}
+
+.my_purchases_box .search_box_filter{
+    margin-bottom: 40px;
+}
+
+/* my Purchases Page Css End */
