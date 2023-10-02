@@ -4114,3 +4114,338 @@ input:focus {
 }
 
 /* my Purchases Page Css End */
+
+
+/* my-store page css start */
+
+/* profile-section */
+.my-store .profile-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 55px;
+}
+
+.my-store .profile-main .profile-top {
+    align-items: center;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: calc(100% - 290px);
+    width: 100%;
+    margin-left: auto;
+}
+
+.my-store .profile-main .profile-top .left .name {
+    color: #418985;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 13px;
+}
+.my-store .profile-main .profile-top .left .location {
+    color: #808080;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.my-store .profile-main .profile-top .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.my-store .profile-main .profile-top .right .box {
+    max-width: 90px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.my-store .profile-main .profile-top .right .box .icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 7px;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.my-store .profile-main .profile-top .right .box .number {
+    color: #1877F2;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 21.383px;
+    padding: 7px;
+}
+
+.my-store .profile-main .profile-top .right .box:nth-child(1) {
+    border-color: #1877F2;
+}
+.my-store .profile-main .profile-top .right .box:nth-child(1) .icon-text {
+    background-color: #1877F2;
+}
+
+.my-store .profile-main .profile-top .right .box:nth-child(1) .number {
+    color: #1877F2;
+}
+
+.my-store .profile-main .profile-top .right .box:nth-child(2) {
+    border-color: #E60023;
+}
+.my-store .profile-main .profile-top .right .box:nth-child(2) .icon-text {
+    background-color: #E60023;
+}
+.my-store .profile-main .profile-top .right .box:nth-child(2) .number {
+    color: #E60023;
+}
+
+.my-store .profile-main .profile-top .right .box:nth-child(3) {
+    border-color: #0073B1;
+}
+.my-store .profile-main .profile-top .right .box:nth-child(3) .icon-text {
+    background-color: #0073B1;
+}
+.my-store .profile-main .profile-top .right .box:nth-child(3) .number {
+    color: #0073B1;
+}
+
+.my-store .profile-main .profile-bottom {
+    padding: 20px 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+}
+
+.my-store .profile-main .profile-bottom .left {
+    padding-right: 80px;
+    border-right: 1px solid #E9E9E9;
+}
+
+.my-store .profile-main .profile-bottom .left .user-info {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.my-store .profile-main .profile-bottom .left .user-info .user-image {
+    max-width: 220px;
+    min-width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    margin-top: -150px;
+}
+
+.my-store .profile-main .profile-bottom .left .store-name  {
+    color: #418985;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.my-store .profile-main .profile-bottom .left .store-link  {
+    color: #545454;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    text-decoration-line: underline;
+}
+
+.my-store .profile-main .profile-bottom .left .user-desc .desc-title {
+    color: #DE7243;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+} 
+
+.my-store .profile-main .profile-bottom .left .user-desc .text {
+    color: #545454;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.my-store .profile-main .profile-bottom .right {
+    padding-left: 80px;
+}
+
+.my-store .profile-main .profile-bottom .right .bio-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #E79637;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.my-store .profile-main .profile-bottom .right .bio-title .edit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    background-color: #92C6C11A;
+    color: #000;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.my-store .profile-main .profile-bottom .right .bio-detail {
+    margin-bottom: 30px;
+    color: #545454;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.my-store .profile-main .profile-bottom .right .bio-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.my-store .profile-main .profile-bottom .right .bio-info .info-title {
+    color: #000;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.my-store .profile-main .profile-bottom .right .bio-info .info-detail {
+    color: #545454;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+@media(max-width: 1400px) {
+    .my-store .profile-main .profile-bottom .left .user-info .user-image {
+        max-width: 150px;
+        min-width: 150px;
+        height: 150px;
+        margin-top: -90px;
+    }
+    .my-store .profile-main .profile-bottom {
+        padding: 20px;
+    }
+    .my-store .profile-main .profile-top {
+        max-width: calc(100% - 190px);
+    }
+    .my-store .profile-main .profile-bottom .left .user-info {
+        gap: 20px;
+    }
+    .my-store .profile-main .profile-bottom .left {
+        padding-right: 30px;
+    }
+    .my-store .profile-main .profile-bottom .right {
+        padding-left: 30px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .my-store .profile-main .profile-top {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .my-store .profile-main .profile-bottom .left .user-info {
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .my-store .profile-main .profile-bottom .left .user-info .user-image {
+        margin-top: 0;
+    }
+    .my-store .profile-main .profile-bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .my-store .profile-main .profile-bottom .left {
+        padding-right: 0px;
+        border-right: 0;
+    }
+    .my-store .profile-main .profile-bottom .right {
+        padding-left: 0px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .my-store .profile-main { 
+        margin-bottom: 40px;
+    }
+    .my-store .profile-main .profile-top .left .name {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .my-store .profile-main .profile-top .left .location {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .my-store .profile-main .profile-bottom .left .user-desc .desc-title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .my-store .profile-main .profile-bottom .left .user-desc .text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .my-store .profile-main .profile-bottom .right .bio-title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .my-store .profile-main .profile-bottom .right .bio-detail {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .my-store .profile-main .profile-bottom .right .bio-info .info-title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .my-store .profile-main .profile-bottom .right .bio-info .info-detail {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .my-store .profile-main { 
+        margin-bottom: 30px;
+    }
+    .my-store .profile-main .profile-top {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 0 15px;
+    }
+}
+/* profile-section */
+
+/* tab-section */
+
+.my-store .tab-main .nav_tab_button .nav.nav-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.my-store .tab-main .nav_tab_button .nav.nav-tabs .nav-link {
+    max-width: unset;
+}
+
+.my-store .tab-main .nav_tab_button .nav.nav-tabs .nav-link.active {
+    background-color: transparent;
+}
+
+/* tab-section */
+
+/* my-store page css end */
