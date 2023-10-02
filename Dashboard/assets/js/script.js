@@ -109,6 +109,18 @@ $(document).ready(function () {
       allowClear: true
     });
   }
+  if ($("#all_grades").length) {
+    $("#all_grades").select2({
+      placeholder: "All Grades",
+      allowClear: true
+    });
+  }
+  if ($("#all_subjects").length) {
+    $("#all_subjects").select2({
+      placeholder: "All Subjects",
+      allowClear: true
+    });
+  }
 })
 
 
