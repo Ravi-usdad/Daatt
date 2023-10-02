@@ -121,6 +121,18 @@ $(document).ready(function () {
       allowClear: true
     });
   }
+  if ($("#all_types_ol").length) {
+    $("#all_types_ol").select2({
+      placeholder: "All Tyoe",
+      allowClear: true
+    });
+  }
+  if ($("#recently_opened").length) {
+    $("#recently_opened").select2({
+      placeholder: "Recently Opened",
+      allowClear: true
+    });
+  }
 })
 
 
