@@ -133,14 +133,14 @@ $(document).ready(function () {
       allowClear: true
     });
   }
-  if ($("#selectgrades").length) {
-    $("#selectgrades").select2({
+  if ($("#selectgrades1").length) {
+    $("#selectgrades1").select2({
       placeholder: "Select Grade/s",
       allowClear: true
     });
   }
-  if ($("#addfolder").length) {
-    $("#addfolder").select2({
+  if ($("#addfolder1").length) {
+    $("#addfolder1").select2({
       placeholder: "Add Folder",
       allowClear: true
     });

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <title>My Product</title>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/css/dropzone.min.css">
+    <link rel="stylesheet" href="./assets/font/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="headre_logo">
+            <a href="/Dashboard/dashboard.html">
+                <img src="./assets/images/headre_logo.svg" alt="logo">
+            </a>
+        </div>
+        <ul class="des_menu_list">
+            <li class="des_menu_item">
+                <a href="dashboard.html" class="menu_item_link">
+                    <i class="icon-icon-1"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="profile.html" class="menu_item_link ">
+                    <i class="icon-icon-2"></i>
+                    Profile
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="billing.html" class="menu_item_link">
+                    <i class="icon-icon-3"></i>
+                    Billing
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="my-store.html" class="menu_item_link">
+                    <i class="icon-icon-4"></i>
+                    My Store
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="my-purchases.html" class="menu_item_link">
+                    <i class="icon-icon-5"></i>
+                    My purchases
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="my-products.html" class="menu_item_link active">
+                    <i class="icon-icon-6"></i>
+                    My Products
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="community-forum.html" class="menu_item_link">
+                    <i class="icon-icon-7"></i>
+                    Community forum
+                </a>
+            </li>
+        </ul>
+        <div class="get_premium_box">
+            <div class="icon_in">
+                <img src="./assets/images/dummy.png" alt="dummy">
+            </div>
+            <p class="titel">Get Premium</p>
+            <p class="content">
+                Earn more money and increase your impact
+            </p>
+            <a href="#" class="upgrade_now_button">Upgrade Now</a>
+        </div>
+    </div>
+    <span class="overlay"></span>
+
+    <div class="content_main">
+        <div class="das_header">
+            <div class="burger_search">
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <button class="search_button_in"><i class="icon-icon-8"></i></button>
+                <form class="search_box">
+                    <input type="text" placeholder="Search here">
+                    <button class="search_button"><i class="icon-icon-8"></i></button>
+                </form>
+            </div>
+            <div class="fleg_user_log">
+                <div class="flag_icon">
+                    <img src="./assets/images/flag.png" alt="flag">
+                </div>
+                <div class="btn-group user_info_dropdown">
+                    <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static"
+                        aria-expanded="false">
+                        <span class="image_box"><img src="./assets/images/user.png" alt="user"></span>
+                        <span class="name_info">
+                            <span class="name_i">Bessie Cooper</span>
+                            <span class="name_immm">Administrator</span>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">My Account</button></li>
+                        <li><button class="dropdown-item" type="button">Log Out</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page_content">
+            <div class="page-header">
+                <div class="left">
+                    <h1 class="des_main_title">My Purchases</h1>
+                    <div class="bredcrump">
+                        <p class="das_sub_title">Home - My Purchases</p>
+                    </div>
+                </div>
+            </div>
+            <div class="des_box my_product_section">
+                <div class="nav_tab_button">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="purchases-tab" data-bs-toggle="tab"
+                            data-bs-target="#purchases" type="button" role="tab" aria-controls="purchases"
+                            aria-selected="true">Single Product</button>
+                        <button class="nav-link" id="collections-tab" data-bs-toggle="tab" data-bs-target="#collections"
+                            type="button" role="tab" aria-controls="collections" aria-selected="false">Bundle of
+                            Products</button>
+                    </div>
+                </div>
+                <div class="products_content_inner">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="purchases" role="tabpanel"
+                            aria-labelledby="purchases-tab">
+                            Single Product
+                        </div>
+                        <div class="tab-pane fade" id="collections" role="tabpanel" aria-labelledby="collections-tab">
+                            Bundle of Products
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/owl.carousel.js"></script>
+    <script src="./assets/js/select2.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

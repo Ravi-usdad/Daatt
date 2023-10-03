@@ -3888,29 +3888,35 @@ input:focus {
 .create_collection_no .new_btn i {
     display: flex;
 }
-#createcollectionpopup.modal.show .modal-dialog{
+
+#createcollectionpopup.modal.show .modal-dialog {
     max-width: 950px;
 }
 
-#createcollectionpopup.modal.show .modal-dialog .modal-content{
+#createcollectionpopup.modal.show .modal-dialog .modal-content {
     border-radius: 20px;
 }
-#createcollectionpopup.modal.show .modal-dialog .modal-content .modal-title{
+
+#createcollectionpopup.modal.show .modal-dialog .modal-content .modal-title {
     font-size: 32px;
     line-height: 40px;
     font-weight: 400;
     color: var(--green);
 }
-#createcollectionpopup.modal.show .modal-dialog .modal-content .btn i{
+
+#createcollectionpopup.modal.show .modal-dialog .modal-content .btn i {
     color: var(--orange);
 }
 
-.createcollection_form{
+.createcollection_form {
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .createcollection_form .input_group input,
-.createcollection_form .input_group textarea{
+.createcollection_form .input_group textarea {
     padding: 20px 15px;
     font-size: 24px;
     width: 100%;
@@ -3920,9 +3926,68 @@ input:focus {
     border-radius: 10px;
 }
 
-.createcollection_form .select_grade .select2-container{
+.createcollection_form .select_grade .select2-container {
     width: 100% !important;
-} 
+}
+
+.createcollection_form .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.createcollection_form .select2-container--default .select2-selection--single {
+    padding: 24px 15px;
+}
+
+#createcollectionpopup.modal {
+    z-index: 20;
+}
+
+.modal-backdrop {
+    z-index: 19;
+}
+
+.createcollection_form .ceckout_box label {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.createcollection_form .button_group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.createcollection_form .button_group .cancel_button {
+    padding: 23px 33px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #979797;
+    border: 2px solid #E8E8E8;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+
+.createcollection_form .button_group .new_btn {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 23px 33px;
+}
+
+.createcollection_form .button_group .cancel_button:hover {
+    background: #E8E8E8;
+    color: var(--black);
+}
+#createcollectionpopup.modal.show .modal-dialog .modal-content .btn {
+    padding: 0;
+}
+#createcollectionpopup.modal.show .modal-dialog .modal-content .btn:focus{
+    box-shadow: none;
+    border: 0;
+    outline: none;
+}
 
 @media(max-width:1366px) {
 
@@ -4044,25 +4109,60 @@ input:focus {
         font-size: 18px;
         line-height: 24px;
     }
-    .create_collection_no .new_btn i{
+
+    .create_collection_no .new_btn i {
         display: flex;
         font-size: 18px;
         line-height: 18px;
     }
+
     .no_results p {
         font-size: 18px;
         line-height: 38px;
     }
+
     .ceckout_box label::before {
         min-width: 20px;
         height: 20px;
     }
+
     .ceckout_box input:checked~label::before {
         background-color: var(--green);
         background-image: url('../images/write.png');
         background-repeat: no-repeat;
         background-size: 10px;
         background-position: center;
+    }
+
+    #createcollectionpopup.modal.show .modal-dialog .modal-content .modal-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .createcollection_form .input_group input,
+    .createcollection_form .input_group textarea {
+        padding: 12px 15px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .createcollection_form .select2-container--default .select2-selection--single {
+        padding: 12px 10px;
+    }
+
+
+    .createcollection_form .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .createcollection_form .button_group{
+        gap: 20px;
+    }
+    .createcollection_form .button_group .cancel_button,
+    .createcollection_form .button_group .new_btn {
+        padding: 12px 25px;
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 
@@ -4090,7 +4190,10 @@ input:focus {
         width: 100%;
         flex: 1;
     }
-
+    #createcollectionpopup.modal.show .modal-dialog .modal-content .modal-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
 
 @media(max-width:767px) {
@@ -4150,7 +4253,8 @@ input:focus {
     .my_collections_list {
         grid-template-columns: repeat(2, 1fr);
     }
-    .select2-container--default .select2-selection--single .select2-selection__rendered{
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
         font-size: 16px;
         line-height: 20px;
     }
@@ -4198,6 +4302,12 @@ input:focus {
     .all_purchases_table .user_img {
         margin: 0;
         margin-left: auto;
+    }
+    .createcollection_form{
+        padding: 0;
+    }
+    .createcollection_form .button_group{
+        flex-direction: column;
     }
 }
 
@@ -4573,3 +4683,7 @@ input:focus {
 /* tab-section */
 
 /* my-store page css end */
+
+/* my product Page Start */
+
+/* my product Page End */
