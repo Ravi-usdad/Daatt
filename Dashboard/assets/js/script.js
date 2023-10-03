@@ -140,7 +140,7 @@ $(document).ready(function () {
     });
   }
   if ($("#addfolder1").length) {
-    $("#addfolder1").select2({
+    $("#addfolder").select2({
       placeholder: "Add Folder",
       allowClear: true
     });
@@ -203,76 +203,40 @@ chart.render();
 
 
 var options = {
-  series: [
-    {
-      name: "Earnings",
-      data: [28, 29, 33, 36, 32, 32, 33]
-    },
-    {
-      name: "Sales",
-      data: [12, 11, 14, 18, 17, 13, 13]
-    }
-  ],
+  series: [{
+    name: 'series1',
+    data: [31, 40, 35, 51, 42, 109, 100]
+  }, {
+    name: 'series2',
+    data: [11, 20, 15, 32, 34, 52, 41]
+  }],
   chart: {
     height: 350,
-    type: 'line',
-    dropShadow: {
-      enabled: true,
-      color: '#000',
-      top: 18,
-      left: 7,
-      blur: 10,
-      opacity: 0.2
-    },
-    toolbar: {
-      show: false
-    }
+    type: 'area'
   },
-  colors: ['#07E098', '#0095FF'],
   dataLabels: {
     enabled: true,
+    formatter: function (val) {
+      return val.toFixed(0); // Format the label as a whole number
+    },
   },
   stroke: {
     curve: 'smooth'
   },
-  grid: {
-    borderColor: '#e7e7e7',
-    row: {
-      colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-      opacity: 0.5
-    },
-  },
-  markers: {
-    size: 1
-  },
   xaxis: {
-    categories: [''],
-
+    type: 'datetime',
+    categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
   },
-  fill: {
-    type: 'gradient',
-    gradient: {
-      shadeIntensity: 1,
-      inverseColors: false,
-      opacityFrom: 0.5,
-      opacityTo: 0,
-      stops: [0, 90, 100]
+  tooltip: {
+    x: {
+      format: 'dd/MM/yy HH:mm'
     },
   },
-  yaxis: {
-    labels: false,
-    min: 5,
-    max: 40
-  },
-  legend: {
-    position: 'bottom',
-    horizontalAlign: 'center',
-    offsetY: 0,
-  }
 };
 
 var chart = new ApexCharts(document.querySelector("#sales-earnings"), options);
 chart.render();
+
 
 
 
@@ -389,3 +353,512 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#total-revenue"), options);
 chart.render();
+
+// 
+
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Define country data
+var countries = {
+  "AR": {
+    "country": "Argentina",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": ["argentinaLow", "argentinaHigh"]
+  },
+  "AT": {
+    "country": "Austria",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["austriaLow", "austriaHigh"]
+  },
+  "AU": {
+    "country": "Australia",
+    "continent_code": "OC",
+    "continent": "Oceania",
+    "maps": ["australiaLow", "australiaHigh"]
+  },
+  "BA": {
+    "country": "Bosnia and Herzegovina",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["bosniaHerzegovinaLow", "bosniaHerzegovinaHigh", "bosniaHerzegovinaCantonsLow", "bosniaHerzegovinaCantonsHigh"]
+  },
+  "BE": {
+    "country": "Belgium",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["belgiumLow", "belgiumHigh"]
+  },
+  "BG": {
+    "country": "Bulgaria",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["bulgariaLow", "bulgariaHigh"]
+  },
+  "BR": {
+    "country": "Brazil",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": ["brazilLow", "brazilHigh"]
+  },
+  "BY": {
+    "country": "Belarus",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["belarusLow", "belarusHigh"]
+  },
+  "CH": {
+    "country": "Switzerland",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["switzerlandLow", "switzerlandHigh"]
+  },
+  "CL": {
+    "country": "Chile",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": ["chileLow", "chileHigh"]
+  },
+  "CN": {
+    "country": "China",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": ["chinaLow", "chinaHigh"]
+  },
+  "CO": {
+    "country": "Colombia",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": ["colombiaLow", "colombiaHigh", "colombiaMuniLow", "colombiaMuniHigh"]
+  },
+  "CZ": {
+    "country": "Czech Republic",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["czechiaLow", "czechiaHigh"]
+  },
+  "DE": {
+    "country": "Germany",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["germanyLow", "germanyHigh"]
+  },
+  "DK": {
+    "country": "Denmark",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["denmarkLow", "denmarkHigh"]
+  },
+  "EE": {
+    "country": "Estonia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["estoniaLow", "estoniaHigh"]
+  },
+  "EG": {
+    "country": "Egypt",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": ["egyptLow", "egyptHigh"]
+  },
+  "ES": {
+    "country": "Spain",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["spainLow", "spainHigh", "spainProvincesLow", "spainProvincesHigh"]
+  },
+  "FI": {
+    "country": "Finland",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["finlandLow", "finlandHigh"]
+  },
+  "FR": {
+    "country": "France",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["franceLow", "franceHigh", "franceDepartmentsLow", "franceDepartmentsHigh"]
+  },
+  "GB": {
+    "country": "United Kingdom",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["ukLow", "ukHigh", "ukCountiesLow", "ukCountiesHigh"]
+  },
+  "GE": {
+    "country": "Georgia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["georgiaLow", "georgiaHigh", "georgiaSouthOssetiaLow", "georgiaSouthOssetiaHigh"]
+  },
+  "GR": {
+    "country": "Greece",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["greeceLow", "greeceHigh"]
+  },
+  "HR": {
+    "country": "Croatia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["croatiaLow", "croatiaHigh"]
+  },
+  "HU": {
+    "country": "Hungary",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["hungaryLow", "hungaryHigh"]
+  },
+  "IE": {
+    "country": "Ireland",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["irelandLow", "irelandHigh"]
+  },
+  "IL": {
+    "country": "Israel",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": ["israelLow", "israelHigh", "israelPalestineLow", "israelPalestineHigh"]
+  },
+  "IR": {
+    "country": "Iran, Islamic Republic of",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": []
+  },
+  "IS": {
+    "country": "Iceland",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["icelandLow", "icelandHigh"]
+  },
+  "IT": {
+    "country": "Italy",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["italyLow", "italyHigh"]
+  },
+  "JM": {
+    "country": "Jamaica",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": []
+  },
+  "JP": {
+    "country": "Japan",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": ["japanLow", "japanHigh"]
+  },
+  "KR": {
+    "country": "Korea, Republic of",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": ["southKoreaLow", "southKoreaHigh"]
+  },
+  "KZ": {
+    "country": "Kazakhstan",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["kazakhstanLow", "kazakhstanHigh"]
+  },
+  "LI": {
+    "country": "Liechtenstein",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["liechtensteinLow", "liechtensteinHigh"]
+  },
+  "LV": {
+    "country": "Latvia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["latviaLow", "latviaHigh"]
+  },
+  "MA": {
+    "country": "Morocco",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": ["moroccoLow", "moroccoHigh"]
+  },
+  "MD": {
+    "country": "Moldova, Republic of",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["moldovaLow", "moldovaHigh"]
+  },
+  "MX": {
+    "country": "Mexico",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": ["mexicoLow", "mexicoHigh"]
+  },
+  "NL": {
+    "country": "Netherlands",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["netherlandsLow", "netherlandsHigh"]
+  },
+  "NO": {
+    "country": "Norway",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["norwayLow", "norwayHigh"]
+  },
+  "PL": {
+    "country": "Poland",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["polandLow", "polandHigh"]
+  },
+  "PT": {
+    "country": "Portugal",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["portugalLow", "portugalHigh", "portugalRegionsLow", "portugalRegionsHigh"]
+  },
+  "PY": {
+    "country": "Paraguay",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": ["paraguayLow", "paraguayHigh"]
+  },
+  "RO": {
+    "country": "Romania",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["romaniaLow", "romaniaHigh"]
+  },
+  "RS": {
+    "country": "Serbia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["serbiaLow", "serbiaHigh", "serbiaNoKosovoLow", "serbiaNoKosovoHigh"]
+  },
+  "RU": {
+    "country": "Russian Federation",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["russiaLow", "russiaHigh", "russiaCrimeaLow", "russiaCrimeaHigh"]
+  },
+  "SE": {
+    "country": "Sweden",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["swedenLow", "swedenHigh"]
+  },
+  "SI": {
+    "country": "Slovenia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["sloveniaLow", "sloveniaHigh", "sloveniaRegionsLow", "sloveniaRegionsHigh"]
+  },
+  "SK": {
+    "country": "Slovakia",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["slovakiaLow", "slovakiaHigh"]
+  },
+  "TR": {
+    "country": "Turkey",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["turkeyLow", "turkeyHigh"]
+  },
+  "UA": {
+    "country": "Ukraine",
+    "continent_code": "EU",
+    "continent": "Europe",
+    "maps": ["ukraineLow", "ukraineHigh"]
+  },
+  "US": {
+    "country": "United States",
+    "continent_code": "NA",
+    "continent": "North America",
+    "maps": ["usaLow", "usaHigh", "usaTerritoriesLow", "usaTerritoriesHigh", "usaTerritories2Low", "usaTerritories2High"]
+  },
+  "UY": {
+    "country": "Uruguay",
+    "continent_code": "SA",
+    "continent": "South America",
+    "maps": []
+  },
+  "UZ": {
+    "country": "Uzbekistan",
+    "continent_code": "AS",
+    "continent": "Asia",
+    "maps": ["uzbekinstanLow", "uzbekinstanHigh"]
+  },
+  "ZA": {
+    "country": "South Africa",
+    "continent_code": "AF",
+    "continent": "Africa",
+    "maps": ["southAfricaLow", "southAfricaHigh"]
+  }
+};
+
+
+var continents = {
+  "AF": 0,
+  "AN": 1,
+  "AS": 2,
+  "EU": 3,
+  "NA": 4,
+  "OC": 5,
+  "SA": 6
+}
+
+// Create map instance
+var chart = am4core.create("chartdiv", am4maps.MapChart);
+chart.projection = new am4maps.projections.Mercator();
+chart.geodataNames = am4geodata_lang_RU;
+
+// Create map polygon series for world map
+var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
+worldSeries.useGeodata = true;
+worldSeries.geodata = am4geodata_worldLow;
+worldSeries.exclude = ["AQ"];
+
+var worldPolygon = worldSeries.mapPolygons.template;
+worldPolygon.tooltipText = "{name}";
+worldPolygon.nonScalingStroke = true;
+worldPolygon.strokeOpacity = 0.5;
+worldPolygon.fill = am4core.color("#eee");
+worldPolygon.propertyFields.fill = "color";
+
+var hs = worldPolygon.states.create("hover");
+hs.properties.fill = chart.colors.getIndex(9);
+
+
+// Create country specific series (but hide it for now)
+var countrySeries = chart.series.push(new am4maps.MapPolygonSeries());
+countrySeries.useGeodata = true;
+countrySeries.hide();
+countrySeries.geodataSource.events.on("done", function (ev) {
+  worldSeries.hide();
+  countrySeries.show();
+});
+
+var countryPolygon = countrySeries.mapPolygons.template;
+countryPolygon.tooltipText = "{name}";
+countryPolygon.nonScalingStroke = true;
+countryPolygon.strokeOpacity = 0.5;
+countryPolygon.fill = am4core.color("#eee");
+
+var hs = countryPolygon.states.create("hover");
+hs.properties.fill = chart.colors.getIndex(9);
+
+var iranLow = "https://raw.githubusercontent.com/BesoKakulia/amCharts-missing-geojsons/master/countries/iranLow.json";
+var jamaicaLow = "https://github.com/BesoKakulia/amCharts-missing-geojsons/blob/master/countries/jamaicaLow.json";
+var uruguayLow = "https://raw.githubusercontent.com/BesoKakulia/amCharts-missing-geojsons/master/countries/uruguayLow.json";
+
+// Set up drill-down to countries events
+worldPolygon.events.on("hit", function (ev) {
+  ev.target.series.chart.zoomToMapObject(ev.target);
+  var map = ev.target.dataItem.dataContext.map;
+  if (map) {
+    ev.target.isHover = false;
+    countrySeries.geodataSource.url = "https://www.amcharts.com/lib/4/geodata/json/" + map + ".json";
+    countrySeries.geodataSource.load();
+  }
+});
+
+// Define SVG path for target icon
+var targetSVG = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
+// create city markers
+var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+imageSeries.id = "markers";
+
+// define template
+var imageSeriesTemplate = imageSeries.mapImages.template;
+
+var circle = imageSeriesTemplate.createChild(am4core.Sprite);
+circle.scale = 0.4;
+circle.fill = new am4core.InterfaceColorSet().getFor("alternativeBackground");
+circle.path = targetSVG;
+
+imageSeriesTemplate.propertyFields.latitude = "latitude";
+imageSeriesTemplate.propertyFields.longitude = "longitude";
+imageSeriesTemplate.nonScaling = true;
+imageSeriesTemplate.horizontalCenter = "middle";
+imageSeriesTemplate.verticalCenter = "middle";
+imageSeriesTemplate.width = 8;
+imageSeriesTemplate.height = 8;
+imageSeriesTemplate.tooltipText = "{title}";
+imageSeriesTemplate.fill = am4core.color("#000");
+
+// set zoom events
+imageSeries.events.on("datavalidated", updateImageVisibility);
+chart.events.on("zoomlevelchanged", updateImageVisibility);
+
+function updateImageVisibility(ev) {
+  var chart = ev.target.baseSprite;
+  var series = chart.map.getKey("markers");
+  series.mapImages.each(function (image) {
+    if (image.dataItem.dataContext.minZoomLevel) {
+      if (image.dataItem.dataContext.minZoomLevel >= chart.zoomLevel && imageSeries.data.country !== "ES") {
+        image.hide();
+      }
+      else {
+        image.show();
+      }
+    }
+  });
+}
+
+imageSeries.data = [
+  {
+    "minZoomLevel": 3.99,
+    "svgPath": targetSVG,
+    "country": "PR",
+    "title": "Lisbon",
+    "latitude": 38.7072,
+    "longitude": -9.1355
+  },
+  // {
+  //   "minZoomLevel": 3,
+  //   "svgPath": targetSVG,
+  //   "country": "ES",
+  //   "title": "Madrid",
+  //   "latitude": 40.4167,
+  //   "longitude": -3.7033
+  // }
+];
+
+// Set up data for countries
+var data = [];
+for (var id in countries) {
+  if (countries.hasOwnProperty(id)) {
+    var country = countries[id];
+    if (country.maps.length) {
+      data.push({
+        id: id,
+        color: chart.colors.getIndex(continents[country.continent_code]),
+        map: country.maps[0]
+      });
+    }
+  }
+}
+worldSeries.data = data;
+
+// Zoom control
+chart.zoomControl = new am4maps.ZoomControl();
+chart.zoomControl.marginBottom = 690;
+
+var homeButton = new am4core.Button();
+homeButton.events.on("hit", function () {
+  worldSeries.show();
+  countrySeries.hide();
+  chart.goHome();
+});
+
+homeButton.icon = new am4core.Sprite();
+homeButton.padding(7, 5, 7, 5);
+homeButton.width = 30;
+iconPath = "M16,8 L14,8 L14,16 L10,16 L10,10 L6,10 L6,16 L2,16 L2,8 L0,8 L8,0 L16,8 Z M16,8";
+homeButton.icon.path = iconPath;
+homeButton.marginBottom = 3;
+homeButton.parent = chart.zoomControl;
+homeButton.insertBefore(chart.zoomControl.plusButton);
