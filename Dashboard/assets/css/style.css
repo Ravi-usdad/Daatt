@@ -4970,7 +4970,31 @@ input:focus {
     border: 1px solid #C8C8C8;
     border-radius: 10px;
 }
-.file_uplode{
-    
+
+.file_uplode .dropzone-root-group .dropzone {
+    width: 100%;
+    border: 1px solid #DE7243;
+    border-radius: 15px;
+    padding: 2rem 1rem 2rem 1rem;
+    background: #fff;
 }
+
+.file_uplode .uplod_text .icon {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.file_uplode .uplod_text .icon i {
+    font-size: 100px;
+    line-height: 100px;
+    display: flex;
+    color: var(--orange);
+}
+
+.file_uplode .img_content .upload_fil {
+    font-size: ;
+}
+
 /* uplode_new_Product Page Strat */
