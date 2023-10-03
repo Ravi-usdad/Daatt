@@ -148,6 +148,12 @@ $(document).ready(function () {
 })
 
 
+function dashboardfilter() {
+  var element = document.getElementById("my-products-main");
+  element.classList.toggle("category-filter-open");
+}
+
+
 var options = {
   series: [{
     name: 'Online Sales',
