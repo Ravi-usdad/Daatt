@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <title>Upload New Product</title>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/dropzone.min.css">
+    <link rel="stylesheet" href="./assets/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/css/dropzone.min.css">
+    <link rel="stylesheet" href="./assets/font/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="headre_logo">
+            <a href="/Dashboard/dashboard.html">
+                <img src="./assets/images/headre_logo.svg" alt="logo">
+            </a>
+        </div>
+        <ul class="des_menu_list">
+            <li class="des_menu_item">
+                <a href="dashboard.html" class="menu_item_link">
+                    <i class="icon-icon-1"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="profile.html" class="menu_item_link ">
+                    <i class="icon-icon-2"></i>
+                    Profile
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="billing.html" class="menu_item_link">
+                    <i class="icon-icon-3"></i>
+                    Billing
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="my-store.html" class="menu_item_link">
+                    <i class="icon-icon-4"></i>
+                    My Store
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="my-purchases.html" class="menu_item_link">
+                    <i class="icon-icon-5"></i>
+                    My purchases
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="my-products.html" class="menu_item_link active">
+                    <i class="icon-icon-6"></i>
+                    My Products
+                </a>
+            </li>
+            <li class="des_menu_item">
+                <a href="community-forum.html" class="menu_item_link">
+                    <i class="icon-icon-7"></i>
+                    Community forum
+                </a>
+            </li>
+        </ul>
+        <div class="get_premium_box">
+            <div class="icon_in">
+                <img src="./assets/images/dummy.png" alt="dummy">
+            </div>
+            <p class="titel">Get Premium</p>
+            <p class="content">
+                Earn more money and increase your impact
+            </p>
+            <a href="#" class="upgrade_now_button">Upgrade Now</a>
+        </div>
+    </div>
+    <span class="overlay"></span>
+
+    <div class="content_main">
+        <div class="das_header">
+            <div class="burger_search">
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+                <button class="search_button_in"><i class="icon-icon-8"></i></button>
+                <form class="search_box">
+                    <input type="text" placeholder="Search here">
+                    <button class="search_button"><i class="icon-icon-8"></i></button>
+                </form>
+            </div>
+            <div class="fleg_user_log">
+                <div class="flag_icon">
+                    <img src="./assets/images/flag.png" alt="flag">
+                </div>
+                <div class="btn-group user_info_dropdown">
+                    <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static"
+                        aria-expanded="false">
+                        <span class="image_box"><img src="./assets/images/user.png" alt="user"></span>
+                        <span class="name_info">
+                            <span class="name_i">Bessie Cooper</span>
+                            <span class="name_immm">Administrator</span>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">My Account</button></li>
+                        <li><button class="dropdown-item" type="button">Log Out</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page_content">
+            <div class="page-header">
+                <div class="left">
+                    <h1 class="des_main_title">Products</h1>
+                    <div class="bredcrump">
+                        <p class="das_sub_title">Home - Products</p>
+                    </div>
+                </div>
+            </div>
+            <div class="des_box  total_credits_left">
+                <p class="box_title_in">Upload New Product</p>
+                <form class="upload_new_product">
+                    <div class="input_group">
+                        <label for="title">Title <span>Required</span></label>
+                        <input type="text" id="title" placeholder="Name your product">
+                    </div>
+                    <div class="input_group">
+                        <label for="files">Files</label>
+                        <div class="file_uplode">
+                            <div class="dropzone-root-group upload-images-group" id="dropzone">
+                                <div class="dropzone needsclick" id="my-awesome-dropzone" action="assets/images">
+                                    <div class="dz-message needsclick">
+                                        <div class="uplod_text">
+                                            <div class="icon">
+                                                <i class="icon-icon-19"></i>
+                                            </div>
+                                            <div class="img_content">
+                                                <p class="upload_fil">Upload file</p>
+                                                <p class="drag_grop">or drag and drop</p>
+                                                <p class="upto">Up to 200 MB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <label for="previews">Product Previews</label>
+                        <div class="tab_upload_tab">
+                            <div class="nav_tab_button">
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="purchases-tab" data-bs-toggle="tab"
+                                        data-bs-target="#purchases" type="button" role="tab" aria-controls="purchases"
+                                        aria-selected="true">Auto generate thumbnails</button>
+                                    <button class="nav-link" id="collections-tab" data-bs-toggle="tab"
+                                        data-bs-target="#collections" type="button" role="tab"
+                                        aria-controls="collections" aria-selected="false">Upload thumbnails now</button>
+                                    <button class="nav-link" id="thumbnails-tab" data-bs-toggle="tab"
+                                        data-bs-target="#thumbnails" type="button" role="tab" aria-controls="thumbnails"
+                                        aria-selected="false">Upload thumbnails later</button>
+                                </div>
+                            </div>
+                            <div class="product_previews_content">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="purchases" role="tabpanel"
+                                        aria-labelledby="purchases-tab">
+                                        <div class="ppp_uplode">
+                                            <div class="dropzone-root-group upload-images-group" id="dropzone">
+                                                <div class="dropzone needsclick" id="my-awesome-dropzone"
+                                                    action="assets/images">
+                                                    <div class="dz-message needsclick">
+                                                        <div class="uplod_text">
+                                                            <div class="icon">
+                                                                <i class="icon-icon-19"></i>
+                                                            </div>
+                                                            <p>Thumbnails will generate once you upload your product
+                                                                file</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="collections" role="tabpanel"
+                                        aria-labelledby="collections-tab">
+                                        <div class="ppp_uplode">
+                                            <div class="dropzone-root-group upload-images-group" id="dropzone">
+                                                <div class="dropzone needsclick" id="my-awesome-dropzone"
+                                                    action="assets/images">
+                                                    <div class="dz-message needsclick">
+                                                        <div class="uplod_text">
+                                                            <div class="icon">
+                                                                <i class="icon-icon-19"></i>
+                                                            </div>
+                                                            <p>Thumbnails will generate once you upload your product
+                                                                file</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="thumbnails" role="tabpanel"
+                                        aria-labelledby="thumbnails-tab">
+                                        <div class="ppp_uplode">
+                                            <div class="dropzone-root-group upload-images-group" id="dropzone">
+                                                <div class="dropzone needsclick" id="my-awesome-dropzone"
+                                                    action="assets/images">
+                                                    <div class="dz-message needsclick">
+                                                        <div class="uplod_text">
+                                                            <div class="icon">
+                                                                <i class="icon-icon-19"></i>
+                                                            </div>
+                                                            <p>Thumbnails will generate once you upload your product
+                                                                file</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <label for="required">Description <span>Required</span></label>
+                        <textarea id="required" cols="30" rows="4"
+                            placeholder="Describe your product and how it can be helpful to another educator"></textarea>
+                    </div>
+                    <div class="pricing_will_in">
+                        <div class="uplode_new_title">Price</div>
+                        <div class="input_group">
+                            <label for="">Pricing will automatically adjust to Daatt’s credit system</label>
+                            <input type="text" placeholder="$ 0.00">
+                        </div>
+                    </div>
+                    <div class="pricing_will_two">
+                        <div class="uplode_new_title">Categories</div>
+                        <div class="input_group">
+                            <label for="">Grade Level <span>Required</span></label>
+                            <p>Select up to four grades. If your product works for all grades, select "Not Grade
+                                Specific."</p>
+                        </div>
+
+                        <div class="list_check_box">
+                            <div class="group_list">
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="prek" name="std" />
+                                    <label for="prek">Pre-K</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input id="Kindergarten" type="checkbox" name="std" />
+                                    <label for="Kindergarten">Kindergarten</label>
+                                </div>
+                            </div>
+                            <div class="group_list">
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Elementary" name="std" />
+                                    <label for="Elementary">Elementary school</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input id="Middle" type="checkbox" name="std" />
+                                    <label for="Middle">Middle school</label>
+                                </div>
+                            </div>
+                            <div class="group_list">
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="High" name="std" />
+                                    <label for="High">High school</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input id="University" type="checkbox" name="std" />
+                                    <label for="University">University</label>
+                                </div>
+                            </div>
+                            <div class="group_list">
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Adult" name="std" />
+                                    <label for="Adult">Adult Education</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input id="Professional" type="checkbox" name="std" />
+                                    <label for="Professional">Professional Development</label>
+                                </div>
+                            </div>
+                            <div class="group_list">
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Staff" name="std" />
+                                    <label for="Staff">Staff Training</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input_group">
+                            <label for="">Subject Area <span>Required</span></label>
+                        </div>
+                        <div class="list_check_box list_check_box_new">
+                            <div class="group_list">
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Kindergarten" name="sub">
+                                    <label for="Kindergarten">Kindergarten</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Pre-1a" name="sub">
+                                    <label for="Pre-1a">Pre-1a</label>
+                                </div>
+                            </div>
+                            <div class="group_list">
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Literature" name="sub">
+                                    <label for="Literature">Literature</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Reading" name="sub">
+                                    <label for="Reading">Reading</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Writing" name="sub">
+                                    <label for="Writing">Writing</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Back-to-School" name="sub">
+                                    <label for="Back-to-School">Back to School</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Algebra" name="sub">
+                                    <label for="Algebra">Algebra</label>
+                                </div>
+                            </div>
+                            <div class="group_list">
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Applied-Math" name="sub">
+                                    <label for="Applied-Math">Applied Math</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Operations" name="sub">
+                                    <label for="Operations">Basic Operations</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Geometry" name="sub">
+                                    <label for="Geometry">Geometry</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Measurement" name="sub">
+                                    <label for="Measurement">Measurement</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="Word-Problems" name="sub">
+                                    <label for="Word-Problems">Word-Problems</label>
+                                </div>
+                            </div>
+                            <div class="group_list">
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="U-S-History" name="sub">
+                                    <label for="U-S-History">U.S. History</label>
+                                </div>
+                                <div class="checkbox_new">
+                                    <input type="checkbox" id="world-history" name="sub">
+                                    <label for="world-history">world-history</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/owl.carousel.js"></script>
+    <script src="./assets/js/drag-and-drop/dropzone.js"></script>
+    <script src="./assets/js/drag-and-drop/get-dropzone.js"></script>
+    <script src="./assets/js/select2.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
