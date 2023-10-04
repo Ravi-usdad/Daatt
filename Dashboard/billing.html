@@ -79,7 +79,9 @@
         </div>
     </div>
     <span class="overlay"></span>
-
+    <div class="message-icon">
+        <i class="icon-icon-12"></i>
+    </div>
     <div class="content_main">
         <div class="das_header">
             <div class="burger_search">
@@ -88,8 +90,8 @@
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>
                 </div>
-                <button class="search_button_in"><i class="icon-icon-8"></i></button>
-                <form class="search_box">
+                <button class="search_button_in" onclick="dashboardsearchbox()"><i class="icon-icon-8"></i></button>
+                <form class="search_box" id="search_box">
                     <input type="text" placeholder="Search here">
                     <button class="search_button"><i class="icon-icon-8"></i></button>
                 </form>
@@ -614,8 +616,10 @@
                     <div class="community_guidelines">
                         <div class="ceckout_box">
                             <input type="checkbox" id="community">
-                            <label for="community">I have read and agree to the Terms and Conditions and <a
-                                    href="#">Community Guidelines</a></label>
+                            <label for="community">
+                                <span>I have read and agree to the Terms and Conditions and
+                                <a href="#">Community Guidelines</a></span>
+                                </label>
                         </div>
                         <div class="ceckout_box">
                             <input type="checkbox" id="agree">

@@ -153,6 +153,11 @@ function dashboardfilter() {
   element.classList.toggle("category-filter-open");
 }
 
+function dashboardsearchbox() {
+  var element = document.getElementById("search_box");
+  element.classList.toggle("active");
+}
+
 
 var options = {
   series: [{
@@ -217,7 +222,7 @@ var options = {
     data: [11, 20, 15, 32, 34, 52, 41]
   }],
   chart: {
-    height: 350,
+    height: 250,
     type: 'area'
   },
   dataLabels: {
@@ -850,8 +855,8 @@ for (var id in countries) {
 worldSeries.data = data;
 
 // Zoom control
-chart.zoomControl = new am4maps.ZoomControl();
-chart.zoomControl.marginBottom = 690;
+// chart.zoomControl = new am4maps.ZoomControl();
+// chart.zoomControl.marginBottom = 690;
 
 var homeButton = new am4core.Button();
 homeButton.events.on("hit", function () {

@@ -607,6 +607,7 @@ input:focus {
 .header {
     background: #FEFAF5;
     padding: 20px 0;
+    position: relative;
 }
 
 .header.sticky {
@@ -767,6 +768,74 @@ input:focus {
     gap: 30px;
 }
 
+.header .search-box { 
+    position: absolute;
+    max-width: 700px;
+    width: 100%;
+    padding: 15px;
+    top: -100%;
+    z-index: 2;
+    left: 50%;
+    transform: translatex(-50%);
+    transition: all 0.5s ease-in-out;
+    border-radius:10px;
+    background: #FFF;
+    box-shadow: 0px 15.94858px 23.45379px 0px rgba(0, 0, 0, 0.09);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .search-box input {
+    padding-right: 80px;
+}
+
+.header .search-box .search-icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+.header .search-box.search-open {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .button_group .search_button {
+    padding: 15px 24px;
+    border-radius: 12px;
+    background: #DE7243;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #DE7243;
+    box-shadow: 0px 12px 42px 0px rgba(222, 114, 67, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.header .button_group .search_button span,
+.header .button_group .search_button span svg {
+    display: block;
+}
+
+.header .button_group .search_button:hover {
+    background: transparent;
+}
+
+.header .button_group .search_button:hover span svg path {
+    stroke: #DE7243;
+}
+
 .header .button_group .login_button {
     padding: 15px 24px;
     border-radius: 12px;
@@ -878,11 +947,21 @@ input:focus {
     .header .button_group .login_button {
         padding: 10px 15px;
     }
+    .header .button_group .search_button {
+        padding: 10px 15px;
+    }
 
     .header .button_group .get_started_button {
         padding: 16px 20px;
     }
-
+    .header .search-box .search-icon { 
+        right: 25px;
+        width: 40px;
+        height: 40px;
+    }
+    .header .search-box input {
+        padding-right: 60px;
+    }
     .header {
         padding: 15px 0;
     }
@@ -911,6 +990,9 @@ input:focus {
 
     .header .button_group .login_button {
         padding: 10px 10px;
+    }
+    .header .button_group .search_button {
+        padding: 7px 7px;
     }
 
     .header .button_group .login_button span,
@@ -2091,22 +2173,12 @@ input:focus {
     align-items: center;
     justify-content: center;
     padding: 5px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .footer .footer-bottom .social-media .icon:hover {
     border-color: var(--orange);
-}
-
-.footer .footer-bottom .social-media .icon svg path,
-.footer .footer-bottom .social-media .icon svg rect {
-    transition: all 0.3s ease-in-out;
-}
-
-.footer .footer-bottom .social-media .icon:hover svg path,
-.footer .footer-bottom .social-media .icon:hover svg rect {
-    fill: var(--orange);
-    transition: all 0.3s ease-in-out;
+    background-color:  var(--orange);
 }
 
 @media(max-width: 1366px) {

@@ -78,6 +78,9 @@
     </div>
 </div>
 <span class="overlay"></span>
+<div class="message-icon">
+    <i class="icon-icon-12"></i>
+</div>
 <div class="content_main">
     <div class="das_header">
         <div class="burger_search">
@@ -86,8 +89,8 @@
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
             </div>
-            <button class="search_button_in"><i class="icon-icon-8"></i></button>
-            <form class="search_box">
+            <button class="search_button_in" onclick="dashboardsearchbox()"><i class="icon-icon-8"></i></button>
+            <form class="search_box" id="search_box">
                 <input type="text" placeholder="Search here">
                 <button class="search_button"><i class="icon-icon-8"></i></button>
             </form>
@@ -212,7 +215,7 @@
                                 </ul>
                               </div>
                         </div>
-                        <div class="top_product_list">
+                        <div class="top_product_list scroll">
                             <div class="top_product_item">
                                 <div class="product_in">
                                     <div class="images_box">
@@ -549,6 +552,7 @@
                                 <h2 class="des_title">Sales Mapping by Country</h2>
                             </div>
                         </div>
+                        <div class="country-chart" id="chartdiv"></div>
                     </div>
                 </div>
             </div>
@@ -566,6 +570,11 @@
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/owl.carousel.js"></script>
     <script src="./assets/js/select2.min.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/lang/RU.js"></script>w
     <script src="./assets/js/script.js"></script>
 </body>
 
