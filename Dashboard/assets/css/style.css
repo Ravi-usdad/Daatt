@@ -6358,6 +6358,7 @@ color: #9F9F9F;
     padding-bottom: 20px;
     margin-bottom: 30px;
     border-bottom: 1px solid #EBEBEB;
+    flex-wrap: wrap;
 }
 
 .product-main .add-product-btn .title {
