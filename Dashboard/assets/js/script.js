@@ -145,6 +145,18 @@ $(document).ready(function () {
       allowClear: true
     });
   }
+  if ($("#addfolder1").length) {
+    $("#addfolder1").select2({
+      placeholder: "Add Folder",
+      allowClear: true
+    });
+  }
+  if ($("#required_type").length) {
+    $("#required_type").select2({
+      placeholder: "Add Folder",
+      allowClear: true
+    });
+  }
 })
 
 
