@@ -150,6 +150,11 @@ function filterSidebar() {
     element.classList.toggle("filter-open");
 }
 
+function Searchbox() {
+    var element = document.getElementById("search-box");
+    element.classList.toggle("search-open");
+}
+
 
 var swiper = new Swiper(".thumb-slider", {
     freeMode: true,

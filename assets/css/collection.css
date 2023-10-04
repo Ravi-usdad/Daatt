@@ -8,6 +8,10 @@
     gap: 20px;
 }
 
+.collection-list-wrapper .overlay {
+    display: none;
+}
+
 .collection-list-wrapper.filter-open {
     display: grid;
     grid-template-columns: 310px calc(100% - 340px);
@@ -769,6 +773,14 @@
         top: 0;
         max-width: 500px;
         z-index: 99999;
+    }
+    .collection-list-wrapper .overlay {
+        display: block;
+    }
+    .collection-list-wrapper.filter-open .overlay {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
     }
 
     .collection-list-wrapper,
