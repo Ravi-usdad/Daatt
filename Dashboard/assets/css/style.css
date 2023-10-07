@@ -291,6 +291,7 @@ input:focus {
     color: #737791;
     font-weight: 400;
     transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
 }
 
 .sidebar .des_menu_list .menu_item_link.active,
@@ -1696,6 +1697,10 @@ input:focus {
     line-height: 32px;
     color: #6C6C6C;
     margin-top: auto;
+}
+
+.total_credits_left .box_content_in .con_text span {
+    cursor: pointer;
 }
 
 .billing_information,
@@ -5799,6 +5804,11 @@ input:focus {
     width: 100%;
     margin: 0 auto;
     font-weight: 400;
+}
+
+.needsclick .uplod_text .information {
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .uplode_new_title {
